@@ -8,9 +8,9 @@ body {
     background-color: var(--white-light-color);
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 :root {
     --primary-color: #0000ff;
