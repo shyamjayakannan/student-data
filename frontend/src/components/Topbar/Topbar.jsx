@@ -1,34 +1,41 @@
 "use client";
-import React from "react";
+
+import React, { useContext } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import "../../styles/home/topbar.css";
+import classes from "../../styles/topbar.module.css";
+import AuthenticationContext from "../../store/AuthenticationContext";
+import useLocalStorage from "../../hooks/useLocalStorage";
 
-const Topbar = () => {
-  return (
-    <>
-      <nav className="navbar">
-        <div className="otherlinks">
-          <Link href="aboutus" className="navlinks">
-            AboutUs
-          </Link>
-          <Link href="services" className="navlinks">
-            Services
-          </Link>
-          <Link href="resources" className="navlinks">
-            Resources
-          </Link>
-        </div>
-        <Link href="/" className="logolink">
-          {/* <Image src="" alt="logo" /> */}
-          <p className="logo">Logo</p>
-        </Link>
-        <div className="signbtn">
-          <button className="signupbtn">Sign Up</button>
-        </div>
-      </nav>
-    </>
-  );
-};
+export default function Topbar() {
+	const authenticationCtx = useContext(AuthenticationContext);
+	const { removePersonalDetails } = useLocalStorage();
 
-export default Topbar;
+	function logout() {
+		authenticationCtx.setLoggedIn(false);
+		removePersonalDetails();
+	}
+
+	return (
+		<nav className={classes.navbar}>
+			<div className={classes.otherlinks}>
+				<Link href="aboutus" className={classes.navlinks}>
+					AboutUs
+				</Link>
+				<Link href="services" className={classes.navlinks}>
+					Services
+				</Link>
+				<Link href="resources" className={classes.navlinks}>
+					Resources
+				</Link>
+			</div>
+			<Link href="/" className={classes.logolink}>
+				{/* <Image src="" alt="logo" /> */}
+				<p className={classes.logo}>Logo</p>
+			</Link>
+			<div className={classes.signbtn}>
+				{authenticationCtx.isLoggedIn ? <button onClick={logout} className={classes.signupbtn}>Sign Out</button> :
+				<Link href="/auth" className={classes.signupbtn}>Sign In</Link>}
+			</div>
+		</nav>
+	);
+}

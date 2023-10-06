@@ -1,0 +1,14 @@
+.register {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.register button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 17px;
+    color: blue;
+}

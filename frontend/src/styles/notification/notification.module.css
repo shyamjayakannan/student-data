@@ -1,0 +1,52 @@
+.container {
+    margin: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--white-color);
+    animation: enter 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+@keyframes enter {
+    from {
+        transform: translateY(-500px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.container button {
+    cursor: pointer;
+    position: relative;
+    height: 100%;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.container p {
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+.exit {
+    animation: exit 0.5s forwards;
+}
+
+@keyframes exit {
+    to {
+        transform: translateY(-500px);
+    }
+}
