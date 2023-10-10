@@ -22,10 +22,7 @@ export default function useAuth() {
             const responsedata = await response.json();
             notificationCtx.message(responsedata.message);
 
-            if (
-                (responsedata.type === "Success" && type === "signin") ||
-                (responsedata.type === "Success" && type === "newPassword")
-            ) {
+            if (responsedata.type === "Success" && (type === "signin" || type === "signup" || type === "newPassword")) {
                 updatePersonalDetails(responsedata.response);
             }
             return responsedata.type;

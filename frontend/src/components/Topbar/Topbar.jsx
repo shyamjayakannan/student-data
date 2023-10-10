@@ -5,12 +5,10 @@ import Link from "next/link";
 import classes from "../../styles/topbar.module.css";
 import AuthenticationContext from "../../store/AuthenticationContext";
 import useLocalStorage from "../../hooks/useLocalStorage";
-import { useRouter } from "next/navigation";
 
 export default function Topbar() {
 	const authenticationCtx = useContext(AuthenticationContext);
 	const { removePersonalDetails } = useLocalStorage();
-	const router = useRouter()
 
 	function logout() {
 		authenticationCtx.setLoggedIn(false);

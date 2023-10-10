@@ -3,11 +3,10 @@
 import { useContext, useEffect, useState } from "react";
 import AuthenticationContext from "../../store/AuthenticationContext";
 import LogIn from "../../components/authentication/LogIn";
-import styles from "../../styles/authentication/Auth.module.css";
-import SignUp from "../../components/authentication/signUp";
 import { usePathname, useRouter } from "next/navigation";
 import LoadingSpinner from "../../ui/loadingSpinner";
 import classes from "../../styles/home.module.css";
+import SignUp from "../../components/authentication/SignUp";
 export default function Auth() {
   const authenticationCtx = useContext(AuthenticationContext);
   const router = useRouter();

@@ -8,8 +8,8 @@ import Card from "../../ui/Card";
 import Loader from "../../ui/loader";
 import EmailInput from "./parts/EmailInput";
 import PasswordInput from "./parts/PasswordInput";
-import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
+import useRedirect from "../../hooks/useRedirect";
 
 function valueReducer(state, action) {
     switch (action.type) {
@@ -20,8 +20,7 @@ function valueReducer(state, action) {
 }
 
 export default function LogIn() {
-    const searchParams = useSearchParams();
-    const router = useRouter();
+    const redirectUser = useRedirect();
     const [value, dispatchValue] = useReducer(valueReducer, { password: { value: "", valid: false }, email: { value: "", valid: false } });
     const check = useCallback((isValid, value, id) => dispatchValue({ type: id, value, valid: isValid }), []);
     const [loader, setLoader] = useState(false),
@@ -41,15 +40,7 @@ export default function LogIn() {
             AuthenticationCtx.setDetails();
             
             // redirect
-            let current = new URLSearchParams(Array.from(searchParams.entries()));
-            current = current.toString();
-            
-            if (current === "") router.push("/");
-            else {
-                const index = current.indexOf("=");
-                const path = current.slice(index + 4);
-                router.push(`/${path}`);
-            }
+            redirectUser();
             AuthenticationCtx.setLoggedIn(true);
         }
 
