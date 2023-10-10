@@ -6,15 +6,15 @@ export default function useRedirect() {
     const searchParams = useSearchParams();
     const router = useRouter();
 
-    function redirectUser() {
+    function redirectUser(pathname) {
         let current = new URLSearchParams(Array.from(searchParams.entries()));
         current = current.toString();
 
-        if (current === "") router.push("/");
+        if (pathname == "") router.push("/");
         else {
             const index = current.indexOf("=");
             const path = current.slice(index + 4);
-            router.push(`/${path}`);
+            router.push(`/${pathname}`);
         }
     }
     return redirectUser;

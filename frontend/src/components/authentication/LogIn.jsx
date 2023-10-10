@@ -39,7 +39,7 @@ export default function LogIn() {
             setSuccess(true);
             
             // redirect
-            redirectUser();
+            redirectUser('dashboard');
             AuthenticationCtx.setLoggedIn(true);
         }
 

@@ -38,7 +38,7 @@ export default function SignUp(props) {
             setSuccess(true);
 
             // redirect
-            redirectUser();
+            redirectUser('dashboard');
             authenticationCtx.setLoggedIn(true);
             props.toggle();
         }
