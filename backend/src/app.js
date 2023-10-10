@@ -20,6 +20,10 @@ app.use((req, res, next) => {
     "Access-Control-Allow-Headers",
     "Content-Type, Authorization,AuthToken"
   );
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "Content-Type, Authorization, AuthToken"
+  );
   next();
 });
 

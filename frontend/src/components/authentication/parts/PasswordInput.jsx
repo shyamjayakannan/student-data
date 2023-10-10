@@ -19,7 +19,7 @@ function PasswordInput(props) {
         <div className={styles.card}>
             <div>
                 <label htmlFor="password">Password(minimum of 7 characters)</label>
-                <input className={`${passwordIsFocussed || passwordIsValid ? styles.cardinput : styles.incorrect}`} onChange={e => setpassword(e.target.value)} onFocus={() => setpasswordIsFocussed(true)} onBlur={() => setpasswordIsFocussed(false)} type={visible ? "text" : "password"} id="password" />
+                <input autoComplete={props.autoComplete} className={`${passwordIsFocussed || passwordIsValid ? styles.cardinput : styles.incorrect}`} onChange={e => setpassword(e.target.value)} onFocus={() => setpasswordIsFocussed(true)} onBlur={() => setpasswordIsFocussed(false)} type={visible ? "text" : "password"} id="password" />
                 {!visible ? <Image onClick={() => setVisible(true)} className={styles.eye} height={20} width={20} src="/images/view.png" alt="" /> : <Image height={20} width={20} onClick={() => setVisible(false)} className={styles.eye} src="/images/hide.png" alt="" />}
                 <div className={styles.line}></div>
                 {(!passwordIsValid && !passwordIsFocussed) && <p>&#9888; Please Enter a valid Password</p>}

@@ -37,7 +37,6 @@ export default function LogIn() {
         );
         if (response === "Success") {
             setSuccess(true);
-            AuthenticationCtx.setDetails();
             
             // redirect
             redirectUser();
@@ -49,8 +48,8 @@ export default function LogIn() {
 
     return (
         <Card style={{ width: "400px" }} noshadow> 
-            <EmailInput onCheck={check} />
-            <PasswordInput onCheck={check} />
+            <EmailInput autoComplete="email" onCheck={check} />
+            <PasswordInput autoComplete="current-password" onCheck={check} />
             <div className={styles.register}>
                 <Link href="/resetpassword" className={styles.forgot}>Forgot Password?</Link>
             </div>

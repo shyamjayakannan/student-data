@@ -1,9 +1,11 @@
 import { useContext } from "react";
 import useLocalStorage from "./useLocalStorage";
 import NotificationContext from "../store/NotificationContext";
+import AuthenticationContext from "../store/AuthenticationContext";
 
 export default function useAuth() {
     const notificationCtx = useContext(NotificationContext);
+    const authenticationCtx = useContext(AuthenticationContext);
     const { updatePersonalDetails } = useLocalStorage();
 
     async function Auth(data, type) {
@@ -22,8 +24,9 @@ export default function useAuth() {
             const responsedata = await response.json();
             notificationCtx.message(responsedata.message);
 
-            if (responsedata.type === "Success" && (type === "signin" || type === "signup" || type === "newPassword")) {
+            if (responsedata.type === "Success" && (type === "signin" || type === "signup")) {
                 updatePersonalDetails(responsedata.response);
+                authenticationCtx.setDetails(responsedata.id);
             }
             return responsedata.type;
         } catch (err) {

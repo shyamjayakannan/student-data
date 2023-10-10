@@ -7,6 +7,7 @@ import { usePathname, useRouter } from "next/navigation";
 import LoadingSpinner from "../../ui/loadingSpinner";
 import classes from "../../styles/home.module.css";
 import SignUp from "../../components/authentication/SignUp";
+import GoogleAuth from "../../components/authentication/parts/GoogleAuth";
 export default function Auth() {
   const authenticationCtx = useContext(AuthenticationContext);
   const router = useRouter();
@@ -48,6 +49,7 @@ export default function Auth() {
           {authenticationCtx.open.LogInOpen && (
             <>
               <LogIn />
+              <GoogleAuth LogInOpen={authenticationCtx.open.LogInOpen} />
               <p style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
                 New Here?
                 <button onClick={toggle} className={classes.but1}>
@@ -58,7 +60,8 @@ export default function Auth() {
           )}
           {authenticationCtx.open.signupOpen && (
             <>
-              <SignUp />
+              <SignUp toggle={toggle} />
+              <GoogleAuth LogInOpen={authenticationCtx.open.LogInOpen} />
               <p style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
                 Already Registered?
                 <button onClick={toggle} className={classes.but1}>

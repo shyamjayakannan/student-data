@@ -13,7 +13,7 @@ import styles from "../../styles/authentication/LogIn.module.css";
 import Card from "../../ui/Card";
 import Loader from "../../ui/loader";
 import EmailInput from "../../components/authentication/parts/EmailInput";
-import useLocalStorage from "../../hooks/useLocalStorage";
+import AuthenticationContext from "../../store/AuthenticationContext";
 
 function valueReducer(state, action) {
   switch (action.type) {
@@ -36,14 +36,14 @@ export default function resetPassword() {
   const [counter, setCounter] = useState(0);
   const interval = useRef();
   const Auth = useAuth();
-  const { fetchPersonalDetails } = useLocalStorage();
+  const authenticationCtx = useContext(AuthenticationContext);
 
   useEffect(() => {
     if (counter === 0) clearInterval(interval.current);
   }, [counter]);
 
   useEffect(() => {
-    const data = fetchPersonalDetails();
+    const data = authenticationCtx.details;
 
     (async (data) => {
       try {
@@ -84,7 +84,7 @@ export default function resetPassword() {
     setLoader(true);
     await Auth({ email: value.email.value }, "resetpassword");
 
-    const data = fetchPersonalDetails();
+    const data = authenticationCtx.details;
 
     (async (data) => {
       try {
@@ -125,7 +125,7 @@ export default function resetPassword() {
       }}
     >
       <Card style={{ width: "400px" }} noshadow>
-        <EmailInput onCheck={check} />
+        <EmailInput autoComplete="email" onCheck={check} />
         {loader ? (
           <Loader />
         ) : (

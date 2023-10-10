@@ -20,16 +20,17 @@ async function getSignIn(userData) {
         }
         const token = jwt.sign(
             {
-                id: user.id,
+                _id: user.id,
+                authenticated: true,
             },
-            config.jwtSecret
+            config.jwtSecret,
+            { expiresIn: "15d" }
         );
         return {
             response: {
                 token: token,
-                id: user.id,
-                email: user.email,
             },
+            id: user.id,
             message: "Logged in Successfully!",
             type: "Success",
         };

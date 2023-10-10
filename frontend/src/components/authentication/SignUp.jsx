@@ -8,7 +8,6 @@ import Card from "../../ui/Card";
 import Loader from "../../ui/loader";
 import EmailInput from "./parts/EmailInput";
 import PasswordInput from "./parts/PasswordInput";
-import { redirect, useRouter } from "next/navigation";
 import useRedirect from "../../hooks/useRedirect";
 
 function valueReducer(state, action) {
@@ -19,7 +18,7 @@ function valueReducer(state, action) {
     }
 }
 
-export default function SignUp() {
+export default function SignUp(props) {
     const redirectUser = useRedirect();
     const [value, dispatchValue] = useReducer(valueReducer, { password: { value: "", valid: false }, email: { value: "", valid: false } });
     const check = useCallback((isValid, value, id) => dispatchValue({ type: id, value, valid: isValid }), []);
@@ -27,7 +26,6 @@ export default function SignUp() {
         [success, setSuccess] = useState();
     const Auth = useAuth();
     const authenticationCtx = useContext(AuthenticationContext);
-    const router = useRouter();
 
     async function submit(e) {
         e.preventDefault();
@@ -38,11 +36,11 @@ export default function SignUp() {
         );
         if (response === "Success") {
             setSuccess(true);
-            authenticationCtx.setDetails();
 
             // redirect
             redirectUser();
             authenticationCtx.setLoggedIn(true);
+            props.toggle();
         }
 
         setLoader(false);
@@ -50,8 +48,8 @@ export default function SignUp() {
 
     return (
         <Card style={{ width: "400px" }} noshadow>
-            <EmailInput onCheck={check} />
-            <PasswordInput onCheck={check} />
+            <EmailInput autoComplete="email" onCheck={check} />
+            <PasswordInput autoComplete="new-password" onCheck={check} />
             {loader ? <Loader />
                 : success ? <div className={styles.success} /> :
                     <button onClick={submit} className={styles["navigate-link"]} disabled={!(value.password.valid && value.email.valid)}>Sign Up</button>

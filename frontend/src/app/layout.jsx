@@ -9,6 +9,7 @@ import Notifications from "../components/notification/notifications";
 import { AuthenticationContextProvider } from "../store/AuthenticationContext";
 import { NotificationContextProvider } from "../store/NotificationContext";
 import { usePathname } from "next/navigation";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 
 export default function RootLayout({ children }) {
 	const path = usePathname();
@@ -19,10 +20,12 @@ export default function RootLayout({ children }) {
 			<body className={inter.className}>
 				<NotificationContextProvider>
 					<AuthenticationContextProvider>
-						{(!path.includes("/auth") && !path.includes("/resetpassword")) && <Topbar />}
-						<Notifications />
-						<main>{children}</main>
-						<Script />
+						<GoogleOAuthProvider clientId={process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID}>
+							{(!path.includes("/auth") && !path.includes("/resetpassword")) && <Topbar />}
+							<Notifications />
+							<main>{children}</main>
+							<Script />
+						</GoogleOAuthProvider>
 					</AuthenticationContextProvider>
 				</NotificationContextProvider>
 			</body>

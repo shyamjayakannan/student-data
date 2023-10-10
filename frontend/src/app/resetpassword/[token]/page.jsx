@@ -81,7 +81,7 @@ export default function newPassword() {
     return (
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: "100%", height: "100vh" }}>
             <Card style={{ width: "400px" }} noshadow>
-                <PasswordInput onCheck={check} />
+                <PasswordInput autoComplete="new-password" onCheck={check} />
                 {loader ? <Loader /> : <button onClick={submit} className={styles["navigate-link"]} disabled={!value.password.valid}>Reset Password</button>}
             </Card>
         </div>

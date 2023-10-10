@@ -9,7 +9,8 @@ module.exports = insertSignUpRoute = {
             const response = await insertSignUp(userData);
             return res.status(200).send({
                 message: "Successfully signed up!",
-                response: response,
+                response,
+                id: response.id,
                 type: "Success",
             });
         } catch (err) {

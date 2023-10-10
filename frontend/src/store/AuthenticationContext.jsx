@@ -31,9 +31,7 @@ export function AuthenticationContextProvider({ children }) {
     error: "",
   });
   const [details, setDetails] = useState({
-    email: "",
     id: "",
-    token: "",
   });
 
   useEffect(() => {
@@ -58,7 +56,10 @@ export function AuthenticationContextProvider({ children }) {
           }
         );
         const responsedata = await response.json();
-        if (responsedata.type === "Success") setIsLoggedIn(true);
+        if (responsedata.type === "Success") {
+          setIsLoggedIn(true);
+          setDetails({ id: responsedata.id });
+        }
         else {
           removePersonalDetails();
           setIsLoggedIn(false);
@@ -99,13 +100,9 @@ export function AuthenticationContextProvider({ children }) {
     }
   }
 
-  function setNewDetails() {
-    const { email, id, token } = fetchPersonalDetails();
-
+  function setNewDetails(id) {
     setDetails({
-      email,
       id,
-      token,
     });
   }
 

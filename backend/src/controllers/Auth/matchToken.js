@@ -1,8 +1,18 @@
 const User = require("../../models/user");
+const jwt = require('jsonwebtoken');
+const config = require("../../config");
 
 module.exports = async function matchToken(userData) {
     try {
-        const user = await User.findOne({ id: userData.id });
+        const decoded = jwt.decode(userData.token, config.jwtSecret);
+        const currentTimestamp = Math.floor(Date.now() / 1000);
+        if (currentTimestamp > decoded.exp) {
+            return {
+                message: "Token Expired",
+                type: "Error",
+            };
+        }
+        const user = await User.findOne({ id: decoded._id });
         if (!user) {
             return {
                 message: "User Not found",
@@ -10,11 +20,15 @@ module.exports = async function matchToken(userData) {
             };
         }
         return {
+            id: user.id,
             message: "Logged in Successfully!",
             type: "Success",
         };
     } catch (err) {
         console.log(err.message);
-        throw err;
+        return {
+            message: err.message,
+            type: "Error",
+        }
     }
 };

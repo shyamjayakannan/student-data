@@ -17,7 +17,7 @@ function EmailInput(props) {
         <div className={styles.card}>
             <div>
                 <label htmlFor="email">Email</label>
-                <input className={`${emailIsFocussed || emailIsValid ? styles.cardinput : styles.incorrect}`} onChange={e => setEmail(e.target.value)} onFocus={() => setEmailIsFocussed(true)} onBlur={() => setEmailIsFocussed(false)} type="email" id="email" />
+                <input autoComplete={props.autoComplete} className={`${emailIsFocussed || emailIsValid ? styles.cardinput : styles.incorrect}`} onChange={e => setEmail(e.target.value)} onFocus={() => setEmailIsFocussed(true)} onBlur={() => setEmailIsFocussed(false)} type="email" id="email" />
                 <div className={styles.line}></div>
                 {(!emailIsValid && !emailIsFocussed) && <p>&#9888; Please Enter a valid Email</p>}
             </div>

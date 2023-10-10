@@ -45,7 +45,7 @@ export default function HeroHeaderSection() {
             Learn More
           </Link>
         </div>
-        <Image src="/images/image1.png" width={500} height={350} alt="hero_image" style={{ marginTop: "50px" }} />
+        <Image src="/images/image1.png" priority width={500} height={350} alt="hero_image" style={{ marginTop: "50px" }} />
       </div>
 
       {/* <p className={classes.hero_text3}>
