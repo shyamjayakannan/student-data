@@ -1,0 +1,122 @@
+.home_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+.hero_image{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.hero_text{
+    display: block;
+    font-family: 'Courier New', Courier,;
+    font-weight:700;
+    font-size: 2rem;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.image1{
+    height: 600px;
+    width: 600px;
+    margin-top: -2rem;
+}
+.hero_text2{
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, ;
+    font-size: 1.3rem;
+    font-weight: 700;
+
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+}
+
+.but1{
+    display: flex;
+    font-family: monospace;
+    color: white;
+    background: black;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.but1:hover{
+    cursor: pointer;
+    background: rgb(193, 193, 193);
+    color:black;
+}
+.but2{
+    display: flex;
+    font-family: monospace;
+    color: white;
+    /* background: black; */
+    padding: 1rem;
+    border-radius: 1rem;
+    border:none;
+    background-color: rgb(192, 189, 189);
+    width: fit-content;
+    font-size: 1rem;
+    text-decoration: none;
+    
+
+}
+.but2:hover{
+    cursor: pointer;
+    background-color: black;
+    color:white
+}
+.hero_text3{
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, ;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap:4rem;
+}
+.imags{
+    height:300px;
+    width: 300px;
+
+}
+.card_content{
+    display: flex;
+    flex-direction: column;
+    padding:1rem;
+    align-items: center;
+    width:350px;
+
+}
+.card_text1{
+    display: flex;
+    font-family: 'Courier New', Courier, ;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+    
+}
+.card_text2{
+    display: flex;
+    font-family: 'Courier New', Courier, ;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 1rem;
+    width:280px;
+
+    
+}

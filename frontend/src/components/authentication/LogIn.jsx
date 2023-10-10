@@ -57,7 +57,7 @@ export default function LogIn() {
     }
 
     return (
-        <Card style={{ width: "400px" }} noshadow>
+        <Card style={{ width: "400px" }} noshadow> 
             <EmailInput onCheck={check} />
             <PasswordInput onCheck={check} />
             <div className={styles.register}>

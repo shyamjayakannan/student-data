@@ -24,13 +24,16 @@
 
 .navigate-link:disabled {
     text-decoration: none;
-    background-color: #525151;
+    background-color: #bebcbc;
     padding: 10px 20px;
     border-radius: 10px;
     font-size: 15px;
     margin: 10px;
     margin-top: 40px;
     border: none;
+    color:black;
+    font-family: monospace;
+    font-weight: 900;
     pointer-events: none;
 }
 
@@ -62,6 +65,10 @@
 .forgot {
     position: absolute;
     right: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: monospace;
+    font-size: 1rem;
 }
 
 .error {
