@@ -41,7 +41,7 @@ export default function SignUp() {
             authenticationCtx.setDetails();
 
             // redirect
-            redirectUser();
+            redirectUser('dashboard');
             authenticationCtx.setLoggedIn(true);
         }
 

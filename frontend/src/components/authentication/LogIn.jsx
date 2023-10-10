@@ -40,7 +40,7 @@ export default function LogIn() {
             AuthenticationCtx.setDetails();
             
             // redirect
-            redirectUser();
+            redirectUser('dashboard');
             AuthenticationCtx.setLoggedIn(true);
         }
 
