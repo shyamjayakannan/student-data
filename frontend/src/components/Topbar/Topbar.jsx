@@ -5,12 +5,14 @@ import Link from "next/link";
 import classes from "../../styles/topbar.module.css";
 import AuthenticationContext from "../../store/AuthenticationContext";
 import useLocalStorage from "../../hooks/useLocalStorage";
+import { googleLogout } from "@react-oauth/google";
 
 export default function Topbar() {
 	const authenticationCtx = useContext(AuthenticationContext);
 	const { removePersonalDetails } = useLocalStorage();
 
 	function logout() {
+		googleLogout();
 		authenticationCtx.setLoggedIn(false);
 		removePersonalDetails();
 	}

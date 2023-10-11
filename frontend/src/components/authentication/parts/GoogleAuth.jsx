@@ -5,12 +5,11 @@ import useAuth from "../../../hooks/useAuth";
 import { useContext } from "react";
 import AuthenticationContext from "../../../store/AuthenticationContext";
 import useRedirect from "../../../hooks/useRedirect";
-import NotificationContext from "../../../store/NotificationContext";
+import classes from "../../../styles/authentication/parts/GoogleAuth.module.css";
 
 export default function GoogleAuth(props) {
     const Auth = useAuth();
     const authenticationCtx = useContext(AuthenticationContext);
-    const notificationCtx = useContext(NotificationContext);
     const redirectUser = useRedirect();
     const login = useGoogleLogin({
         async onSuccess(user) {
@@ -31,14 +30,12 @@ export default function GoogleAuth(props) {
             );
             if (response1 === "Success") {
                 // redirect
-                redirectUser();
+                redirectUser("/dashboard");
                 authenticationCtx.setLoggedIn(true);
-            } else {
-                notificationCtx.message("Email is already in use and cannot be used to Sign In with Google");
             }
         },
         onError: (error) => console.log('Login Failed:', error)
     });
 
-    return <button onClick={login}>{props.LogInOpen ? "Sign In" : "Sign Up"} with Google</button>;
+    return <button className={classes.google} onClick={login}>{props.LogInOpen ? "Sign In" : "Sign Up"} with Google</button>;
 }

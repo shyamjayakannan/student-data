@@ -13,7 +13,7 @@ export default function Notification(props) {
         timeout.current = setTimeout(() => {
             setExit(true);
             setTimeout(() => notificationCtx.deleteMessage(props.id), 500);
-        }, 3000);
+        }, 5000);
     }, []);
 
     function removeNotification() {

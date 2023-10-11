@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, createContext, useEffect } from "react";
 import useLocalStorage from "../hooks/useLocalStorage";
+import { googleLogout } from "@react-oauth/google";
 
 const AuthenticationContext = createContext({
   open: {
@@ -63,6 +64,7 @@ export function AuthenticationContextProvider({ children }) {
         else {
           removePersonalDetails();
           setIsLoggedIn(false);
+          googleLogout();
         }
       } catch (err) {
         console.log(err);

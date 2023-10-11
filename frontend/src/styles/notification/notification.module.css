@@ -1,5 +1,6 @@
 .container {
     margin: 5px;
+    max-width: 500px;
     position: relative;
     display: flex;
     align-items: center;
@@ -37,7 +38,7 @@
 
 .container p {
     margin: 0;
-    text-align: center;
+    text-align: justify;
     padding: 10px;
 }
 

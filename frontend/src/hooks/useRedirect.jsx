@@ -10,11 +10,11 @@ export default function useRedirect() {
         let current = new URLSearchParams(Array.from(searchParams.entries()));
         current = current.toString();
 
-        if (pathname == "") router.push("/");
+        if (current === "") router.push(pathname);
         else {
             const index = current.indexOf("=");
             const path = current.slice(index + 4);
-            router.push(`/${pathname}`);
+            router.push(`/${path}`);
         }
     }
     return redirectUser;

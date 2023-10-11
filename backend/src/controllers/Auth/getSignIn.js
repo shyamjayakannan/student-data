@@ -8,13 +8,13 @@ async function getSignIn(userData) {
         const user = await User.findOne({ email: userData.email });
         if (!user) {
             return {
-                message: "User Not found",
+                message: "User Not found. Please Sign Up",
                 type: "Error",
             };
         }
         if (!user.authenticate(userData.password)) {
             return {
-                message: "Email and password don't match.",
+                message: "Email and password don't match. This may happen if you try to Sign In with Google while having an existing account",
                 type: "Error",
             };
         }
