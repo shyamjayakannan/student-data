@@ -1,4 +1,67 @@
-.main_section{
-    width:300px;
-    background:blue
+.main_section {
+  width: 300px;
+  height: 90vh;
+  background-color: var(--primary-dark);
+  width: 300px;
+  color: var(--primary-bright);
+  font-family: monospace;
+  font-weight: 900;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0rem 4rem 0 0;
+  border: none;
+  /* box-shadow: rgba(193, 193, 193, 0.1) 0px 20px 25px -5px, rgba(213, 213, 213, 0.04) 0px 10px 10px -5px; */
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-family: monospace;
+    font-weight: 900;
+    color: var(--primary-dark);
+    gap: 2rem;
+
+}
+.but{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-family: monospace;
+    font-weight: 900;
+    color: var(--primary-bright);
+    font-size: 1.2rem;
+    background: transparent;
+    border-radius: 2rem;
+    border: none;
+}
+.but:hover{
+    cursor: pointer;
+    background-color: var(--primary-bright);
+    color: var(--primary-dark);
+}
+.butset{
+    position:absolute;
+    bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-family: monospace;
+    font-weight: 900;
+    color: var(--primary-bright);
+    font-size: 1.2rem;  
+    background: transparent;
+    border-radius: 2rem;
+    border: none;
+}
+.butset:hover{
+    cursor: pointer;
+    background-color: var(--primary-bright);
+    color: var(--primary-dark);
 }
