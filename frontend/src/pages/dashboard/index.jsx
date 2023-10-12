@@ -7,7 +7,6 @@ const Dashboard = () => {
   return (
     <LoadingWait>
       <div className={classes.dashboard_container}>
-        hello
         <Leftsidebar />
       </div>
     </LoadingWait>
