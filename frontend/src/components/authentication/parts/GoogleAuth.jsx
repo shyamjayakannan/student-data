@@ -37,5 +37,14 @@ export default function GoogleAuth(props) {
         onError: (error) => console.log('Login Failed:', error)
     });
 
-    return <button className={classes.google} onClick={login}>{props.LogInOpen ? "Sign In" : "Sign Up"} with Google</button>;
+    return (
+        <>
+            <div className={classes.or}>
+                <hr className={classes.hr} />
+                <p>OR</p>
+                <hr className={classes.hr} />
+            </div>
+            <button className={classes.google} onClick={login}>{props.LogInOpen ? "Sign In" : "Sign Up"} with Google</button>
+        </>
+    );
 }

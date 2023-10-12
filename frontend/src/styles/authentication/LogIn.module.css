@@ -66,8 +66,7 @@
     position: absolute;
     right: 10px;
     text-decoration: none;
-    color: black;
-    font-family: monospace;
+    color: var(--blue);
     font-size: 1rem;
 }
 

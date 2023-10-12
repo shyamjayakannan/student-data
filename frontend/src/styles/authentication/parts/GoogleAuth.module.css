@@ -2,4 +2,26 @@
     border: none;
     text-decoration: none;
     cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.or hr {
+    height: 2px;
+    width: 200px;
+    border: none;
+    background-color: var(--primary-dark);
+}
+
+.or {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.or p {
+    margin: 10px;
 }

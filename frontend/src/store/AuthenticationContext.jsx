@@ -10,9 +10,7 @@ const AuthenticationContext = createContext({
     error: "",
   },
   details: {
-    email: "",
     id: "",
-    token: "",
   },
   isLoggedIn: true,
   show: () => {},
