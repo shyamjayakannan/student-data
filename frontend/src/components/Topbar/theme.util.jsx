@@ -34,10 +34,16 @@ export default function ThemeToggler() {
         const useSetTheme = (e) => { setTheme(e.matches ? 'dark' : 'light') }
         const watchSysTheme = window.matchMedia('(prefers-color-scheme: dark)')
 
-        watchSysTheme.addEventListener('change', useSetTheme)
+        watchSysTheme.addEventListener('change', useSetTheme);
+
+        function changeTheme() {
+            setTheme(localStorage.getItem('theme'));
+        }
+        window.addEventListener("storage", changeTheme);
 
         return () => {
-            watchSysTheme.removeEventListener('change', useSetTheme)
+            watchSysTheme.removeEventListener('change', useSetTheme);
+            removeEventListener("storage", changeTheme);
         }
     }, [theme])
 
