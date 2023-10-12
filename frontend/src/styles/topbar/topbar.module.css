@@ -32,6 +32,11 @@
 }
 
 .navlinks {
+    text-decoration: none;
+    color: var(--primary-dark);
+    font-family: monospace;
+    font-weight: 800;
+    font-size: 1.2rem;
   text-decoration: none;
   color: var(--primary-dark);
   font-family: monospace;
@@ -85,7 +90,9 @@
   align-items: center;
 }
 
-.dashbtn:hover {
+.dashbtn:hover {    background-color: rgb(229, 226, 226);
+    color: black;
+
   background-color: rgb(229, 226, 226);
   color: var(--primary-dark);
 }
