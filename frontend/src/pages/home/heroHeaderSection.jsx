@@ -38,7 +38,7 @@ export default function HeroHeaderSection() {
           Discover your opportunities based on your profile
         </p>
         <div className={classes.buttons}>
-          <Link href="/auth" className={classes.but1}>
+          <Link href="/dashboard" className={classes.but1}>
             Get Started
           </Link>
           <Link href="/aboutus" className={classes.but2}>

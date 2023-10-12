@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--white-light-color);
 }
 
 ::-webkit-scrollbar {
@@ -15,7 +17,7 @@ body {
 /*
  * Dark mode theme 
  */
- :root[data-theme='dark'] {
+ :root[data-theme='light'] {
 	--primary-bright:	#ffffff;
 	--primary:		#d9d9d9;
 	--primary-dim:		#666666;
@@ -23,15 +25,14 @@ body {
 	--secondary: 		#ffed7f;
 	--secondary-bright: 	#ffea5f;
 	--background: 		#060708;
-	
-	/* Asks browser to behave in dark mode */
-	color-scheme: dark;
+	--green: green;
+	--blue: blue;
 } 
 
 /*
  * Light mode theme 
  */
-:root[data-theme='light'] {
+:root[data-theme='dark'] {
 	--primary-bright:	#000000;
 	--primary: 		#060708;
 	--primary-dim:		#121315;
@@ -39,4 +40,9 @@ body {
 	--secondary: 		#002aff;
 	--secondary-bright:	#4800ff;
 	--background: 		#ededed;
+	--green: green;
+	--blue: blue;
+
+	/* Asks browser to behave in dark mode */
+	color-scheme: dark;
 }

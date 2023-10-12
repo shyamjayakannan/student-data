@@ -7,12 +7,12 @@
 	height: 3rem;
 	width: auto;
 	margin: 0;
-	background-color: transparent;
+	background-color: var(--primary-bright);
 	border: none;
 }
 
 .toggle	svg {
 	display: block;
 	position: relative;
-	fill: var(--primary-bright);
+	fill: var(--primary-dark);
 }

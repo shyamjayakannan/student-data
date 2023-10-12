@@ -26,7 +26,6 @@
     font-family: 'Courier New', Courier, ;
     font-size: 1.3rem;
     font-weight: 700;
-
 }
 .buttons{
     display: flex;
@@ -37,8 +36,8 @@
 .but1{
     display: flex;
     font-family: monospace;
-    color: white;
-    background: black;
+    color: var(--primary-bright);
+    background: var(--primary-dark);
     padding: 1rem;
     border-radius: 1rem;
     font-size: 1rem;
@@ -55,8 +54,8 @@
 .but2{
     display: flex;
     font-family: monospace;
-    color: white;
-    /* background: black; */
+    color: var(--primary-bright);
+    /* background: var(--primary-dark); */
     padding: 1rem;
     border-radius: 1rem;
     border:none;
@@ -67,8 +66,8 @@
     cursor: pointer;
 }
 .but2:hover{
-    background-color: black;
-    color:white
+    background-color: var(--primary-dark);
+    color:var(--primary-bright)
 }
 .hero_text3{
     display: flex;
