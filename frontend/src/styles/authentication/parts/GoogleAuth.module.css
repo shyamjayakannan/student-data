@@ -1,17 +1,11 @@
 .google {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
     border: none;
     text-decoration: none;
     cursor: pointer;
     padding: 10px 20px;
-    border-radius: 40px;
+    border-radius: 20px;
     font-size: 1em;
     margin-bottom: 20px;
-    background-color: rgba(231, 221, 221, 0.8);
-    color: black;
 }
 
 .or hr {
