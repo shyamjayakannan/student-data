@@ -2,10 +2,11 @@
 
 import React, { useContext } from "react";
 import Link from "next/link";
-import classes from "../../styles/topbar.module.css";
+import classes from "../../styles/topbar/topbar.module.css";
 import AuthenticationContext from "../../store/AuthenticationContext";
 import useLocalStorage from "../../hooks/useLocalStorage";
 import { googleLogout } from "@react-oauth/google";
+import ThemeToggler from "./theme.util";
 
 export default function Topbar() {
 	const authenticationCtx = useContext(AuthenticationContext);
@@ -34,6 +35,7 @@ export default function Topbar() {
 				{/* <Image src="" alt="logo" /> */}
 				<p className={classes.logo}>Logo</p>
 			</Link>
+			<ThemeToggler />
 			<div className={classes.signbtn}>
 				{authenticationCtx.isLoggedIn ? <button onClick={logout} className={classes.signupbtn}>Sign Out</button> :
 				<Link href="/auth" className={classes.signupbtn}>Sign In</Link>}
