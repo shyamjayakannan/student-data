@@ -35,7 +35,6 @@
     font-family: monospace;
     font-weight: 800;
     font-size: 1.2rem;
-
 }
 
 .logolink {
@@ -63,7 +62,6 @@
 }
 
 .signupbtn:hover {
-
     background-color: rgb(229, 226, 226);
-    color: var(--primary-dark);
+    color: black;
 }

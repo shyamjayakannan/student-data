@@ -6,6 +6,7 @@ import { useContext } from "react";
 import AuthenticationContext from "../../../store/AuthenticationContext";
 import useRedirect from "../../../hooks/useRedirect";
 import classes from "../../../styles/authentication/parts/GoogleAuth.module.css";
+import Image from "next/image";
 
 export default function GoogleAuth(props) {
     const Auth = useAuth();
@@ -44,7 +45,10 @@ export default function GoogleAuth(props) {
                 <p>OR</p>
                 <hr className={classes.hr} />
             </div>
-            <button className={classes.google} onClick={login}>{props.LogInOpen ? "Sign In" : "Sign Up"} with Google</button>
+            <button className={classes.google} onClick={login}>
+                <Image src="/images/7123025_logo_google_g_icon.png" width={30} height={30} alt="google" />
+                {props.LogInOpen ? "Sign In" : "Sign Up"} with Google
+            </button>
         </>
     );
 }

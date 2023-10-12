@@ -43,7 +43,8 @@ export default function Auth() {
             alignItems: "center",
             justifyContent: "center",
             width: "100%",
-            height: "100vh",
+            minHeight: "100vh",
+            padding: "20px"
           }}
         >
           {authenticationCtx.open.LogInOpen && (
