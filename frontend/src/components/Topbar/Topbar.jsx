@@ -16,6 +16,7 @@ export default function Topbar() {
 	function logout() {
 	  googleLogout();
 	  authenticationCtx.setLoggedIn(false);
+		authenticationCtx.setDetails("");
 	  removePersonalDetails();
 	  router.push('/');
 	}
