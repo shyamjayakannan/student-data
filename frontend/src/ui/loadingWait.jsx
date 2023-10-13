@@ -16,7 +16,10 @@ export default function LoadingWait(props) {
         }
         else {
             setLoading(true);
-            routerPushChange("/auth");
+            if (authenticationCtx.open.logoutButton) {
+                routerPushChange("/");
+                authenticationCtx.setLogoutButton(false);
+            } else routerPushChange("/auth");
         }
     }, [authenticationCtx.isLoggedIn]);
 
