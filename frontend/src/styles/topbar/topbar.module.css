@@ -74,7 +74,7 @@
 
 .signupbtn:hover {
   background-color: rgb(229, 226, 226);
-  color: var(--primary-dark);
+  color: black;
 }
 .dashbtn {
   background-color: var(--primary-dark);
@@ -94,5 +94,4 @@
     color: black;
 
   background-color: rgb(229, 226, 226);
-  color: var(--primary-dark);
 }

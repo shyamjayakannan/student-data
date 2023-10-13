@@ -11,25 +11,21 @@ import Shortlist from "../../components/dashboard/Shortlist";
 const Buts = [
   {
     name: "Companies",
-
     class: classes.but,
     comp: <Companies />,
   },
   {
     name: "Students",
-
     class: classes.but,
     comp: <Students />,
   },
   {
     name: "Shortlist",
-
     class: classes.but,
     comp: <Shortlist />,
   },
   {
     name: "Settings",
-
     class: classes.butset,
     comp: <Settings />,
   },
@@ -42,16 +38,13 @@ const Dashboard = () => {
     Students: false,
   });
 
-  // console.log(disp);
   function handleDisp(name) {
     setdisp((disp) => {
       for (let key in disp) {
         disp[key] = false;
       }
-      // console.log(name);
       return { ...disp, [name]: !disp[name] };
     });
-    // console.log(disp)
   }
 
   return (
@@ -65,12 +58,12 @@ const Dashboard = () => {
             disp.Settings ||
             disp.Students
           ) && <Dpage />}
+          {Buts.map((element, index) => disp[element.name] && <div key={index}>{element.comp}</div>)}
 
-          {disp.Students && <Students />}
+          {/* {disp.Students && <Students />}
           {disp.Companies && <Companies />}
           {disp.Settings && <Settings />}
-          {disp.Shortlist && <Shortlist />}
-          {/* <Settings/> */}
+          {disp.Shortlist && <Shortlist />} */}
         </main>
       </div>
     </LoadingWait>
