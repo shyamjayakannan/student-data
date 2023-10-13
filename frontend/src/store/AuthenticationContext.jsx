@@ -8,6 +8,7 @@ const AuthenticationContext = createContext({
     signupOpen: false,
     LogInOpen: true,
     error: "",
+    logoutButton: false,
   },
   details: {
     id: "",
@@ -17,6 +18,7 @@ const AuthenticationContext = createContext({
   hide: () => {},
   setDetails: () => {},
   setLoggedIn: () => {},
+  setLogoutButton: () => {},
 });
 
 export default AuthenticationContext;
@@ -25,6 +27,7 @@ export function AuthenticationContextProvider({ children }) {
   const { fetchPersonalDetails, removePersonalDetails } = useLocalStorage();
   const [isLoggedIn, setIsLoggedIn] = useState(true);
   const [open, setOpen] = useState({
+    logoutButton: false,
     signupOpen: false,
     LogInOpen: true,
     error: "",
@@ -106,6 +109,12 @@ export function AuthenticationContextProvider({ children }) {
     });
   }
 
+  function logoutButtonHandler(state) {
+    setOpen(open => {
+      return {...open, logoutButton: state};
+    });
+  }
+
   return (
     <AuthenticationContext.Provider
       value={{
@@ -114,6 +123,7 @@ export function AuthenticationContextProvider({ children }) {
         hide: hideHandler,
         setDetails: setNewDetails,
         setLoggedIn: setIsLoggedIn,
+        setLogoutButton: logoutButtonHandler,
         isLoggedIn,
         details,
       }}

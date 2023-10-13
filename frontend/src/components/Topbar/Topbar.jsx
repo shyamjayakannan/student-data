@@ -15,13 +15,13 @@ export default function Topbar() {
 	const router = useRouter();
 	function logout() {
 	  googleLogout();
+	  authenticationCtx.setLogoutButton(true);
 	  authenticationCtx.setLoggedIn(false);
 		authenticationCtx.setDetails("");
 	  removePersonalDetails();
-	  router.push('/');
 	}
 	const pathname = usePathname();
-	console.log(pathname);
+	// console.log(pathname);
 	return (
 		<nav className={classes.navbar}>
 			<div className={classes.otherlinks}>

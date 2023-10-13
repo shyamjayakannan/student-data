@@ -3,5 +3,14 @@
     /* width:100%; */
     /* height: 100vh; */
     /* background-color: red; */
-
+    display: flex;
+}
+.main_cont{
+    display: flex;
+    color:var(--primary-dark);
+    width: 80vw;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
