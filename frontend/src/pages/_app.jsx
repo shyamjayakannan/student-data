@@ -12,6 +12,7 @@ import { ThemeContextProvider } from "../store/ThemeContext";
 
 export default function MyApp({ Component, pageProps }) {
   const path = usePathname();
+  const getLayout = Component.getLayout || ((page) => page);
   
   return (
     <ThemeContextProvider>
@@ -25,7 +26,7 @@ export default function MyApp({ Component, pageProps }) {
             )}
             <Notifications />
             <main>
-                <Component {...pageProps} />
+                {getLayout(<Component {...pageProps} />)}
             </main>
           </GoogleOAuthProvider>
         </AuthenticationContextProvider>

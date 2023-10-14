@@ -1,49 +1,35 @@
 "use client";
 import { useContext, useEffect, useState } from "react";
-import useLocalStorage from "../../hooks/useLocalStorage";
 import classes from "../../styles/leftsidebar.module.css";
 import useGetUser from "../../hooks/useGetUser";
 import AuthenticationContext from "../../store/AuthenticationContext";
 import Image from "next/image";
-
-import Dpage from "../dashboard/Dpage";
-import Settings from "../dashboard/Settings";
-import { useRouter } from "next/router";
-
 import Link from "next/link";
-import Companies from "../dashboard/Companies";
-import Students from "../dashboard/Students";
-import Shortlist from "../dashboard/Shortlist";
 
 export const Buts = [
   {
     name: "Companies",
-    display: false,
     class: classes.but,
-    comp: <Companies />,
+    route: "/dashboard/companies",
   },
   {
     name: "Students",
-    display: false,
     class: classes.but,
-    comp: <Students />,
+    route: "/dashboard/students",
   },
   {
     name: "Shortlist",
-    display: false,
     class: classes.but,
-    comp: <Shortlist />,
+    route: "/dashboard/shortlist",
   },
   {
     name: "Settings",
-    display: false,
     class: classes.butset,
-    comp: <Settings />,
+    route: "/dashboard/settings",
   },
 ];
 
-const Leftsidebar = (props) => {
-  const router = useRouter();
+const Leftsidebar = () => {
   const [email, setemail] = useState("");
   const getUser = useGetUser();
 
@@ -56,15 +42,6 @@ const Leftsidebar = (props) => {
     }
     wow();
   }, [authenticationCtx.details]);
-
-  const handleclick = (e) => {
-    e.preventDefault();
-    // console.log(e.target.value);
-
-    props.disp(e.target.value);
-    // x.display =!x.display;
-    // console.log(Buts.find((e)=>e.display==true).name);
-  };
 
   return (
     <>
@@ -82,15 +59,13 @@ const Leftsidebar = (props) => {
         </p>
         <p className={classes.buttons}>
           {Buts.map((element) => (
-            <button
+            <Link
               className={element.class}
               key={element.name}
-              value={element.name}
-              // href={`/dashboard/${element.name.toLocaleLowerCase()}`}
-              onClick={handleclick}
+              href={element.route}
             >
               {element.name}
-            </button>
+            </Link>
           ))}
         </p>
       </div>
