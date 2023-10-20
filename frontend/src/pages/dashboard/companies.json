@@ -1,0 +1,2535 @@
+{
+    "2020-21": [
+        {
+            "Id": 1,
+            "Company": "A.P.T Portfolio Private Limited ",
+            "Selected": 1,
+            "About company": "https://aptportfolio.com/about-us",
+            "Job Profile": "Software Engineer",
+            "Venue": "Delhi/Banglore"
+        },
+        {
+            "Id": 2,
+            "Company": "Accenture Japan Ltd. ",
+            "Selected": 4,
+            "About company": "https://www.accenture.com/sg-en/careers/jobdetails?id=R00123345_en",
+            "CTC(in Lakhs)": "56.60 JPY",
+            "CGPA": 6.5,
+            "Job Profile": "Digital Consultancy",
+            "Venue": "Japan"
+        },
+        {
+            "Id": 3,
+            "Company": "ADLOID Technologies Pvt. Ltd.",
+            "Selected": 1,
+            "About company": "https://adloid.co.in/about.html",
+            "CTC(in Lakhs)": 28,
+            "CGPA": 7,
+            "Job Profile": "Business Analyst",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 4,
+            "Company": "ADLOID Technologies Pvt. Ltd. ",
+            "Selected": 1,
+            "About company": "https://adloid.co.in/about.html",
+            "Job Profile": "Software Development Engineer",
+            "Venue": "Delhi  "
+        },
+        {
+            "Id": 5,
+            "Company": "Adobe ",
+            "Selected": 4,
+            "About company": "https://www.adobe.com/about-adobe.html",
+            "CTC(in Lakhs)": 20,
+            "CGPA": 7,
+            "Job Profile": "Product Designer",
+            "Venue": "Noida/Banglore"
+        },
+        {
+            "Id": 6,
+            "Company": "Adobe ",
+            "Selected": 1,
+            "About company": "https://www.adobe.com/about-adobe.html",
+            "Job Profile": "Research Engineer",
+            "Venue": "Noida/Banglore"
+        },
+        {
+            "Id": 7,
+            "Company": "Amagi Media Labs Pv. Ltd. ",
+            "Selected": 2,
+            "About company": "https://www.amagi.com/about",
+            "CTC(in Lakhs)": 16,
+            "CGPA": 6,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 8,
+            "Company": "Amazon",
+            "Selected": 3,
+            "About company": "https://www.aboutamazon.in/workplace/employee-benefits",
+            "CTC(in Lakhs)": 30,
+            "CGPA": 7,
+            "Job Profile": "Software Development Engineer",
+            "Venue": "Banglore/Hyderabad/Chennai/Delhi/Mumbai/Pune"
+        },
+        {
+            "Id": 9,
+            "Company": "Amazon",
+            "Selected": 9,
+            "About company": "https://www.aboutamazon.in/workplace/employee-benefits",
+            "CTC(in Lakhs)": 30,
+            "CGPA": 7.5,
+            "Job Profile": "Software Development Engineer",
+            "Venue": "Banglore/Hyderabad/Chennai/Delhi/Mumbai/Pune"
+        },
+        {
+            "Id": 10,
+            "Company": "Amazon Development Center Germany ",
+            "Selected": 1,
+            "About company": "https://www.aboutamazon.in/workplace/employee-benefits",
+            "Job Profile": "Not revealed",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 11,
+            "Company": "American Express ",
+            "Selected": 8,
+            "About company": "https://www.americanexpress.com/en-us/careers/?inav=in_sitefooter_company_information_careers",
+            "CTC(in Lakhs)": 17.67,
+            "CGPA": 6,
+            "Job Profile": "Software Development Engineer",
+            "Venue": "Gurgaon/Banglore"
+        },
+        {
+            "Id": 12,
+            "Company": "American Express ",
+            "Selected": 1,
+            "About company": "https://www.americanexpress.com/en-us/careers/?inav=in_sitefooter_company_information_careers",
+            "CGPA": 0,
+            "Job Profile": "Not revealed",
+            "Venue": "Gurgaon/Banglore"
+        },
+        {
+            "Id": 13,
+            "Company": "Analog Devices",
+            "Selected": 1,
+            "About company": "https://www.analog.com/en/about-adi/careers.html",
+            "CTC(in Lakhs)": 26.33,
+            "CGPA": 7,
+            "Job Profile": "Digital Design Engineer",
+            "Venue": "Bengaluru"
+        },
+        {
+            "Id": 14,
+            "Company": "AppDynamics",
+            "Selected": 1,
+            "About company": "https://www.appdynamics.com/company/careers",
+            "CTC(in Lakhs)": 45.6,
+            "CGPA": 7.5,
+            "Job Profile": "Not revealed",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 15,
+            "Company": "AppDynamics",
+            "Selected": 1,
+            "About company": "https://www.appdynamics.com/company/careers",
+            "CTC(in Lakhs)": 45.6,
+            "CGPA": 7.5,
+            "Job Profile": "Not revealed",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 16,
+            "Company": "Applied Materials",
+            "Selected": 1,
+            "About company": "https://www.appliedmaterials.com/in/en/careers.html",
+            "CTC(in Lakhs)": 12.64,
+            "CGPA": 5.5,
+            "Job Profile": "Application Engineer",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 17,
+            "Company": "ArcelorMittal Nippon Steel India",
+            "Selected": 2,
+            "About company": "https://www.amns.in/careers",
+            "CTC(in Lakhs)": 8,
+            "CGPA": 0,
+            "Job Profile": "Graduate Engineer",
+            "Venue": "Any AMNS location in India"
+        },
+        {
+            "Id": 18,
+            "Company": "ASC Infratech ",
+            "Selected": 4,
+            "About company": "https://www.ascinfratech.com/company-profile.php",
+            "CTC(in Lakhs)": 6.3,
+            "CGPA": 0,
+            "Job Profile": "Trainee Engineer",
+            "Venue": "Noida  "
+        },
+        {
+            "Id": 19,
+            "Company": "ATCS ",
+            "Selected": 2,
+            "About company": "https://www.atcs.com",
+            "CTC(in Lakhs)": 7,
+            "CGPA": 6,
+            "Job Profile": "Data Engineer",
+            "Venue": "Jaipur"
+        },
+        {
+            "Id": 20,
+            "Company": "Auronova Consulting ",
+            "Selected": 1,
+            "About company": "https://www.auronova.in/about-us/jobs.php",
+            "CTC(in Lakhs)": 10.5,
+            "CGPA": 6.5,
+            "Job Profile": "Analyst",
+            "Venue": "Mumbai"
+        },
+        {
+            "Id": 21,
+            "Company": "Axis Bank",
+            "Selected": 3,
+            "About company": "https://www.axisbank.com/careers/fresher",
+            "CTC(in Lakhs)": 13,
+            "CGPA": 6,
+            "Job Profile": "Analyst",
+            "Venue": "Mumbai/Banglore"
+        },
+        {
+            "Id": 22,
+            "Company": "Axis Bank",
+            "Selected": 3,
+            "About company": "https://www.axisbank.com/careers/fresher",
+            "Job Profile": "Digital Product Owner",
+            "Venue": "Mumbai/Banglore"
+        },
+        {
+            "Id": 23,
+            "Company": "Axis Bank ",
+            "Selected": 1,
+            "About company": "https://www.axisbank.com/careers/fresher",
+            "CTC(in Lakhs)": 13,
+            "CGPA": 6,
+            "Job Profile": "Software Development Engineer",
+            "Venue": "Mumbai/Banglore"
+        },
+        {
+            "Id": 24,
+            "Company": "Axis Bank ",
+            "Selected": 4,
+            "About company": "https://www.axisbank.com/careers/fresher",
+            "Job Profile": "Not revealed",
+            "Venue": "Mumbai/Banglore"
+        },
+        {
+            "Id": 25,
+            "Company": "Axtria India Pvt Ltd ",
+            "Selected": 2,
+            "About company": "https://www.axtria.com/axtria-careers",
+            "CTC(in Lakhs)": 10.5,
+            "CGPA": 7,
+            "Job Profile": "Analyst",
+            "Venue": "Hyderabad"
+        },
+        {
+            "Id": 26,
+            "Company": "Axxela Advisory Services ",
+            "Selected": 1,
+            "About company": "https://www.axxela.in",
+            "CTC(in Lakhs)": 11,
+            "CGPA": 7,
+            "Job Profile": "Analyst",
+            "Venue": "Mumbai/Kolkata"
+        },
+        {
+            "Id": 27,
+            "Company": "Axxela Advisory Services ",
+            "Selected": 1,
+            "About company": "https://www.axxela.in",
+            "Job Profile": "Analyst",
+            "Venue": "Mumbai/Kolkata"
+        },
+        {
+            "Id": 28,
+            "Company": "B&S Engineering Consultants Pvt. Ltd. ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/bsecpl/?originalSubdomain=in",
+            "CTC(in Lakhs)": 5.15,
+            "CGPA": 0,
+            "Job Profile": "Not Revealed",
+            "Venue": "Noida"
+        },
+        {
+            "Id": 29,
+            "Company": "Bajaj Auto Ltd. ",
+            "Selected": 6,
+            "About company": "https://www.bajajauto.com/careers/why-us",
+            "CTC(in Lakhs)": 14.08,
+            "CGPA": 0,
+            "Job Profile": "Graduate Trainee Engineer",
+            "Venue": "Pune"
+        },
+        {
+            "Id": 30,
+            "Company": "Bajaj Auto Ltd. ",
+            "Selected": 3,
+            "About company": "https://www.bajajauto.com/careers/why-us",
+            "CTC(in Lakhs)": 14.08,
+            "CGPA": 5.5,
+            "Job Profile": "Not revealed",
+            "Venue": "Pune"
+        },
+        {
+            "Id": 31,
+            "Company": "BeeHyv Software Solutions Pvt Ltd ",
+            "Selected": 4,
+            "About company": "https://www.beehyv.com/careers",
+            "CTC(in Lakhs)": 6.3,
+            "CGPA": 6,
+            "Job Profile": "Software Developer",
+            "Venue": "Hyderabad"
+        },
+        {
+            "Id": 32,
+            "Company": "Bidgely ",
+            "Selected": 1,
+            "About company": "https://www.bidgely.com/bidgely-career-opportunities",
+            "CTC(in Lakhs)": 19,
+            "CGPA": 0,
+            "Job Profile": "Not revealed",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 33,
+            "Company": "Bidgely ",
+            "Selected": 2,
+            "About company": "https://www.bidgely.com/bidgely-career-opportunities",
+            "CTC(in Lakhs)": 19.1,
+            "CGPA": 6.5,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 34,
+            "Company": "bitFlyer Blockchain Inc. ",
+            "Selected": 1,
+            "About company": "https://sg.wantedly.com/companies/company_7215089",
+            "CTC(in Lakhs)": 33,
+            "CGPA": 7.5,
+            "Job Profile": "Blockchain Enigneer",
+            "Venue": "Tokyo"
+        },
+        {
+            "Id": 35,
+            "Company": "BNY Mellon",
+            "Selected": 1,
+            "About company": "https://www.bnymellon.com/apac/en/careers/work-with-us.html",
+            "CTC(in Lakhs)": 22.24,
+            "CGPA": 7,
+            "Job Profile": "Software Development Engineer",
+            "Venue": "Pune/Chennai"
+        },
+        {
+            "Id": 36,
+            "Company": "BNY Mellon ",
+            "Selected": 6,
+            "About company": "https://www.bnymellon.com/apac/en/careers/work-with-us.html",
+            "CTC(in Lakhs)": 22.24,
+            "CGPA": 7,
+            "Job Profile": "Not revealed",
+            "Venue": "Pune/Chennai"
+        },
+        {
+            "Id": 37,
+            "Company": "Brigosha Technologies",
+            "Selected": 1,
+            "About company": "https://www.brigosha.com/join-us",
+            "CTC(in Lakhs)": 14,
+            "CGPA": 6,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 38,
+            "Company": "Cairn India ",
+            "Selected": 3,
+            "About company": "https://www.cairnindia.com/Pages/WhyCairn.aspx",
+            "CTC(in Lakhs)": 14.95,
+            "CGPA": 5.5,
+            "Job Profile": "Not Revealed",
+            "Venue": "Barmer"
+        },
+        {
+            "Id": 39,
+            "Company": "Campus Management International Pvt Ltd ",
+            "Selected": 6,
+            "About company": "https://www.anthology.com/en-in/about-us",
+            "Job Profile": "Software Developer",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 40,
+            "Company": "Chegg Inc ",
+            "Selected": 2,
+            "About company": "https://www.chegg.com/about",
+            "CTC(in Lakhs)": 13,
+            "CGPA": 6,
+            "Job Profile": "Software Engineer",
+            "Venue": "Delhi"
+        },
+        {
+            "Id": 41,
+            "Company": "Cisco Systems ",
+            "Selected": 6,
+            "About company": "https://www.cisco.com/c/en/us/about/careers.html",
+            "CTC(in Lakhs)": 34,
+            "CGPA": 7.5,
+            "Job Profile": "Software Development Engineer",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 42,
+            "Company": "Cisco Systems ",
+            "Selected": 8,
+            "About company": "https://www.cisco.com/c/en/us/about/careers.html",
+            "CTC(in Lakhs)": 34.74,
+            "CGPA": 7,
+            "Job Profile": "Software Development Engineer",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 43,
+            "Company": "Citibank ",
+            "Selected": 7,
+            "About company": "https://www.online.citibank.co.in",
+            "Job Profile": "Not Revealed",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 44,
+            "Company": "Citrix R&D India PVT LTD ",
+            "Selected": 5,
+            "About company": "https://www.citrix.com/about",
+            "CTC(in Lakhs)": 24.55,
+            "CGPA": 6,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 45,
+            "Company": "Classplus ",
+            "Selected": 2,
+            "About company": "https://classplusapp.com/aboutus.html",
+            "CTC(in Lakhs)": 11,
+            "CGPA": 0,
+            "Job Profile": "Business Analyst",
+            "Venue": "Noida"
+        },
+        {
+            "Id": 46,
+            "Company": "Classplus ",
+            "Selected": 2,
+            "About company": "https://classplusapp.com/aboutus.html",
+            "CTC(in Lakhs)": 11,
+            "CGPA": 0,
+            "Job Profile": "Program Associate",
+            "Venue": "Noida"
+        },
+        {
+            "Id": 47,
+            "Company": "Cleartax ",
+            "Selected": 2,
+            "About company": "https://www.clear.in/s/careers?utm_content=https://cleartax.in&utm_term=v2_homeV2&cta_type=navbar&anonid=ae09d5d0-8601-4cf4-9e82-018c65ddde52",
+            "CTC(in Lakhs)": 10,
+            "CGPA": 0,
+            "Job Profile": "Business Analyst",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 48,
+            "Company": "Cleartax ",
+            "Selected": 6,
+            "About company": "https://www.clear.in/s/careers?utm_content=https://cleartax.in&utm_term=v2_homeV2&cta_type=navbar&anonid=ae09d5d0-8601-4cf4-9e82-018c65ddde52",
+            "CTC(in Lakhs)": 15,
+            "CGPA": 5.5,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 49,
+            "Company": "ClearTrail Technologies Pvt. Ltd. ",
+            "Selected": 1,
+            "About company": "https://careers.clear-trail.com/#!",
+            "CTC(in Lakhs)": 15,
+            "CGPA": 6.5,
+            "Job Profile": "Not Revealed",
+            "Venue": "Indore"
+        },
+        {
+            "Id": 50,
+            "Company": "Cognizant Technology Solutions ",
+            "Selected": 1,
+            "About company": "https://www.cognizant.com/us/en/about-cognizant",
+            "CTC(in Lakhs)": 14,
+            "CGPA": 7,
+            "Job Profile": "Not Revealed",
+            "Venue": "Pune/Hyderabad/Chennai"
+        },
+        {
+            "Id": 51,
+            "Company": "Cohesity ",
+            "Selected": 3,
+            "About company": "https://careers.cohesity.com",
+            "CTC(in Lakhs)": 64.26,
+            "CGPA": 7.5,
+            "Job Profile": "Research Engineer",
+            "Venue": "Banglore /Pune"
+        },
+        {
+            "Id": 52,
+            "Company": "Contata Solutions Pvt. Ltd. ",
+            "Selected": 2,
+            "About company": "https://www.contata.com/career",
+            "CTC(in Lakhs)": 9,
+            "CGPA": 6,
+            "Job Profile": "System Analyst",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 53,
+            "Company": "CSRL ",
+            "Selected": 6,
+            "About company": "https://www.csrl.in",
+            "CTC(in Lakhs)": 4.2,
+            "CGPA": 0,
+            "Job Profile": "Academic Officer",
+            "Venue": "Pan India"
+        },
+        {
+            "Id": 54,
+            "Company": "Cubastion Consulting ",
+            "Selected": 1,
+            "About company": "https://cubastion.com/join-us",
+            "CTC(in Lakhs)": 7.74,
+            "CGPA": 6,
+            "Job Profile": "Associate Consultant",
+            "Venue": "Gurgaon "
+        },
+        {
+            "Id": 55,
+            "Company": "D. E. Shaw India Pvt. Ltd. ",
+            "Selected": 3,
+            "About company": "https://www.deshawindia.com/careers",
+            "Job Profile": "Not Revealed",
+            "Venue": "Hyderabad"
+        },
+        {
+            "Id": 56,
+            "Company": "Dar Al Handasah ",
+            "Selected": 1,
+            "About company": "https://www.dar.com/careers/ourculture",
+            "CTC(in Lakhs)": 5.47,
+            "CGPA": 0,
+            "Job Profile": "Environmental Engineer",
+            "Venue": "Pune"
+        },
+        {
+            "Id": 57,
+            "Company": "Decision Point ",
+            "Selected": 2,
+            "About company": "https://decisionpoint.ai/careers",
+            "CTC(in Lakhs)": 8,
+            "CGPA": 5,
+            "Job Profile": "Business Analyst",
+            "Venue": "Gurgaon"
+        },
+        {
+            "Id": 58,
+            "Company": "Deskera Systems India Pvt. Ltd. ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/deskera/?originalSubdomain=in",
+            "CTC(in Lakhs)": 15,
+            "CGPA": 6,
+            "Job Profile": "Software Development Engineer",
+            "Venue": "Pune"
+        },
+        {
+            "Id": 59,
+            "Company": "Deutsche Bank ",
+            "Selected": 4,
+            "About company": "https://careers.db.com/?language_id=1",
+            "CTC(in Lakhs)": 21.5,
+            "CGPA": 6.5,
+            "Job Profile": "Graduate Analyst",
+            "Venue": "Pune/Banglore"
+        },
+        {
+            "Id": 60,
+            "Company": "DG Takano ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/dg-takano",
+            "CTC(in Lakhs)": 22.96,
+            "CGPA": 7,
+            "Job Profile": "Mechanical Design Engineer",
+            "Venue": "Osaka, Japan"
+        },
+        {
+            "Id": 61,
+            "Company": "DIT University ",
+            "Selected": 1,
+            "About company": "https://www.dituniversity.edu.in/hr-policy",
+            "CTC(in Lakhs)": 4.8,
+            "CGPA": 6,
+            "Job Profile": "Assistant Professor",
+            "Venue": "Dehradun"
+        },
+        {
+            "Id": 62,
+            "Company": "Diverta Inc. ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/diverta-inc-",
+            "Job Profile": "Not Revealed",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 63,
+            "Company": "Dolcera : Digital Signal Processing ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/dolcera/?originalSubdomain=in",
+            "Job Profile": "Trainee Patent Analyst",
+            "Venue": "Hyderabad"
+        },
+        {
+            "Id": 64,
+            "Company": "Dolcera Information Technology Private Limited ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/dolcera/?originalSubdomain=in",
+            "CTC(in Lakhs)": 7,
+            "CGPA": 5,
+            "Job Profile": "Trainee Patent Analyst",
+            "Venue": "Hyderabad"
+        },
+        {
+            "Id": 65,
+            "Company": "Dr. Reddyâ€™s ",
+            "Selected": 4,
+            "About company": "https://www.linkedin.com/company/dr--reddys-laboratories/?originalSubdomain=in",
+            "CTC(in Lakhs)": 6.05,
+            "CGPA": 0,
+            "Job Profile": "Technical Trainee",
+            "Venue": "Hyderabad/Banglore"
+        },
+        {
+            "Id": 66,
+            "Company": "Dream11 ",
+            "Selected": 6,
+            "About company": "https://www.dreamsports.group/careers",
+            "CTC(in Lakhs)": 33,
+            "CGPA": 7,
+            "Job Profile": "Software Engineer",
+            "Venue": "Mumbai"
+        },
+        {
+            "Id": 67,
+            "Company": "Eaton ",
+            "Selected": 3,
+            "About company": "https://www.linkedin.com/company/eaton",
+            "CTC(in Lakhs)": 10,
+            "CGPA": 6,
+            "Job Profile": "Engineer",
+            "Venue": "Pune"
+        },
+        {
+            "Id": 68,
+            "Company": "Effiya",
+            "Selected": 7,
+            "About company": "https://www.linkedin.com/company/effiya-technologies/?originalSubdomain=in",
+            "CTC(in Lakhs)": 11.42,
+            "CGPA": 6.5,
+            "Job Profile": "Consulting",
+            "Venue": "Noida"
+        },
+        {
+            "Id": 69,
+            "Company": "Enphase Energy ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/enphase-energy",
+            "CTC(in Lakhs)": 25,
+            "CGPA": 6,
+            "Job Profile": "Not Revealed",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 70,
+            "Company": "Enphase Energy ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/enphase-energy",
+            "CTC(in Lakhs)": 25,
+            "CGPA": 6,
+            "Job Profile": "Not Revealed",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 71,
+            "Company": "Envestnet Yodlee ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/yodlee/?originalSubdomain=in",
+            "Job Profile": "Not Revealed",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 72,
+            "Company": "EXL Service ",
+            "Selected": 24,
+            "About company": "https://onedrive.live.com/edit.aspx?resid=DC99902FB0C3CAF0!1334&ithint=file%2cxlsx&wdo=2&authkey=!AG-WcseUis3mRpY",
+            "CTC(in Lakhs)": 11.1,
+            "CGPA": 0,
+            "Job Profile": "Consultant",
+            "Venue": "Gurgaon/Noida/Ahemdabad"
+        },
+        {
+            "Id": 73,
+            "Company": "ExxonMobil ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/exxonmobil/?originalSubdomain=in",
+            "CTC(in Lakhs)": 11.4,
+            "CGPA": 0,
+            "Job Profile": "Geologist & Geophysicist",
+            "Venue": "Bengaluru"
+        },
+        {
+            "Id": 74,
+            "Company": "ExxonMobil ",
+            "Selected": 3,
+            "About company": "https://www.linkedin.com/company/exxonmobil/?originalSubdomain=in",
+            "CTC(in Lakhs)": 12,
+            "CGPA": 6,
+            "Job Profile": "Not Revealed",
+            "Venue": "Bengaluru"
+        },
+        {
+            "Id": 75,
+            "Company": "Fareportal ",
+            "Selected": 4,
+            "About company": "https://www.linkedin.com/company/fareportal/?originalSubdomain=in",
+            "CTC(in Lakhs)": 10,
+            "CGPA": 6,
+            "Job Profile": "Software Engineer",
+            "Venue": "Gurgaon"
+        },
+        {
+            "Id": 76,
+            "Company": "Fareye ",
+            "Selected": 12,
+            "About company": "https://www.linkedin.com/company/fareye/?originalSubdomain=in",
+            "CTC(in Lakhs)": 20,
+            "CGPA": 7,
+            "Job Profile": "Software Development Engineer",
+            "Venue": "Noida"
+        },
+        {
+            "Id": 77,
+            "Company": "Finnovation Tech Solutions Pvt. Ltd ",
+            "Selected": 9,
+            "About company": "https://www.linkedin.com/company/finnovation-tech-solutions-pvt.-ltd./?originalSubdomain=in",
+            "CTC(in Lakhs)": 12,
+            "CGPA": 0,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 78,
+            "Company": "Flipkart ",
+            "Selected": 3,
+            "About company": "https://www.linkedin.com/company/flipkart/?originalSubdomain=in",
+            "CTC(in Lakhs)": 26.57,
+            "CGPA": 7,
+            "Job Profile": "Not Revealed",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 79,
+            "Company": "Flipkart ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/flipkart/?originalSubdomain=in",
+            "CTC(in Lakhs)": 21,
+            "CGPA": 7,
+            "Job Profile": "Product Design Engineer",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 80,
+            "Company": "Flipkart ",
+            "Selected": 4,
+            "About company": "https://www.linkedin.com/company/flipkart/?originalSubdomain=in",
+            "CTC(in Lakhs)": 26.57,
+            "CGPA": 7,
+            "Job Profile": "Software Development Engineer",
+            "Venue": "Hyderabad"
+        },
+        {
+            "Id": 81,
+            "Company": "FN Mathlogic ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/mathlogic/?originalSubdomain=in",
+            "CTC(in Lakhs)": 8.4,
+            "CGPA": 5,
+            "Job Profile": "Analyst",
+            "Venue": "Hyderabad"
+        },
+        {
+            "Id": 82,
+            "Company": "Fractal Analytics Pvt. Ltd. ",
+            "Selected": 12,
+            "About company": "https://www.linkedin.com/company/fractal-analytics/?originalSubdomain=in",
+            "CTC(in Lakhs)": 18,
+            "CGPA": 5.5,
+            "Job Profile": "Imagineer",
+            "Venue": "Hyderabad/Banglore"
+        },
+        {
+            "Id": 83,
+            "Company": "Futures First ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/futures-first-info--services-pvt--ltd-/?originalSubdomain=in",
+            "CTC(in Lakhs)": 12.54,
+            "CGPA": 6,
+            "Job Profile": "Market Analyst",
+            "Venue": "Mumbai"
+        },
+        {
+            "Id": 84,
+            "Company": "Futures First ",
+            "Selected": 3,
+            "About company": "https://www.linkedin.com/company/futures-first-info--services-pvt--ltd-/?originalSubdomain=in",
+            "CTC(in Lakhs)": 12.54,
+            "CGPA": 6.5,
+            "Job Profile": "Not Revealed",
+            "Venue": "Pune"
+        },
+        {
+            "Id": 85,
+            "Company": "Futures First ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/futures-first-info--services-pvt--ltd-/?originalSubdomain=in",
+            "Job Profile": "Not Revealed",
+            "Venue": "Noida"
+        },
+        {
+            "Id": 86,
+            "Company": "Gameskraft Technologies ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/gameskraft/?originalSubdomain=in",
+            "CTC(in Lakhs)": 32,
+            "CGPA": 7.5,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 87,
+            "Company": "GE Digital ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/ge-digital/?originalSubdomain=in",
+            "CGPA": 8,
+            "Job Profile": "Not Revealed",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 88,
+            "Company": "GE Healthcare ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/ge-digital/?originalSubdomain=in",
+            "CTC(in Lakhs)": 15.11,
+            "CGPA": 7,
+            "Job Profile": "Not Revealed",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 89,
+            "Company": "Go Lorry Pvt Ltd ",
+            "Selected": 1,
+            "About company": "https://www.golorry.com/join-the-team",
+            "CTC(in Lakhs)": 9,
+            "CGPA": 7,
+            "Job Profile": "Frontend Engineer",
+            "Venue": "Gurgaon/Noida/Ahemdabad"
+        },
+        {
+            "Id": 90,
+            "Company": "Go Lorry Pvt Ltd ",
+            "Selected": 3,
+            "About company": "https://www.golorry.com/join-the-team",
+            "CTC(in Lakhs)": 9,
+            "CGPA": 7,
+            "Job Profile": "Operations Functional Lead",
+            "Venue": "Bengaluru"
+        },
+        {
+            "Id": 91,
+            "Company": "Goldman Sachs ",
+            "Selected": 7,
+            "About company": "https://www.linkedin.com/company/goldman-sachs",
+            "CTC(in Lakhs)": 31.5,
+            "CGPA": 7.5,
+            "Job Profile": "Analyst",
+            "Venue": "Bengaluru"
+        },
+        {
+            "Id": 92,
+            "Company": "Goldman Sachs ",
+            "Selected": 15,
+            "About company": "https://www.linkedin.com/company/goldman-sachs",
+            "CTC(in Lakhs)": 31.5,
+            "CGPA": 7.5,
+            "Job Profile": "Not Revealed",
+            "Venue": "Gurgaon"
+        },
+        {
+            "Id": 93,
+            "Company": "Google ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/google/?originalSubdomain=in",
+            "CTC(in Lakhs)": 30.36,
+            "CGPA": 6,
+            "Job Profile": "Not Revealed",
+            "Venue": "Noida"
+        },
+        {
+            "Id": 94,
+            "Company": "Google ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/google/?originalSubdomain=in",
+            "CTC(in Lakhs)": 30,
+            "CGPA": 6.5,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 95,
+            "Company": "Groww ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/groww.in/?originalSubdomain=in",
+            "CTC(in Lakhs)": 20,
+            "CGPA": 7,
+            "Job Profile": "Product Designer",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 96,
+            "Company": "Haalliburton Development Centre, India ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/halliburton",
+            "CTC(in Lakhs)": 11.69,
+            "CGPA": 5.5,
+            "Job Profile": "Technology Professional",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 97,
+            "Company": "Harness ",
+            "Selected": 3,
+            "About company": "https://www.linkedin.com/company/harnessinc",
+            "CTC(in Lakhs)": 30,
+            "CGPA": 7,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 98,
+            "Company": "HCL Technologies Ltd. ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/hcltech?originalSubdomain=in",
+            "CTC(in Lakhs)": 8.5,
+            "CGPA": 6,
+            "Job Profile": "Software Engineer",
+            "Venue": "Gurgaon  "
+        },
+        {
+            "Id": 99,
+            "Company": "HCL Technologies ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/hcltech?originalSubdomain=in",
+            "CTC(in Lakhs)": 8.5,
+            "CGPA": 6,
+            "Job Profile": "Software Engineer",
+            "Venue": "Mumbai/Gurugram/Bengaluru"
+        },
+        {
+            "Id": 100,
+            "Company": "HCL Technologies Ltd. ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/hcltech?originalSubdomain=in",
+            "CTC(in Lakhs)": 8.5,
+            "CGPA": 6,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 101,
+            "Company": "HDFC Life ",
+            "Selected": 5,
+            "About company": "https://www.linkedin.com/company/hdfc-life/?originalSubdomain=in",
+            "CTC(in Lakhs)": 13,
+            "CGPA": 5.5,
+            "Job Profile": "Graduate Trainee",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 102,
+            "Company": "Head Digital Works ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/head-digital-works-pvt-ltd/?originalSubdomain=in",
+            "Job Profile": "Associate Software Engineer",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 103,
+            "Company": "Hind Rectifiers Pvt. Ltd. ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/hirect/?originalSubdomain=in",
+            "CTC(in Lakhs)": 8,
+            "CGPA": 0,
+            "Job Profile": "Power Electronics Designer",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 104,
+            "Company": "Hindustan Petroleum Corporation Limited ",
+            "Selected": 5,
+            "About company": "https://www.linkedin.com/company/hpcl/?originalSubdomain=in",
+            "Job Profile": "Asssitant Engineer",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 105,
+            "Company": "Hindustan Unilever Limited",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/unilever/?originalSubdomain=in",
+            "CTC(in Lakhs)": 30,
+            "CGPA": 7.5,
+            "Job Profile": "Not Revealed",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 106,
+            "Company": "HSBC ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/hsbc",
+            "Job Profile": "Not Revealed",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 107,
+            "Company": "HSBC Technology India ",
+            "Selected": 3,
+            "About company": "https://www.linkedin.com/company/hsbc",
+            "CTC(in Lakhs)": 15,
+            "CGPA": 7,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 108,
+            "Company": "IBM ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/ibm/?originalSubdomain=in",
+            "Job Profile": "Not Revealed",
+            "Venue": "Gurgaon"
+        },
+        {
+            "Id": 109,
+            "Company": "ICICI Bank ",
+            "Selected": 15,
+            "About company": "https://www.linkedin.com/company/icici-bank/?originalSubdomain=in",
+            "CTC(in Lakhs)": 16,
+            "CGPA": 6,
+            "Job Profile": "Management Trainee",
+            "Venue": "Pan India"
+        },
+        {
+            "Id": 110,
+            "Company": "IFAS Pvt Ltd ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/ifas-edutech-pvt-ltd/?originalSubdomain=in",
+            "CTC(in Lakhs)": 6,
+            "CGPA": 0,
+            "Job Profile": "Assistant Professor",
+            "Venue": "Baner, Pune"
+        },
+        {
+            "Id": 111,
+            "Company": "IIFL ",
+            "Selected": 3,
+            "About company": "https://www.linkedin.com/company/iifl/?originalSubdomain=in",
+            "CTC(in Lakhs)": "75k/month",
+            "Job Profile": "Software Developer",
+            "Venue": "Mumbai/Andheri"
+        },
+        {
+            "Id": 112,
+            "Company": "ImpactGuru ",
+            "Selected": 9,
+            "About company": "https://www.linkedin.com/company/impact-guru",
+            "CTC(in Lakhs)": 7.1,
+            "CGPA": 5,
+            "Job Profile": "Business Development",
+            "Venue": "Mumbai"
+        },
+        {
+            "Id": 113,
+            "Company": "InnoMinds ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/impact-guru",
+            "CTC(in Lakhs)": "8 to 18",
+            "Job Profile": "Not Revealed",
+            "Venue": "Hyderabad"
+        },
+        {
+            "Id": 114,
+            "Company": "Innoplexus ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/innominds/?originalSubdomain=in",
+            "CTC(in Lakhs)": 12,
+            "CGPA": 7,
+            "Job Profile": "Associate Data Scientist",
+            "Venue": "Pune/Banglore"
+        },
+        {
+            "Id": 115,
+            "Company": "Intel Technology Pvt. Ltd. ",
+            "Selected": 11,
+            "About company": "https://jobs.intel.com/en/countries-India",
+            "CTC(in Lakhs)": 16,
+            "CGPA": 7,
+            "Job Profile": "Hardware Engineer",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 116,
+            "Company": "Intel Technology Pvt. Ltd. ",
+            "Selected": 6,
+            "About company": "https://jobs.intel.com/en/countries-India",
+            "CTC(in Lakhs)": 16,
+            "CGPA": 6,
+            "Job Profile": "Not Revealed",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 117,
+            "Company": "Intel Technology Pvt. Ltd. ",
+            "Selected": 1,
+            "About company": "https://jobs.intel.com/en/countries-India",
+            "CTC(in Lakhs)": 16,
+            "CGPA": 6,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 118,
+            "Company": "Intuit ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/intuit/?originalSubdomain=in",
+            "Job Profile": "Not Revealed",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 119,
+            "Company": "IOL CHEMICALS AND PHARMCEUTICALS LIMITED ",
+            "Selected": 4,
+            "About company": "https://www.linkedin.com/company/iolcp/?originalSubdomain=in",
+            "Job Profile": "Trainee",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 120,
+            "Company": "iRageCapital Advisory Pvt Ltd ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/iragecapital-advisory-private-limited/?originalSubdomain=in",
+            "CTC(in Lakhs)": 31.15,
+            "CGPA": 7.5,
+            "Job Profile": "Quantitative Analyst",
+            "Venue": "Mumbai"
+        },
+        {
+            "Id": 121,
+            "Company": "ITC Limited ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/itc-limited/?originalSubdomain=in",
+            "CTC(in Lakhs)": 25,
+            "CGPA": 7,
+            "Job Profile": "Not Revealed",
+            "Venue": "Pan India"
+        },
+        {
+            "Id": 122,
+            "Company": "Jaguar Land Rover India ",
+            "Selected": 3,
+            "About company": "https://www.linkedin.com/company/jlrindia/?originalSubdomain=in",
+            "CTC(in Lakhs)": 20,
+            "CGPA": 7,
+            "Job Profile": "Graduate Electronics Engineer Trainee",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 123,
+            "Company": "Jaguar Land Rover India ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/jlrindia/?originalSubdomain=in",
+            "CTC(in Lakhs)": 20,
+            "CGPA": 0,
+            "Job Profile": "Graduate Mechanical Engineer Trainee",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 124,
+            "Company": "Jaguar Land Rover India",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/jlrindia/?originalSubdomain=in",
+            "CTC(in Lakhs)": 20,
+            "CGPA": 0,
+            "Job Profile": "Graduate Software Engineer Trainee",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 125,
+            "Company": "Jalan Technology Consulting",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/jalantechnologies/?originalSubdomain=in",
+            "CTC(in Lakhs)": 6,
+            "CGPA": 5,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore/Jaipur"
+        },
+        {
+            "Id": 126,
+            "Company": "Javis ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/okjavis/?originalSubdomain=in",
+            "CTC(in Lakhs)": 12.8,
+            "CGPA": 0,
+            "Job Profile": "Software Developer",
+            "Venue": "Mumbai"
+        },
+        {
+            "Id": 127,
+            "Company": "Jindal Stainless ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/jindal-stainless/?originalSubdomain=in",
+            "CTC(in Lakhs)": 9.5,
+            "CGPA": 6.5,
+            "Job Profile": "Post Graduate Engineer Trainee",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 128,
+            "Company": "Jio Platforms ",
+            "Selected": 4,
+            "About company": "https://www.linkedin.com/company/jioplatforms/?originalSubdomain=in",
+            "CTC(in Lakhs)": 23,
+            "CGPA": 6.5,
+            "Job Profile": "Software Developer",
+            "Venue": "Navi Mumbai"
+        },
+        {
+            "Id": 129,
+            "Company": "Jio Platforms ",
+            "Selected": 4,
+            "About company": "https://www.linkedin.com/company/jioplatforms/?originalSubdomain=in",
+            "CTC(in Lakhs)": 11,
+            "CGPA": 7,
+            "Job Profile": "Software Developer",
+            "Venue": "Navi Mumbai"
+        },
+        {
+            "Id": 130,
+            "Company": "Jio Platforms Ltd. ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/jioplatforms/?originalSubdomain=in",
+            "CTC(in Lakhs)": 17,
+            "CGPA": 0,
+            "Job Profile": "Manager",
+            "Venue": "Navi Mumbai/Banglore"
+        },
+        {
+            "Id": 131,
+            "Company": "JioSaavn Media Ltd ",
+            "Selected": 4,
+            "About company": "https://www.linkedin.com/company/jioplatforms/?originalSubdomain=in",
+            "CTC(in Lakhs)": 20,
+            "CGPA": 6,
+            "Job Profile": "Software Engineer",
+            "Venue": "Mumbai/Banglore"
+        },
+        {
+            "Id": 132,
+            "Company": "John Deere India Pvt Ltd ",
+            "Selected": 3,
+            "About company": "https://www.linkedin.com/company/john-deere-india-private-limited/?originalSubdomain=in",
+            "CTC(in Lakhs)": 15.08,
+            "CGPA": 6,
+            "Job Profile": "Post Graduate Engineer Trainee",
+            "Venue": "Pune/Banglore"
+        },
+        {
+            "Id": 133,
+            "Company": "JP Morgan Chase & Co ",
+            "Selected": 6,
+            "About company": "https://www.linkedin.com/company/jpmorganchase/?originalSubdomain=in",
+            "CTC(in Lakhs)": 31,
+            "CGPA": 7,
+            "Job Profile": "Quantitative Research Analyst",
+            "Venue": "Mumbai/Banglore"
+        },
+        {
+            "Id": 134,
+            "Company": "JP Morgan Chase & Co ",
+            "Selected": 5,
+            "About company": "https://www.linkedin.com/company/jpmorganchase/?originalSubdomain=in",
+            "CTC(in Lakhs)": 18,
+            "CGPA": 7,
+            "Job Profile": "Software Engineer",
+            "Venue": "Mumbai"
+        },
+        {
+            "Id": 135,
+            "Company": "JP Morgan Chase & Co ",
+            "Selected": 5,
+            "About company": "https://www.linkedin.com/company/jpmorganchase/?originalSubdomain=in",
+            "CTC(in Lakhs)": 18,
+            "CGPA": 7,
+            "Job Profile": "Software Engineer",
+            "Venue": "Hyderabad/Mumbai"
+        },
+        {
+            "Id": 136,
+            "Company": "KLA Tencor",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/klacorp",
+            "CTC(in Lakhs)": 18.22,
+            "CGPA": 5.5,
+            "Job Profile": "Software Engineer",
+            "Venue": "Chennai"
+        },
+        {
+            "Id": 137,
+            "Company": "Koo App ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/koo-india/?originalSubdomain=in",
+            "CTC(in Lakhs)": 12,
+            "CGPA": 5,
+            "Job Profile": "Backend/iOS/Android Engineers",
+            "Venue": "Bengaluru"
+        },
+        {
+            "Id": 138,
+            "Company": "Kylas ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/kylas/?originalSubdomain=in",
+            "CTC(in Lakhs)": 14.23,
+            "CGPA": 0,
+            "Job Profile": "Project Engineer",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 139,
+            "Company": "LAM Research ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/lam-research",
+            "CTC(in Lakhs)": 20.2,
+            "CGPA": 6,
+            "Job Profile": "Senior Electrical Engineer",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 140,
+            "Company": "Larsen & Toubro Infotech Limited ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/l&t-infotech/?originalSubdomain=in",
+            "CTC(in Lakhs)": 9,
+            "CGPA": 6,
+            "Job Profile": "Banking & Financial Services Trainee",
+            "Venue": "Pan India"
+        },
+        {
+            "Id": 141,
+            "Company": "Larsen & Toubro Infotech Limited ",
+            "Selected": 3,
+            "About company": "https://www.linkedin.com/company/l&t-infotech/?originalSubdomain=in",
+            "CTC(in Lakhs)": 9,
+            "CGPA": 5.5,
+            "Job Profile": "Data Engineer",
+            "Venue": "Pan India"
+        },
+        {
+            "Id": 142,
+            "Company": "Larsen & Toubro Limited",
+            "Selected": 13,
+            "About company": "https://www.linkedin.com/company/l&t-infotech/?originalSubdomain=in",
+            "CTC(in Lakhs)": 7,
+            "CGPA": 5,
+            "Job Profile": "Engineering Trainee",
+            "Venue": "Pan India"
+        },
+        {
+            "Id": 143,
+            "Company": "LG Ads ",
+            "Selected": 5,
+            "About company": "https://www.linkedin.com/company/lgads/?originalSubdomain=in",
+            "Job Profile": "Not Revealed",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 144,
+            "Company": "LG Ads ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/lgads/?originalSubdomain=in",
+            "Job Profile": "Data Scientist",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 145,
+            "Company": "LG Ads",
+            "Selected": 10,
+            "About company": "https://www.linkedin.com/company/lgads/?originalSubdomain=in",
+            "Job Profile": "Technologist",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 146,
+            "Company": "Mastercard ",
+            "Selected": 7,
+            "About company": "https://www.linkedin.com/company/mastercard/?originalSubdomain=in",
+            "Job Profile": "Analytics Consulting",
+            "Venue": "Gurgaon"
+        },
+        {
+            "Id": 147,
+            "Company": "Merilytics ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/merilytics/?originalSubdomain=in",
+            "CTC(in Lakhs)": 8.1,
+            "CGPA": 0,
+            "Job Profile": "Senior Business Analyst",
+            "Venue": "Hyderabad"
+        },
+        {
+            "Id": 148,
+            "Company": "Micron Technologies Operations India LLP ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/showcase/micron-technology-india/?originalSubdomain=in",
+            "CTC(in Lakhs)": 20,
+            "CGPA": 5.5,
+            "Job Profile": "Data Scientist",
+            "Venue": "Hyderabad  "
+        },
+        {
+            "Id": 149,
+            "Company": "Micron Technologies Operations India LLP ",
+            "Selected": 4,
+            "About company": "https://www.linkedin.com/showcase/micron-technology-india/?originalSubdomain=in",
+            "CTC(in Lakhs)": 15.54,
+            "CGPA": 5,
+            "Job Profile": "Hardware Engineer",
+            "Venue": "Hyderabad"
+        },
+        {
+            "Id": 150,
+            "Company": "Microsoft",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/microsoft/?originalSubdomain=in",
+            "Job Profile": "Not Revealed",
+            "Venue": "Hyderabad/Banglore/Noida"
+        },
+        {
+            "Id": 151,
+            "Company": "Microsoft",
+            "Selected": 13,
+            "About company": "https://www.linkedin.com/company/microsoft/?originalSubdomain=in",
+            "CTC(in Lakhs)": 45,
+            "CGPA": 7.5,
+            "Job Profile": "Not Revealed",
+            "Venue": "Hyderabad/Banglore/Noida"
+        },
+        {
+            "Id": 152,
+            "Company": "Microsoft",
+            "Selected": 30,
+            "About company": "https://www.linkedin.com/company/microsoft/?originalSubdomain=in",
+            "CTC(in Lakhs)": 45.03,
+            "CGPA": 8,
+            "Job Profile": "Software Engineer",
+            "Venue": "Hyderabad/Banglore/Noida"
+        },
+        {
+            "Id": 153,
+            "Company": "MIKO",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/mikorobot/?originalSubdomain=in",
+            "CTC(in Lakhs)": 16,
+            "CGPA": 6,
+            "Job Profile": "Jr. AI Development & NLP Engineer",
+            "Venue": "Dadar, Mumbai"
+        },
+        {
+            "Id": 154,
+            "Company": "MIKO ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/mikorobot/?originalSubdomain=in",
+            "CTC(in Lakhs)": 16,
+            "CGPA": 6,
+            "Job Profile": "Jr. Mechanical Engineer",
+            "Venue": "Dadar, Mumbai"
+        },
+        {
+            "Id": 155,
+            "Company": "MIKO ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/mikorobot/?originalSubdomain=in",
+            "CTC(in Lakhs)": 16,
+            "CGPA": 6,
+            "Job Profile": "Jr. Robotics Engineer",
+            "Venue": "Dadar, Mumbai"
+        },
+        {
+            "Id": 156,
+            "Company": "Myntra ",
+            "Selected": 4,
+            "About company": "https://www.linkedin.com/company/myntra/?originalSubdomain=in",
+            "CTC(in Lakhs)": 13,
+            "CGPA": 6.5,
+            "Job Profile": "Data Analyst",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 157,
+            "Company": "Myntra ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/myntra/?originalSubdomain=in",
+            "CTC(in Lakhs)": 24,
+            "CGPA": 6.5,
+            "Job Profile": "Not Revealed",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 158,
+            "Company": "Myntra",
+            "Selected": 3,
+            "About company": "https://www.linkedin.com/company/myntra/?originalSubdomain=in",
+            "CTC(in Lakhs)": 24,
+            "CGPA": 5,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 159,
+            "Company": "Nagarro Software (P) Ltd ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/nagarro/?originalSubdomain=in",
+            "CTC(in Lakhs)": 8,
+            "CGPA": 7,
+            "Job Profile": "Software Developer",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 160,
+            "Company": "Navi ",
+            "Selected": 5,
+            "About company": "https://www.linkedin.com/company/go-navi/?originalSubdomain=in",
+            "CTC(in Lakhs)": 28,
+            "CGPA": 7,
+            "Job Profile": "Software Development Engineer",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 161,
+            "Company": "NBC Bearings ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/nbc-bearings/?originalSubdomain=in",
+            "CTC(in Lakhs)": 6.3,
+            "CGPA": 6,
+            "Job Profile": "Graduate Engineer Trainees",
+            "Venue": "Mumbai/Banglore"
+        },
+        {
+            "Id": 162,
+            "Company": "Netcracker Technology",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/netcrackertech",
+            "CTC(in Lakhs)": 14,
+            "CGPA": 0,
+            "Job Profile": "Associate Software Engineer",
+            "Venue": "Pune/Banglore"
+        },
+        {
+            "Id": 163,
+            "Company": "Newzera Tech Labs Pvt. Ltd. ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/newzera/?originalSubdomain=in",
+            "CTC(in Lakhs)": 14,
+            "CGPA": 0,
+            "Job Profile": "Not Revealed",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 164,
+            "Company": "Nference ",
+            "Selected": 4,
+            "About company": "https://www.linkedin.com/company/nference/?originalSubdomain=in",
+            "CTC(in Lakhs)": 15,
+            "CGPA": 5.5,
+            "Job Profile": "Software Engineer",
+            "Venue": "Gurgaon"
+        },
+        {
+            "Id": 165,
+            "Company": "Nutanix Technologies India Pvt. Ltd. ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/nutanix/?originalSubdomain=in",
+            "Job Profile": "Not Revealed",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 166,
+            "Company": "NVIDIA Graphics ",
+            "Selected": 3,
+            "About company": "https://www.linkedin.com/company/nvidia-graphics-privatelimited-pune/?originalSubdomain=in",
+            "CTC(in Lakhs)": 22.53,
+            "CGPA": 6,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore/Jaipur"
+        },
+        {
+            "Id": 167,
+            "Company": "O9 Solutions Management India Pvt. Ltd. ",
+            "Selected": 3,
+            "About company": "https://www.linkedin.com/company/o9solutions/?originalSubdomain=in",
+            "CTC(in Lakhs)": 10.77,
+            "CGPA": 6,
+            "Job Profile": "Product Application Engineer",
+            "Venue": "Mumbai"
+        },
+        {
+            "Id": 168,
+            "Company": "Off Campus ",
+            "Selected": 1,
+            "Job Profile": "Not Revealed",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 169,
+            "Company": "Oil India Limited ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/oil-india-limited/?originalSubdomain=in",
+            "CTC(in Lakhs)": "85k/month",
+            "CGPA": 5,
+            "Job Profile": "Senior Engineer",
+            "Venue": "Navi Mumbai"
+        },
+        {
+            "Id": 170,
+            "Company": "OnePlus ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/oneplus",
+            "CTC(in Lakhs)": 31.25,
+            "CGPA": 7,
+            "Job Profile": "Software Engineer",
+            "Venue": "Navi Mumbai"
+        },
+        {
+            "Id": 171,
+            "Company": "Oracle India Pvt. Ltd. ",
+            "Selected": 6,
+            "About company": "https://www.linkedin.com/company/oracle/?originalSubdomain=in",
+            "CTC(in Lakhs)": 27.51,
+            "CGPA": 7,
+            "Job Profile": "Application Development Group",
+            "Venue": "Navi Mumbai/Banglore"
+        },
+        {
+            "Id": 172,
+            "Company": "Oracle India Pvt. Ltd.",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/oracle/?originalSubdomain=in",
+            "CTC(in Lakhs)": 27.51,
+            "CGPA": 7.5,
+            "Job Profile": "Not Revealed",
+            "Venue": "Mumbai/Banglore"
+        },
+        {
+            "Id": 173,
+            "Company": "Oracle India Pvt. Ltd. ",
+            "Selected": 12,
+            "About company": "https://www.linkedin.com/company/oracle/?originalSubdomain=in",
+            "CTC(in Lakhs)": 27.51,
+            "CGPA": 7.5,
+            "Job Profile": "Server Technology",
+            "Venue": "Pune/Banglore"
+        },
+        {
+            "Id": 174,
+            "Company": "Oski Technology, Inc. ",
+            "Selected": 2,
+            "About company": "https://about.crunchbase.com/about-us/careers",
+            "CTC(in Lakhs)": "13+",
+            "CGPA": 6,
+            "Job Profile": "Formal Verification Engineer",
+            "Venue": "Mumbai/Banglore"
+        },
+        {
+            "Id": 175,
+            "Company": "Pandit Deendayal Petroleum University, Gandhinagar ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/school/pdeuofficial/?originalSubdomain=in",
+            "CTC(in Lakhs)": 16.04,
+            "CGPA": 0,
+            "Job Profile": "Assistant Professor",
+            "Venue": "Mumbai"
+        },
+        {
+            "Id": 176,
+            "Company": "PayPal India Pvt Ltd ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/paypal/?originalSubdomain=in",
+            "CTC(in Lakhs)": 30.55,
+            "CGPA": 6.5,
+            "Job Profile": "Software Engineer",
+            "Venue": "Hyderabad/Mumbai"
+        },
+        {
+            "Id": 177,
+            "Company": "Paytm ",
+            "Selected": 8,
+            "About company": "https://www.linkedin.com/company/paytm/?originalSubdomain=in",
+            "CTC(in Lakhs)": 19,
+            "CGPA": 7,
+            "Job Profile": "Software Engineer",
+            "Venue": "Chennai"
+        },
+        {
+            "Id": 178,
+            "Company": "PharmaACE Consulting ",
+            "Selected": 3,
+            "About company": "https://www.linkedin.com/company/qualcomm/?originalSubdomain=in",
+            "CTC(in Lakhs)": 8.5,
+            "CGPA": 0,
+            "Job Profile": "Associate Consultant",
+            "Venue": "Bengaluru"
+        },
+        {
+            "Id": 179,
+            "Company": "Postdot Technologies Private Limited ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/postdot-technologies-pvt.-ltd./?originalSubdomain=in",
+            "Job Profile": "Software Engineer",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 180,
+            "Company": "Praxis Global Alliance ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/praxglobal/?originalSubdomain=in",
+            "CTC(in Lakhs)": 11.5,
+            "CGPA": 6,
+            "Job Profile": "Associate Consultant",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 181,
+            "Company": "Publicis Sapient ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/publicissapient",
+            "CTC(in Lakhs)": 17.5,
+            "CGPA": 6,
+            "Job Profile": "Data Scientist",
+            "Venue": "Pan India"
+        },
+        {
+            "Id": 182,
+            "Company": "Publicis Sapient ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/publicissapient",
+            "CTC(in Lakhs)": 14.7,
+            "CGPA": 6,
+            "Job Profile": "Not Revealed",
+            "Venue": "Pan India"
+        },
+        {
+            "Id": 183,
+            "Company": "Quadeye Securities ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/quadeye/?originalSubdomain=in",
+            "CTC(in Lakhs)": 46,
+            "CGPA": 8,
+            "Job Profile": "Not Revealed",
+            "Venue": "Pan India"
+        },
+        {
+            "Id": 184,
+            "Company": "Qualcomm India Pvt. Ltd. ",
+            "Selected": 3,
+            "About company": "https://www.linkedin.com/company/qualcomm/?originalSubdomain=in",
+            "CTC(in Lakhs)": 31.5,
+            "CGPA": 8,
+            "Job Profile": "Hardware Engineer",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 185,
+            "Company": "Qualcomm India Pvt. Ltd. ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/qualcomm/?originalSubdomain=in",
+            "CTC(in Lakhs)": 31.05,
+            "CGPA": 7.5,
+            "Job Profile": "Not Revealed",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 186,
+            "Company": "Quantbox ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/quantbox-research-pte/?trk=public_profile_experience-item_profile-section-card_image-click&originalSubdomain=nl",
+            "CTC(in Lakhs)": "60-80",
+            "CGPA": 8,
+            "Job Profile": "Analyst",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 187,
+            "Company": "Quantiphi Analytics Solution Private Limited ",
+            "Selected": 4,
+            "About company": "https://www.linkedin.com/company/quantiphi/?originalSubdomain=in",
+            "CTC(in Lakhs)": 8.5,
+            "CGPA": 6,
+            "Job Profile": "Mechanical Learning Engineer",
+            "Venue": "Gurgaon"
+        },
+        {
+            "Id": 188,
+            "Company": "R Systems International Ltd. ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/r-systems/?originalSubdomain=in",
+            "CTC(in Lakhs)": 7.5,
+            "CGPA": 5.5,
+            "Job Profile": "Software Engineer",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 189,
+            "Company": "Razorpay Software Private Limited ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/razorpay-software-private-limited/about",
+            "CTC(in Lakhs)": 22,
+            "CGPA": 7,
+            "Job Profile": "Product Designer",
+            "Venue": "Hyderabad"
+        },
+        {
+            "Id": 190,
+            "Company": "Razorpay Software Private Limited ",
+            "Selected": 6,
+            "About company": "https://www.linkedin.com/company/razorpay-software-private-limited/about",
+            "CTC(in Lakhs)": 24,
+            "CGPA": 7,
+            "Job Profile": "Software Developer",
+            "Venue": "Hyderabad"
+        },
+        {
+            "Id": 191,
+            "Company": "Razorpay Software Private Limited ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/razorpay-software-private-limited/about",
+            "CTC(in Lakhs)": 20,
+            "CGPA": 6.5,
+            "Job Profile": "Software Development Engineer",
+            "Venue": "Hyderabad/Banglore"
+        },
+        {
+            "Id": 192,
+            "Company": "Regent Climate Connect Knowledge Solutions Pvt Ltd ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/climate-connect-ltd/?originalSubdomain=in",
+            "CTC(in Lakhs)": 7,
+            "CGPA": 6,
+            "Job Profile": "Software Engineer",
+            "Venue": "Mumbai"
+        },
+        {
+            "Id": 193,
+            "Company": "Rippling ",
+            "Selected": 1,
+            "About company": "https://www.linkedin.com/company/rippling/jobs/?originalSubdomain=in",
+            "CTC(in Lakhs)": 9.88,
+            "CGPA": 6,
+            "Job Profile": "Software Engineer",
+            "Venue": "Pune"
+        },
+        {
+            "Id": 194,
+            "Company": "Rodic Consultants Pvt. Ltd ",
+            "Selected": 4,
+            "About company": "https://www.linkedin.com/company/rodicconsultants/?originalSubdomain=in",
+            "CTC(in Lakhs)": 5.5,
+            "CGPA": 0,
+            "Job Profile": "Trainee Engineer",
+            "Venue": "Noida"
+        },
+        {
+            "Id": 195,
+            "Company": "Salesforce.com Pvt. Ltd. ",
+            "Selected": 3,
+            "About company": "https://www.linkedin.com/company/salesforce",
+            "CTC(in Lakhs)": 32,
+            "CGPA": 7,
+            "Job Profile": "Not Revealed",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 196,
+            "Company": "Samsung Research Institute",
+            "Selected": 6,
+            "About company": "https://www.linkedin.com/company/samsungrndindia/?originalSubdomain=in",
+            "CTC(in Lakhs)": 20,
+            "CGPA": 6.5,
+            "Job Profile": "Engineer ",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 197,
+            "Company": "Samsung Research Institute",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/samsungrndindia/?originalSubdomain=in",
+            "Job Profile": "Not Revealed",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 198,
+            "Company": "Samsung Semiconductor",
+            "Selected": 1,
+            "About company": "https://semiconductor.samsung.com/emea/about-us",
+            "CTC(in Lakhs)": 23.1,
+            "CGPA": 7,
+            "Job Profile": "Not Revealed",
+            "Venue": "Gurgaon/Noida/Ahemdabad"
+        },
+        {
+            "Id": 199,
+            "Company": "Samsung Semiconductor ",
+            "Selected": 1,
+            "About company": "https://semiconductor.samsung.com/emea/about-us",
+            "CTC(in Lakhs)": 23.1,
+            "CGPA": 7,
+            "Job Profile": "Not Revealed",
+            "Venue": "Bengaluru"
+        },
+        {
+            "Id": 200,
+            "Company": "Samsung Semiconductor ",
+            "Selected": 1,
+            "About company": "https://semiconductor.samsung.com/emea/about-us",
+            "CTC(in Lakhs)": 23.1,
+            "CGPA": 7,
+            "Job Profile": "Software Engineer",
+            "Venue": "Bengaluru"
+        },
+        {
+            "Id": 201,
+            "Company": "Samsung Semiconductor India Research Center Bangalore ",
+            "Selected": 1,
+            "About company": "https://research.samsung.com/sri-b#:~:text=Samsung%20R%26D%20Institute%20India%20%E2%80%93%20Bangalore,that%20can%20create%20the%20future.&text=New%20Research%20Publication%20Record%20at%20SRI%2DB!",
+            "CTC(in Lakhs)": 23.1,
+            "CGPA": 7,
+            "Job Profile": "Not Revealed",
+            "Venue": "Gurgaon"
+        },
+        {
+            "Id": 202,
+            "Company": "SAP Labs India Pvt Ltd ",
+            "Selected": 4,
+            "About company": "https://www.sap.com/india/about/labs-india.html",
+            "CTC(in Lakhs)": 33.1,
+            "CGPA": 7.5,
+            "Job Profile": "Developer",
+            "Venue": "Noida"
+        },
+        {
+            "Id": 203,
+            "Company": "SCA TECHNOLOGIES INDIA PVT LTD ",
+            "Selected": 1,
+            "About company": "https://www.scatech.com/about-us/#:~:text=SCA%20is%20based%20in%20Pittsburgh,seasoned%20foodservice%20and%20software%20experts.",
+            "CTC(in Lakhs)": "11 to 12",
+            "CGPA": 6,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 204,
+            "Company": "Sciative Solutions ",
+            "Selected": 1,
+            "About company": "https://sciative.com/about-us",
+            "CTC(in Lakhs)": 5,
+            "CGPA": 0,
+            "Job Profile": "Data Analyst",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 205,
+            "Company": "Searce ",
+            "Selected": 1,
+            "About company": "https://www.searce.com/who-we-are",
+            "CTC(in Lakhs)": 13,
+            "CGPA": 5.5,
+            "Job Profile": "Business Technology Analyst/Cloud Consultant",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 206,
+            "Company": "Shubhashray Housing India ",
+            "Selected": 2,
+            "About company": "https://shubhashray.com/about-us",
+            "CTC(in Lakhs)": 5,
+            "CGPA": 0,
+            "Job Profile": "Planning Manager",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 207,
+            "Company": "Siemens Healthineers ",
+            "Selected": 1,
+            "About company": "https://www.siemens-healthineers.com/en-in/about#:~:text=Siemens%20Healthineers%20India-,About%20Siemens%20Healthineers%20India,all%20enabled%20by%20digitalizing%20healthcare.",
+            "CTC(in Lakhs)": 16,
+            "CGPA": 6,
+            "Job Profile": "Engineer",
+            "Venue": "Gurgaon  "
+        },
+        {
+            "Id": 208,
+            "Company": "SmartCoin Financials Pvt. Ltd.",
+            "Selected": 2,
+            "About company": "https://blog.smartcoin.co.in/about-us",
+            "CTC(in Lakhs)": 20,
+            "CGPA": 7,
+            "Job Profile": "Software Engineer",
+            "Venue": "Mumbai/Gurugram/Bengaluru"
+        },
+        {
+            "Id": 209,
+            "Company": "Societe Generale Global Solution Center ",
+            "Selected": 4,
+            "About company": "https://www.societegenerale.asia/en/about-asia-pacific/societe-generale-group/#:~:text=Founded%20by%20a%20group%20of,leading%20European%20financial%20services%20groups.",
+            "CTC(in Lakhs)": 18.96,
+            "CGPA": 7,
+            "Job Profile": "Not Revealed",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 210,
+            "Company": "Societe Generale Global Solution Center ",
+            "Selected": 24,
+            "About company": "https://www.societegenerale.asia/en/about-asia-pacific/societe-generale-group/#:~:text=Founded%20by%20a%20group%20of,leading%20European%20financial%20services%20groups.",
+            "CTC(in Lakhs)": 18.96,
+            "CGPA": 6,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 211,
+            "Company": "Solar Energy Corporation of India Limited",
+            "Selected": 2,
+            "About company": "https://www.seci.co.in/about/introduction",
+            "CTC(in Lakhs)": 17.68,
+            "CGPA": 6,
+            "Job Profile": "Executive Trainee",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 212,
+            "Company": "Solar Energy Corporation of India Limited ",
+            "Selected": 1,
+            "About company": "https://www.seci.co.in/about/introduction",
+            "CTC(in Lakhs)": 17.68,
+            "CGPA": 6,
+            "Job Profile": "Executive Trainee",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 213,
+            "Company": "Sprinklr India Pvt. Ltd.",
+            "Selected": 2,
+            "About company": "https://www.sprinklr.com",
+            "CTC(in Lakhs)": 15,
+            "CGPA": 8,
+            "Job Profile": "Data Scientist",
+            "Venue": "Hyderabad"
+        },
+        {
+            "Id": 214,
+            "Company": "Sprinklr India Pvt. Ltd. ",
+            "Selected": 3,
+            "About company": "https://www.sprinklr.com",
+            "CTC(in Lakhs)": 14,
+            "CGPA": 6.5,
+            "Job Profile": "Product Analyst",
+            "Venue": "Mumbai"
+        },
+        {
+            "Id": 215,
+            "Company": "Sprinklr India Pvt. Ltd. ",
+            "Selected": 2,
+            "About company": "https://www.sprinklr.com",
+            "CTC(in Lakhs)": 14,
+            "CGPA": 0,
+            "Job Profile": "Product Analyst",
+            "Venue": "Mumbai/Banglore"
+        },
+        {
+            "Id": 216,
+            "Company": "Sprinklr India Pvt. Ltd.",
+            "Selected": 1,
+            "About company": "https://www.sprinklr.com",
+            "CTC(in Lakhs)": 25,
+            "CGPA": 5,
+            "Job Profile": "Product Engineer",
+            "Venue": "Pune/Banglore"
+        },
+        {
+            "Id": 217,
+            "Company": "Squarepoint Capital ",
+            "Selected": 1,
+            "About company": "https://www.squarepoint-capital.com/about#:~:text=Squarepoint%20is%20a%20privately%20held,becoming%20independent%20in%20December%202014.",
+            "CTC(in Lakhs)": "95000 SGD",
+            "CGPA": 7.5,
+            "Job Profile": "Graduate Software Engineer",
+            "Venue": "Hyderabad"
+        },
+        {
+            "Id": 218,
+            "Company": "SRF Limited ",
+            "Selected": 1,
+            "About company": "https://www.srf.com/about-overview/#:~:text=Since%20SRF's%20incorporation%20in%201970,in%20our%20ability%20to%20diversify.",
+            "CTC(in Lakhs)": 9,
+            "CGPA": 6,
+            "Job Profile": "Design Trainee",
+            "Venue": "Gurgaon"
+        },
+        {
+            "Id": 219,
+            "Company": "Standard Chartered GBS India Pvt Ltd.",
+            "Selected": 8,
+            "About company": "https://www.sc.com/in/about-us",
+            "CTC(in Lakhs)": 17.22,
+            "CGPA": 6.5,
+            "Job Profile": "Not Revealed",
+            "Venue": "Banglore/Chennai"
+        },
+        {
+            "Id": 220,
+            "Company": "Standard Chartered GBS India Pvt Ltd.",
+            "Selected": 1,
+            "About company": "https://www.sc.com/in/about-us",
+            "CTC(in Lakhs)": 17.22,
+            "CGPA": 7,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore/Chennai"
+        },
+        {
+            "Id": 221,
+            "Company": "Sterlite Technologies",
+            "Selected": 8,
+            "About company": "https://stl.tech/about-us",
+            "CTC(in Lakhs)": 11,
+            "CGPA": 7,
+            "Job Profile": "Graduate Engineer Trainee",
+            "Venue": "Across India"
+        },
+        {
+            "Id": 222,
+            "Company": "Strand Life Sciences ",
+            "Selected": 1,
+            "About company": "https://strandls.com/about-us",
+            "CTC(in Lakhs)": 13.3,
+            "CGPA": 6.5,
+            "Job Profile": "Associate Software Engineer",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 223,
+            "Company": "Supertal ",
+            "Selected": 2,
+            "About company": "https://www.supertal.io/about-us#:~:text=Supertal%20envisions%20a%20world%20where,journey%20towards%20becoming%20visionary%20founders.",
+            "CTC(in Lakhs)": 16.5,
+            "CGPA": 5,
+            "Job Profile": "Not Revealed",
+            "Venue": "Gurugram"
+        },
+        {
+            "Id": 224,
+            "Company": "Swastik Classes Private Limited ",
+            "Selected": 1,
+            "About company": "https://swastikclasses.com/blogs/best-iit-jee-coaching-in-dehradun/#:~:text=About%20Swastik%20Classes,-Swastik%20Classes%2C%20founded&text=Both%20Founders%20are%20IIT%20Delhi,new%20teaching%20center%20in%20Dehradun.",
+            "CTC(in Lakhs)": 6,
+            "CGPA": 0,
+            "Job Profile": "Teacher",
+            "Venue": "Delhi"
+        },
+        {
+            "Id": 225,
+            "Company": "Swiggy-Bundl Technologies Pvt. Ltd. ",
+            "Selected": 3,
+            "About company": "https://careers.swiggy.com/#/about",
+            "CTC(in Lakhs)": 29,
+            "CGPA": 7.5,
+            "Job Profile": "Software Develpment Engineer]",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 226,
+            "Company": "TATA Advanced System Pvt Ltd ",
+            "Selected": 2,
+            "About company": "https://www.tataadvancedsystems.com/about",
+            "CTC(in Lakhs)": 6.5,
+            "CGPA": 0,
+            "Job Profile": "Engineer Trainee",
+            "Venue": "Hyderabad/Bengluru/Nagpur/Mumbai"
+        },
+        {
+            "Id": 227,
+            "Company": "Tata AIG ",
+            "Selected": 1,
+            "About company": "https://www.tataaig.com/about-us",
+            "CTC(in Lakhs)": 15.6,
+            "CGPA": 5.5,
+            "Job Profile": "Data Scientist",
+            "Venue": "pan India"
+        },
+        {
+            "Id": 228,
+            "Company": "Tata AIG ",
+            "Selected": 2,
+            "About company": "https://www.tataaig.com/about-us",
+            "CTC(in Lakhs)": 15.6,
+            "CGPA": 5.5,
+            "Job Profile": "Risk Engineer",
+            "Venue": "pan india"
+        },
+        {
+            "Id": 229,
+            "Company": "Tata Consultancy Services ",
+            "Selected": 2,
+            "About company": "https://www.tcs.com/who-we-are",
+            "Job Profile": "Technical Engineer",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 230,
+            "Company": "Tata Steel",
+            "Selected": 2,
+            "About company": "https://www.tatasteel.com/rnd/about-us/history.asp",
+            "CTC(in Lakhs)": 10.52,
+            "CGPA": 6,
+            "Job Profile": "Mechanical",
+            "Venue": "Pan India"
+        },
+        {
+            "Id": 231,
+            "Company": "Technoforte Software Pvt Ltd ",
+            "Selected": 2,
+            "About company": "https://www.technoforte.co.in/about-us",
+            "CTC(in Lakhs)": 10,
+            "CGPA": 6,
+            "Job Profile": "Developer",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 232,
+            "Company": "TekGrid Consulting Services Pvt Ltd ",
+            "Selected": 1,
+            "About company": "https://www.tekgrid.com/about-us.html",
+            "CTC(in Lakhs)": 11,
+            "CGPA": 6,
+            "Job Profile": "Frontend Developer",
+            "Venue": "Bekuevue/Surat/Banglore"
+        },
+        {
+            "Id": 233,
+            "Company": "Texas Instruments ",
+            "Selected": 2,
+            "About company": "https://www.ti.com/about-ti/overview.html",
+            "CTC(in Lakhs)": 21.5,
+            "CGPA": 7,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 234,
+            "Company": "Texas Instruments ",
+            "Selected": 3,
+            "About company": "https://www.ti.com/about-ti/overview.html",
+            "CTC(in Lakhs)": 21,
+            "CGPA": 7,
+            "Job Profile": "Hardware Engineer",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 235,
+            "Company": "Texas Instruments ",
+            "Selected": 1,
+            "About company": "https://www.ti.com/about-ti/overview.html",
+            "CTC(in Lakhs)": 21,
+            "CGPA": 7,
+            "Job Profile": "Not Revealed",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 236,
+            "Company": "ThoughtSpot India Private Limited ",
+            "Selected": 2,
+            "About company": "https://www.thoughtspot.com/news",
+            "CTC(in Lakhs)": 37.16,
+            "CGPA": 7,
+            "Job Profile": "Technical Staff",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 237,
+            "Company": "Times Internet Limited - ILN ",
+            "Selected": 1,
+            "About company": "https://timesinternet.in/about",
+            "CTC(in Lakhs)": 20.5,
+            "CGPA": 6.5,
+            "Job Profile": "Software Development",
+            "Venue": "Gurgaon"
+        },
+        {
+            "Id": 238,
+            "Company": "Topline Inc. ",
+            "Selected": 1,
+            "About company": "https://toplineindustries.in/about-us",
+            "Job Profile": "Software Develpment Engineer",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 239,
+            "Company": "Truminds Software Systems Pvt. Ltd. ",
+            "Selected": 1,
+            "About company": "https://www.truminds.com/about",
+            "CTC(in Lakhs)": 7,
+            "CGPA": 0,
+            "Job Profile": "Software Engineer",
+            "Venue": "Gurgaon/Banglore"
+        },
+        {
+            "Id": 240,
+            "Company": "Uber India System Pvt Ltd. ",
+            "Selected": 2,
+            "About company": "https://www.uber.com/in/en/about",
+            "CTC(in Lakhs)": 35.38,
+            "CGPA": 7,
+            "Job Profile": "Software Develpment Engineer",
+            "Venue": "Banglore/Hyderabad"
+        },
+        {
+            "Id": 241,
+            "Company": "Uber India System Pvt Ltd. ",
+            "Selected": 1,
+            "About company": "https://www.uber.com/in/en/about",
+            "CTC(in Lakhs)": 35.38,
+            "CGPA": 7,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore/Hyderabad"
+        },
+        {
+            "Id": 242,
+            "Company": "Udaan ",
+            "Selected": 1,
+            "About company": "https://udaan.com/about-us",
+            "CTC(in Lakhs)": 19,
+            "CGPA": 6.5,
+            "Job Profile": "Operations ",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 243,
+            "Company": "Udaan ",
+            "Selected": 1,
+            "About company": "https://udaan.com/about-us",
+            "Job Profile": "Not Revealed",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 244,
+            "Company": "Udaan",
+            "Selected": 2,
+            "About company": "https://udaan.com/about-us",
+            "CTC(in Lakhs)": 35,
+            "CGPA": 7.5,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 245,
+            "Company": "Unacademy ",
+            "Selected": 4,
+            "About company": "https://unacademy.com/about",
+            "CTC(in Lakhs)": 18,
+            "CGPA": 6,
+            "Job Profile": "Teacher",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 246,
+            "Company": "UniAccoâ€Œ ",
+            "Selected": 2,
+            "About company": "https://www.linkedin.com/company/uniacco/?originalSubdomain=in",
+            "CTC(in Lakhs)": 12,
+            "CGPA": 0,
+            "Job Profile": "Full Stack Engineer",
+            "Venue": "Mumbai"
+        },
+        {
+            "Id": 247,
+            "Company": "V3iT Consulting ",
+            "Selected": 7,
+            "About company": "https://www.v3it.com/about/index.php",
+            "CTC(in Lakhs)": 5.21,
+            "CGPA": 0,
+            "Job Profile": "Jr. Software Engineer",
+            "Venue": "Not revealed"
+        },
+        {
+            "Id": 248,
+            "Company": "Vconstruct Pvt Ltd ",
+            "Selected": 2,
+            "About company": "https://vconstruct.com/who-we-are",
+            "CTC(in Lakhs)": 5.75,
+            "CGPA": 6,
+            "Job Profile": "Project Engineer",
+            "Venue": "Pune  "
+        },
+        {
+            "Id": 249,
+            "Company": "Vedantu ",
+            "Selected": 3,
+            "About company": "https://www.vedantu.com/v/about-us",
+            "CTC(in Lakhs)": 16,
+            "CGPA": 7,
+            "Job Profile": "Software Development Engineer",
+            "Venue": "Banglore  "
+        },
+        {
+            "Id": 250,
+            "Company": "Vehere ",
+            "Selected": 1,
+            "About company": "https://vehere.com/our-story",
+            "CTC(in Lakhs)": 12,
+            "CGPA": 7,
+            "Job Profile": "Engineer Trainee",
+            "Venue": "Kolkata"
+        },
+        {
+            "Id": 251,
+            "Company": "Veritas ",
+            "Selected": 1,
+            "About company": "https://www.veritas.com",
+            "CTC(in Lakhs)": 15.78,
+            "CGPA": 6,
+            "Job Profile": "Software Engineer",
+            "Venue": "Pune  "
+        },
+        {
+            "Id": 252,
+            "Company": "Vishakha Polyfab P. Ltd ",
+            "Selected": 1,
+            "About company": "https://www.vishakhapolyfab.com/about-vishakha-polyfab/company-information",
+            "CTC(in Lakhs)": 7,
+            "CGPA": 6,
+            "Job Profile": "Graduate Engineer Trainee",
+            "Venue": "Ahemdabad"
+        },
+        {
+            "Id": 253,
+            "Company": "Vivachem Intermediates Private Ltd. ",
+            "Selected": 2,
+            "About company": "https://vivachem.co.in",
+            "CTC(in Lakhs)": 7.8,
+            "CGPA": 5.5,
+            "Job Profile": "Graduate Engineer Trainee",
+            "Venue": "Raikot, Punjab"
+        },
+        {
+            "Id": 254,
+            "Company": "VMware ",
+            "Selected": 6,
+            "About company": "https://www.vmware.com/in/company.html",
+            "CTC(in Lakhs)": 24.29,
+            "CGPA": 7,
+            "Job Profile": "Developer",
+            "Venue": "Banglore/Pune/Chennai"
+        },
+        {
+            "Id": 255,
+            "Company": "Wells Fargo ",
+            "Selected": 16,
+            "About company": "https://www.wellsfargojobs.com/en/life-at-wells-fargo/about-us/#:~:text=About%20Wells%20Fargo,leading%20middle%2Dmarket%20banking%20provider.",
+            "CTC(in Lakhs)": 20,
+            "CGPA": 6.5,
+            "Job Profile": "Analyst",
+            "Venue": "Banglore/Hyderabad/Chennai"
+        },
+        {
+            "Id": 256,
+            "Company": "Wipro ",
+            "Selected": 5,
+            "About company": "https://www.wipro.com/about-us",
+            "CTC(in Lakhs)": 11,
+            "CGPA": 5,
+            "Job Profile": "Project Engineer",
+            "Venue": "Anywhere Acroos India"
+        },
+        {
+            "Id": 257,
+            "Company": "Xion Multiventures Pvt. Ltd. ",
+            "Selected": 1,
+            "About company": "https://zopsmart.com/about",
+            "CTC(in Lakhs)": 14.83,
+            "CGPA": 6.5,
+            "Job Profile": "Algroithmic Trader",
+            "Venue": "Gurgaon  "
+        },
+        {
+            "Id": 258,
+            "Company": "ZopSmart ",
+            "Selected": 3,
+            "About company": "https://zopsmart.com/about",
+            "CTC(in Lakhs)": 8.54,
+            "CGPA": 6,
+            "Job Profile": "Software Engineer",
+            "Venue": "Banglore"
+        },
+        {
+            "Id": 259,
+            "Company": "ZS Associates ",
+            "Selected": 2,
+            "About company": "https://www.zs.com/about/about-us",
+            "CTC(in Lakhs)": 8.93,
+            "CGPA": 6,
+            "Job Profile": "Not Revealed",
+            "Venue": "Pune /New Delhi/Banglore"
+        },
+        {
+            "Id": 260,
+            "Company": "ZS Associates",
+            "Selected": 3,
+            "About company": "https://www.zs.com/about/about-us",
+            "CTC(in Lakhs)": 12.78,
+            "CGPA": 5.5,
+            "Job Profile": "Data Scientist",
+            "Venue": "Pune /New Delhi/Banglore"
+        }
+    ]
+}

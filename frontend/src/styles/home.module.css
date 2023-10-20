@@ -4,7 +4,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
-    /* background-color: red; */
+    background-color: var(--primary-bright);
 }
 .hero_image{
     display: flex;

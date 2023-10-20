@@ -6,7 +6,7 @@
     align-items: center;
     padding: 20px;
     border-radius: 10px;
-    background-color: white;
+    background-color: var(--white);
     animation: enter 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
     box-shadow:
         2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
