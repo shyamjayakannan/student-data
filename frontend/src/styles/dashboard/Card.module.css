@@ -1,0 +1,45 @@
+.container {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 0.5rem var(--primary-shadow);
+    padding: 20px;
+    background-color: var(--primary-bright);
+}
+
+:root[data-theme = "dark"] .container {
+    border: 2px solid grey;
+}
+
+.container:hover {
+    box-shadow: 0 0 1rem var(--primary-shadow);
+    scale: 1.01;
+}
+
+.container hr {
+    margin-top: 20px;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(200, 200, 200);
+    border: none;
+    border-radius: 1px;
+}
+
+.info {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.info strong {
+    margin-bottom: 5px;
+    color: grey;
+}
+
+.info p:first-child {
+    margin-top: 0;
+}
+
+.info h3:first-child {
+    margin-top: 5px;
+}

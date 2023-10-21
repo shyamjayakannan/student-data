@@ -9,31 +9,33 @@ import Link from "next/link";
 export const Buts = [
   {
     name: "Companies",
-    class: classes.but,
     route: "/dashboard/companies",
   },
   {
     name: "Students",
-    class: classes.but,
     route: "/dashboard/students",
   },
   {
     name: "Shortlist",
-    class: classes.but,
     route: "/dashboard/shortlist",
   },
   {
     name: "Settings",
-    class: classes.butset,
     route: "/dashboard/settings",
   },
 ];
 
 const Leftsidebar = () => {
   const [email, setemail] = useState("");
+  const [button, setButton] = useState({
+    Companies: false,
+    Students: false,
+    Shortlist: false,
+    Settings: false,
+  });
   const getUser = useGetUser();
-
   const authenticationCtx = useContext(AuthenticationContext);
+
   useEffect(() => {
     if (authenticationCtx.details.id === "") return;
     async function wow() {
@@ -42,6 +44,13 @@ const Leftsidebar = () => {
     }
     wow();
   }, [authenticationCtx.details]);
+
+  function setColor(which) {
+    setButton(button => {
+      for (const key in button) button[key] = false;
+      return { ...button, [which]: true };
+    });
+  }
 
   return (
     <>
@@ -60,9 +69,10 @@ const Leftsidebar = () => {
         <p className={classes.buttons}>
           {Buts.map((element) => (
             <Link
-              className={element.class}
+              className={`${classes.but} ${element.name === "Settings" ? classes.butset : ""} ${button[element.name] ? classes.color : ""}`}
               key={element.name}
               href={element.route}
+              onClick={() => setColor(element.name)}
             >
               {element.name}
             </Link>

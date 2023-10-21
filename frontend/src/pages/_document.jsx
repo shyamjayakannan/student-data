@@ -9,7 +9,7 @@ export default function Document() {
 					{`
 						const themeLocalStorage   = localStorage.getItem('theme')
 						const themeSystem         = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-						if (themeLocalStorage !== "") document.querySelector(':root').dataset.theme = themeLocalStorage;
+						if (themeLocalStorage && themeLocalStorage !== "") document.querySelector(':root').dataset.theme = themeLocalStorage;
 						else {
 							document.querySelector(':root').dataset.theme = themeSystem;
 							localStorage.setItem("theme", themeSystem);

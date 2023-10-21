@@ -44,6 +44,8 @@ export default function Auth() {
             justifyContent: "center",
             width: "100%",
             minHeight: "100vh",
+            position: "absolute",
+            top: "0",
             padding: "20px"
           }}
         >

@@ -1,5 +1,6 @@
 .container {
     margin: 5px;
+    color: black;
     max-width: 500px;
     position: relative;
     display: flex;
@@ -34,6 +35,7 @@
     border: none;
     font-size: 30px;
     padding-right: 10px;
+    color: black;
 }
 
 .container p {

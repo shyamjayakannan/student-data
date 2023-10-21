@@ -10,6 +10,7 @@
     padding: 10px;
     border-radius: 10px;
     color: black;
+    color-scheme: light;
 }
 
 .card div {
@@ -28,7 +29,6 @@
 
 .cardinput {
     font-size: 16px;
-    color: black;
     background: none;
     /* VERY IMPORTANT REMOVE OUTLINE */
     outline: none;
