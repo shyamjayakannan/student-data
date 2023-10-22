@@ -19,7 +19,7 @@ function valueReducer(state, action) {
     }
 }
 
-export default function LogIn() {
+export default function LogIn(props) {
     const redirectUser = useRedirect();
     const [value, dispatchValue] = useReducer(valueReducer, { password: { value: "", valid: false }, email: { value: "", valid: false } });
     const check = useCallback((isValid, value, id) => dispatchValue({ type: id, value, valid: isValid }), []);
@@ -37,26 +37,29 @@ export default function LogIn() {
         );
         if (response === "Success") {
             setSuccess(true);
-            
+
             // redirect
             redirectUser('/dashboard');
             AuthenticationCtx.setLoggedIn(true);
-        }
+        } else if (response === "User Not found Error") props.toggle();
 
         setLoader(false);
     }
 
     return (
-        <Card style={{ width: "400px" }} noshadow> 
-            <EmailInput autoComplete="email" onCheck={check} />
-            <PasswordInput autoComplete="current-password" onCheck={check} />
-            <div className={styles.register}>
-                <Link href="/resetpassword" className={styles.forgot}>Forgot Password?</Link>
-            </div>
-            {loader ? <Loader />
-                : success ? <div className={styles.success} /> :
-                    <button onClick={submit} className={styles["navigate-link"]} disabled={!(value.password.valid && value.email.valid)}>Sign In</button>
-            }
-        </Card>
+        <>
+            <h1>Sign In</h1>
+            <Card style={{ width: "400px" }} noshadow>
+                <EmailInput autoComplete="email" onCheck={check} />
+                <PasswordInput autoComplete="current-password" onCheck={check} />
+                <div className={styles.register}>
+                    <Link href="/resetpassword" className={styles.forgot}>Forgot Password?</Link>
+                </div>
+                {loader ? <Loader />
+                    : success ? <div className={styles.success} /> :
+                        <button onClick={submit} className={styles["navigate-link"]} disabled={!(value.password.valid && value.email.valid)}>Sign In</button>
+                }
+            </Card>
+        </>
     );
 }

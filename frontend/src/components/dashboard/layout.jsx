@@ -4,12 +4,12 @@ import LoadingWait from "../../ui/loadingWait";
 
 const Layout = (props) => {
   return (
-    // <LoadingWait>
+    <LoadingWait>
       <div className={classes.dashboard_container}>
         <Leftsidebar />
         <main style={{ width: "100%" }}>{props.children}</main>
       </div>
-    // </LoadingWait>
+    </LoadingWait>
   );
 };
 export default Layout;

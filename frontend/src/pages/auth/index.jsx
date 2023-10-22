@@ -51,9 +51,9 @@ export default function Auth() {
         >
           {authenticationCtx.open.LogInOpen && (
             <>
-              <LogIn />
+              <LogIn toggle={toggle} />
               <GoogleAuth LogInOpen={authenticationCtx.open.LogInOpen} />
-              <p style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+              <p style={{ display: "flex", alignItems: "center", gap: "1rem", margin: "0" }}>
                 New Here?
                 <button onClick={toggle} className={classes.but1}>
                   Register
@@ -65,7 +65,7 @@ export default function Auth() {
             <>
               <SignUp toggle={toggle} />
               <GoogleAuth LogInOpen={authenticationCtx.open.LogInOpen} />
-              <p style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
+              <p style={{ display: "flex", alignItems: "center", gap: "1rem", margin: "0" }}>
                 Already Registered?
                 <button onClick={toggle} className={classes.but1}>
                   Sign In

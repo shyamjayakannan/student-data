@@ -9,11 +9,10 @@ import { usePathname } from "next/navigation";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import { ThemeContextProvider } from "../store/ThemeContext";
 
-
 export default function MyApp({ Component, pageProps }) {
   const path = usePathname();
   const getLayout = Component.getLayout || ((page) => page);
-  
+
   return (
     <ThemeContextProvider>
       <NotificationContextProvider>
@@ -25,8 +24,8 @@ export default function MyApp({ Component, pageProps }) {
               <Topbar />
             )}
             <Notifications />
-            <main style={{marginTop: "68px"}}>
-                {getLayout(<Component {...pageProps} />)}
+            <main style={{ marginTop: "68px" }}>
+              {getLayout(<Component {...pageProps} />)}
             </main>
           </GoogleOAuthProvider>
         </AuthenticationContextProvider>

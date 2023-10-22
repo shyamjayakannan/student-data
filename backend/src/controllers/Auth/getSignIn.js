@@ -9,12 +9,12 @@ async function getSignIn(userData) {
         if (!user) {
             return {
                 message: "User Not found. Please Sign Up",
-                type: "Error",
+                type: "User Not found Error",
             };
         }
         if (!user.authenticate(userData.password)) {
             return {
-                message: "Email and password don't match. This may happen if you try to Sign In with Google while having an existing account",
+                message: "Email and password don't match. This may happen if you try to Sign In with Google while having an existing account with us",
                 type: "Error",
             };
         }

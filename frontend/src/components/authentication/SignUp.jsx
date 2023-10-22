@@ -47,13 +47,16 @@ export default function SignUp(props) {
     };
 
     return (
-        <Card style={{ width: "400px" }} noshadow>
-            <EmailInput autoComplete="email" onCheck={check} />
-            <PasswordInput autoComplete="new-password" onCheck={check} />
-            {loader ? <Loader />
-                : success ? <div className={styles.success} /> :
-                    <button onClick={submit} className={styles["navigate-link"]} disabled={!(value.password.valid && value.email.valid)}>Sign Up</button>
-            }
-        </Card>
+        <>
+            <h1>Sign Up</h1>
+            <Card style={{ width: "400px" }} noshadow>
+                <EmailInput autoComplete="email" onCheck={check} />
+                <PasswordInput autoComplete="new-password" onCheck={check} />
+                {loader ? <Loader />
+                    : success ? <div className={styles.success} /> :
+                        <button onClick={submit} className={styles["navigate-link"]} disabled={!(value.password.valid && value.email.valid)}>Sign Up</button>
+                }
+            </Card>
+        </>
     );
 }

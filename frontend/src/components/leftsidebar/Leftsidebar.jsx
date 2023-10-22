@@ -25,6 +25,8 @@ export const Buts = [
   },
 ];
 
+let data = {};
+
 const Leftsidebar = () => {
   const [email, setemail] = useState("");
   const [button, setButton] = useState({
@@ -38,8 +40,13 @@ const Leftsidebar = () => {
 
   useEffect(() => {
     if (authenticationCtx.details.id === "") return;
+    if (authenticationCtx.details.id === data.id) {
+      setemail(data.email);
+      return;
+    }
     async function wow() {
       const set = await getUser(authenticationCtx.details);
+      data = { email: set.email, id: authenticationCtx.details.id };
       setemail(set.email);
     }
     wow();

@@ -33,6 +33,9 @@ export default function GoogleAuth(props) {
                 // redirect
                 redirectUser("/dashboard");
                 authenticationCtx.setLoggedIn(true);
+            } else if (response1 === "User Not found Error") {
+                authenticationCtx.hide("LogInOpen");
+                authenticationCtx.show("signupOpen");
             }
         },
         onError: (error) => console.log('Login Failed:', error)

@@ -5,7 +5,6 @@
   color: var(--primary-bright);
   font-family: monospace;
   font-weight: 900;
-  font-size: 1.4rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -15,8 +14,11 @@
 
 .user {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
+  font-size: 0.5rem;
 }
 
 .buttons {
