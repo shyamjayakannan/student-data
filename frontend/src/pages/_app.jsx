@@ -24,7 +24,7 @@ export default function MyApp({ Component, pageProps }) {
               <Topbar />
             )}
             <Notifications />
-            <main style={{ marginTop: "68px" }}>
+            <main style={{ marginTop: "68px", width: "100%" }}>
               {getLayout(<Component {...pageProps} />)}
             </main>
           </GoogleOAuthProvider>

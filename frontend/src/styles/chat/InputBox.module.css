@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    text-decoration: none;
+    border: none;
+    width: 500px;
+    min-height: 30px;
+    max-height: 100px;
+    overflow-y: scroll;
+    padding: 5px 10px;
+    background-color: white;
+}

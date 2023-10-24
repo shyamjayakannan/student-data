@@ -8,7 +8,7 @@ module.exports = insertNewPasswordRoutes = {
             const userData = req.body;
             const response = await insertNewPassword(userData);
             return res.status(200).send({
-                message: "Password reset  Successfully!",
+                message: "Password reset Successfully!",
                 response: response,
                 type: "Success",
             });
