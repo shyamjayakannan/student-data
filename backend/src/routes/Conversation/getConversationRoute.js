@@ -1,4 +1,4 @@
-const { getConversation } = require("../../controllers/Conversation/getConversation");
+const getConversation = require("../../controllers/Conversation/getConversation");
 
 module.exports = getConversationRoute = {
     path: "/conversation/getConversation",

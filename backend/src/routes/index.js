@@ -8,8 +8,13 @@ const matchTokenRoute = require("./Auth/matchTokenRoute");
 const resetPasswordRoute = require("./Auth/resetPasswordRoute");
 const setResetPasswordEmailSentTimeRoute = require("./Auth/setResetPasswordEmailSentTimeRoute");
 const createConversationRoute = require("./Conversation/createConversationRoute");
+const deleteConversationRoute = require("./Conversation/deleteConversationRoute");
+const getAllUserConversationsRoute = require("./Conversation/getAllUserConversationsRoute");
+const getConversationRoute = require("./Conversation/getConversationRoute");
+const updateConversationRoute = require("./Conversation/updateConversationRoute");
 
 module.exports = routes = [
+    // auth
     getNewPasswordRoute,
     getSignInRoute,
     insertNewPasswordRoute,
@@ -19,5 +24,11 @@ module.exports = routes = [
     getResetPasswordEmailSentTimeRoute,
     setResetPasswordEmailSentTimeRoute,
     getUserRoute,
+
+    // conversation
     createConversationRoute,
+    getConversationRoute,
+    deleteConversationRoute,
+    getAllUserConversationsRoute,
+    updateConversationRoute,
 ];

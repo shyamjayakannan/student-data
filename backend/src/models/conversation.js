@@ -31,9 +31,12 @@ const conversationSchema = new Schema({
     },
     messageHistory: {
         type: String,
+        default: "",
+    },
+    messages: {
+        type: [messageSchema],
         required: true,
     },
-    messages: [messageSchema],
     timestamp: {
         type: Date,
         default: Date.now,

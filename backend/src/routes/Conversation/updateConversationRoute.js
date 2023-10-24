@@ -1,11 +1,11 @@
-const createConversation = require("../../controllers/Conversation/createConversation");
+const updateConversation = require("../../controllers/Conversation/updateConversation");
 
-module.exports = createConversationRoute = {
-    path: "/conversation/createConversation",
+module.exports = getConversationRoute = {
+    path: "/conversation/updateConversation",
     method: "post",
     handler: async (req, res) => {
         try {
-            const response = await createConversation(req.body);
+            const response = await updateConversation(req.body);
             return res.status(200).send(response);
         } catch (err) {
             return res.status(400).send({

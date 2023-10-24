@@ -5,12 +5,12 @@ import Topbar from "../components/Topbar/Topbar";
 import Notifications from "../components/notification/notifications";
 import { AuthenticationContextProvider } from "../store/AuthenticationContext";
 import { NotificationContextProvider } from "../store/NotificationContext";
-import { usePathname } from "next/navigation";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import { ThemeContextProvider } from "../store/ThemeContext";
+import { useRouter } from "next/router";
 
 export default function MyApp({ Component, pageProps }) {
-  const path = usePathname();
+  const router = useRouter();
   const getLayout = Component.getLayout || ((page) => page);
 
   return (
@@ -20,7 +20,7 @@ export default function MyApp({ Component, pageProps }) {
           <GoogleOAuthProvider
             clientId={process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID}
           >
-            {!path.includes("/auth") && !path.includes("/resetpassword") && (
+            {!router.route.includes("/auth") && !router.route.includes("/resetpassword") && (
               <Topbar />
             )}
             <Notifications />

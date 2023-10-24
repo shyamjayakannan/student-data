@@ -1,4 +1,4 @@
-const { getAllUserConversations } = require("../../controllers/Conversation/getAllUserConversations");
+const getAllUserConversations = require("../../controllers/Conversation/getAllUserConversations");
 
 module.exports = getAllUserConversationsRoute = {
     path: "/conversation/getAllUserConversations",

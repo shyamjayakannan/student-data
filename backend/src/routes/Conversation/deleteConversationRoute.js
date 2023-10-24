@@ -1,4 +1,4 @@
-const { deleteConversation } = require("../../controllers/Conversation/deleteConversation");
+const deleteConversation = require("../../controllers/Conversation/deleteConversation");
 
 module.exports = deleteConversationRoute = {
     path: "/conversation/deleteConversation",

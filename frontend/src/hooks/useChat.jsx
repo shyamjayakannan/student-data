@@ -16,12 +16,12 @@ export default function useChat() {
 
     function setMessage(message) {
         chat.message = message;
-        setters.forEach(setter => setter(chat));
+        setters.forEach(setter => setter({...chat}));
     }
 
     function setTitle(title) {
         chat.title = title;
-        setters.forEach(setter => setter(chat));
+        setters.forEach(setter => setter({...chat}));
     }
 
     return { chat, setMessage, setTitle };
