@@ -16,6 +16,7 @@ const Layout = () => {
     const router = useRouter();
 
     useEffect(() => {
+        // console.log(router.query.id)
         switch (router.query.id) {
             case "companies":
                 setComponent(<Companies />);
@@ -26,7 +27,7 @@ const Layout = () => {
             case "shortlist":
                 setComponent(<Shortlist />);
                 break;
-            case "settingss":
+            case "settings":
                 setComponent(<Settings />);
                 break;
             default: setComponent(<Dpage />);

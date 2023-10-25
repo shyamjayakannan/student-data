@@ -54,7 +54,7 @@ export default function Topbar() {
 				<div className={classes.signbtn}>
 					<ThemeToggler />
 					{
-						authenticationCtx.isLoggedIn && pathname == '/dashboard' ? (
+						authenticationCtx.isLoggedIn && pathname == '/dashboard/dpage' ? (
 							<button
 								onClick={(e) => {
 									e.preventDefault();

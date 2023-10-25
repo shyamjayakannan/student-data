@@ -1,4 +1,9 @@
-.container {
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.compcardsbox {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
@@ -6,4 +11,12 @@
     overflow-y: scroll;
     max-height: 100%;
     cursor: pointer;
+
+}
+.search{
+    display: flex;
+    width: 100%;
+    /* height: fit-content; */
+    /* align-items: center; */
+    justify-content: center;
 }

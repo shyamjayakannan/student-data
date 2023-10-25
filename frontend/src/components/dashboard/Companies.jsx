@@ -5,6 +5,7 @@ import classes from "../../styles/dashboard/companies.module.css";
 import Card from './Card';
 import data from "../../pages/dashboard/companies/companies.json";
 import CardSkeleton from './CardSkeleton';
+import SearchBar from './SearchBar';
 
 const Companies = () => {
   const [loading, setLoading] = useState(true);
@@ -34,7 +35,14 @@ const Companies = () => {
 
   return (
     <div className={classes.container}>
+      <div className={classes.search}>
+
+      <SearchBar/>
+      </div>
+      <div className={classes.compcardsbox}>
+
       {loading ? Array(6).fill(0).map((_, index) => <CardSkeleton key={index} />) : data["2020-21"].map((item, index) => <Card key={index} data={item} />)}
+      </div>
     </div>
   )
 }

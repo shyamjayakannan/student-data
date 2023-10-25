@@ -20,6 +20,10 @@ export const Buts = [
     route: "/dashboard/shortlist",
   },
   {
+    name: "Chat Bot",
+    route: "/chat/new",
+  },
+  {
     name: "Settings",
     route: "/dashboard/settings",
   },
