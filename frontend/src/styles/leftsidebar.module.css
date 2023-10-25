@@ -48,15 +48,15 @@
 }
 
 .but:hover {
-  color: var(--blue);
+  color: var(--white);
 }
 
 .color {
-  color: var(--blue);
+  color: var(--white);
 }
 
 .buttons input:checked .but {
-  color: var(--blue);
+  color: var(--white);
 }
 
 .butset {
