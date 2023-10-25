@@ -100,7 +100,10 @@
   font-size: 1rem;
   text-decoration: none;
   cursor: pointer;
+  width: 8rem;
   display: flex;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 

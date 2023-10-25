@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "../../styles/dashboard/companies.module.css";
+import classes from "../../styles/dashboard/dashboard.module.css";
 import Image from 'next/image'
 
 const Settings = () => {

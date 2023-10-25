@@ -74,10 +74,12 @@
     font-family: 'Courier New', Courier, ;
     font-size: 1.5rem;
     font-weight: 800;
+    margin-top: 10%;
 }
 .cards{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 3rem;
 }
 .card_content{
     display: flex;
