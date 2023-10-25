@@ -12,9 +12,9 @@ export default function useRedirect() {
 
         if (current === "") router.push(pathname);
         else {
-            const index = current.indexOf("=");
-            const path = current.slice(index + 4);
-            router.push(`/${path}`);
+            const index = current.indexOf("selected=");
+            const path = current.slice(index + 9).replaceAll("%2F", "/");
+            router.push(`${path}`);
         }
     }
     return redirectUser;

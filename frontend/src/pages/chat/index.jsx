@@ -1,11 +1,14 @@
 "use client";
 
 import { useRouter } from "next/router";
-import Default from "../../components/chat/Default";
-import Layout from "../../components/chat/Layout";
+import { useEffect } from "react";
 
 export default function Chat() {
     const router = useRouter();
-    router.push("/chat/new");
+
+    useEffect(() => {
+        router.push("/chat/new");
+    }, []);
+
     return (<></>);
 }

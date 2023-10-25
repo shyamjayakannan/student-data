@@ -1,11 +1,10 @@
 "use client";
 
 import React, { useEffect, useState } from 'react'
-import Layout from '../../../components/dashboard/layout'
-import classes from "../../../styles/dashboard/companies.module.css";
-import Card from '../../../components/dashboard/Card';
-import data from "./companies.json";
-import CardSkeleton from '../../../components/dashboard/CardSkeleton';
+import classes from "../../styles/dashboard/companies.module.css";
+import Card from './Card';
+import data from "../../pages/dashboard/companies/companies.json";
+import CardSkeleton from './CardSkeleton';
 
 const Companies = () => {
   const [loading, setLoading] = useState(true);
@@ -39,7 +38,5 @@ const Companies = () => {
     </div>
   )
 }
-
-Companies.getLayout = (page) => <Layout>{page}</Layout>;
 
 export default Companies

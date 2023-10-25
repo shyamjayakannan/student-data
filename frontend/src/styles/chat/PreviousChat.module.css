@@ -7,3 +7,10 @@
     border-right: 1px solid black;
     position: relative;
 }
+
+.new {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}

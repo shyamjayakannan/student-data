@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const { v4 } = require("uuid");
 const { Schema } = mongoose;
 
 const messageSchema = new Schema({
@@ -19,7 +20,7 @@ const messageSchema = new Schema({
 const conversationSchema = new Schema({
     id: {
         type: String,
-        required: true,
+        default: v4(),
     },
     userId: {
         type: String,

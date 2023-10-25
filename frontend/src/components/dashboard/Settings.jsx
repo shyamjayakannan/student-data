@@ -1,7 +1,7 @@
 import React from "react";
-import classes from "../../../styles/dashboard/dashboard.module.css";
+import classes from "../../styles/dashboard/companies.module.css";
 import Image from 'next/image'
-import Layout from "../../../components/dashboard/layout";
+
 const Settings = () => {
   return (
     <div className={classes.main_cont}>
@@ -14,7 +14,5 @@ const Settings = () => {
     </div>
   );
 };
-
-Settings.getLayout = (page) => <Layout>{page}</Layout>;
 
 export default Settings;

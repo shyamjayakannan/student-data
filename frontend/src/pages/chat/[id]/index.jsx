@@ -1,58 +1,49 @@
 "use client";
 
 import { useRouter } from 'next/router';
-import Layout from '../../../components/chat/Layout'
 import { useContext, useEffect, useRef, useState } from 'react';
 import InputBox from '../../../components/chat/InputBox';
 import classes from "../../../styles/chat/Default.module.css";
 import ChatContainer from '../../../components/chat/ChatContainer';
 import AuthenticationContext from '../../../store/AuthenticationContext';
 import useConversation from '../../../hooks/useConversation';
-import { v4 } from "uuid";
+import LoadingWait from '../../../ui/loadingWait';
+import PreviousChat from '../../../components/chat/PreviousChats';
 
-function ChatId() {
+const data = {};
+
+export default function ChatId() {
     const containerRef = useRef();
     const router = useRouter();
     const authenticationCtx = useContext(AuthenticationContext);
     const Conversation = useConversation();
     const [messages, setMessages] = useState([]);
     const [messageHistory, setMessageHistory] = useState("");
+    const [call, setCall] = useState(true);
 
     useEffect(() => {
         if (authenticationCtx.details.id === "" || router.query.id === "new") return;
+        if (data[router.query.id]) {
+            setMessageHistory(data[router.query.id].messageHistory);
+            setMessages(data[router.query.id].messages);
+            return;
+        }
 
         (async () => {
             try {
-                if (chat.message !== "") {
-                    setMessage("");
+                const backendResponse = await Conversation({
+                    id: router.query.id,
+                    userId: authenticationCtx.details.id,
+                }, "getConversation");
 
-                    const pythonResponse = await pythonRequest();
-                    const newMessages = [...messages, { sender: "bot", message: pythonResponse.message }];
-                    setMessages(newMessages);
-                    setMessageHistory(pythonResponse.messageHistory);
-                    setTitle(pythonResponse.title);
-
-                    await Conversation({
-                        id: router.query.id,
-                        userId: authenticationCtx.details.id,
-                        title: pythonResponse.title,
-                        messageHistory: pythonResponse.messageHistory,
-                        messages: newMessages,
-                    }, "createConversation");
-                } else {
-                    const backendResponse = await Conversation({
-                        id: router.query.id,
-                        userId: authenticationCtx.details.id,
-                    }, "getConversation");
-
-                    if (backendResponse.type === "Error") {
-                        router.push("/chat");
-                        return;
-                    }
-                    console.log(backendResponse.conversation.messages)
-                    setMessages(backendResponse.conversation.messages);
-                    setMessageHistory(backendResponse.conversation.messageHistory);
+                if (backendResponse.type === "Error") {
+                    router.push("/chat/new");
+                    return;
                 }
+
+                data[router.query.id] = { messages: backendResponse.conversation.messages, messageHistory: backendResponse.conversation.messageHistory };
+                setMessageHistory(backendResponse.conversation.messageHistory);
+                setMessages(backendResponse.conversation.messages);
             } catch (err) {
                 console.log(err.message);
             }
@@ -60,56 +51,71 @@ function ChatId() {
     }, [authenticationCtx.details, router.query.id]);
 
     useEffect(() => {
-        containerRef.current.scrollTop = containerRef.current.scrollHeight;
-
-        const length = messages.length;
-
-        if (length === 0 || messages[length - 1].sender === "user") return;
-        (async () => {
-            try {
-                await Conversation({
-                    id: router.query.id,
-                    userId: authenticationCtx.details.id,
-                    messageHistory,
-                    messages,
-                }, "updateConversation");
-            } catch (err) {
-                console.log(err.message);
-            }
-        })();
+        if (containerRef.current) containerRef.current.scrollTop = containerRef.current.scrollHeight;
     }, [messages]);
 
-    async function pythonRequest() {
+    async function pythonRequest(message) {
         try {
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            return { message: "Hi, how are you?", messageHistory: "", title: "wow" };
+            const pythonResponse = await new Promise(resolve => setTimeout(() => resolve({ message: "Hi, how are you?", messageHistory: "", title: "wow" }), 1000));
+            const newMessages = [...messages, { sender: "user", message }, { sender: "bot", message: pythonResponse.message }];
+
+            data[router.query.id] = { messages: newMessages, messageHistory: pythonResponse.messageHistory };
+            setMessageHistory(pythonResponse.messageHistory);
+            setMessages(newMessages);
+            return { newMessages, messageHistory: pythonResponse.messageHistory, title: pythonResponse.title };
         } catch (error) {
             console.log(error);
         }
     }
 
     async function sendData(message) {
-        if (router.query.id === "new") {
-            const id = v4();
-            setMessage(message);
-            router.push(`/chat/${id}`);
-            return;
-        }
-        
-        setMessages(messages => [...messages, { sender: "user", message }]);
+        try {
+            if (router.query.id === "new") {
+                setMessages([{ sender: "user", message }]);
 
-        const pythonResponse = await pythonRequest();
-        setMessages(messages => [...messages, { sender: "bot", message: pythonResponse.message }]);
-        setMessageHistory(pythonResponse.messageHistory);
+                const pythonResponse = await pythonRequest(message);
+
+                const backendResponse = await Conversation({
+                    userId: authenticationCtx.details.id,
+                    title: pythonResponse.title,
+                    messageHistory: pythonResponse.messageHistory,
+                    messages: pythonResponse.newMessages,
+                }, "createConversation");
+
+                if (backendResponse.type === "Success") {
+                    setCall(call => !call);
+                    router.push(`/chat/${backendResponse.conversation.id}`);
+                }
+                return;
+            }
+
+            setMessages(messages => [...messages, { sender: "user", message }]);
+
+            const pythonResponse = await pythonRequest(message);
+
+            await Conversation({
+                id: router.query.id,
+                userId: authenticationCtx.details.id,
+                messageHistory: pythonResponse.messageHistory,
+                messages: pythonResponse.newMessages,
+            }, "updateConversation");
+        } catch (err) {
+            console.log(err.message);
+        }
+    }
+
+    function clearMessages() {
+        setMessages([]);
+        setMessageHistory("");
     }
 
     return (
         <LoadingWait>
             <div style={{ display: "flex", height: "calc(100vh - 68px)", position: "relative" }}>
-                <PreviousChat />
+                <PreviousChat clear={clearMessages} call={call} />
                 <main style={{ width: "100%", height: "100%" }}>
                     <div className={classes.container}>
-                        {router.query.id === "new" ?
+                        {router.query.id === "new" && messages.length === 0 ?
                             <div className={classes.semi}>
                                 <h1>Select one of your chats from the left or type below to begin a new one</h1>
                             </div> :
@@ -124,7 +130,3 @@ function ChatId() {
         </LoadingWait>
     );
 }
-
-ChatId.getLayout = (page) => <Layout>{page}</Layout>;
-
-export default ChatId;

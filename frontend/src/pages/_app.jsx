@@ -11,7 +11,6 @@ import { useRouter } from "next/router";
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  const getLayout = Component.getLayout || ((page) => page);
 
   return (
     <ThemeContextProvider>
@@ -25,7 +24,7 @@ export default function MyApp({ Component, pageProps }) {
             )}
             <Notifications />
             <main style={{ marginTop: "68px", width: "100%" }}>
-              {getLayout(<Component {...pageProps} />)}
+              <Component {...pageProps} />
             </main>
           </GoogleOAuthProvider>
         </AuthenticationContextProvider>
