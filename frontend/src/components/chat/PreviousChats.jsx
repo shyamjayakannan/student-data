@@ -81,7 +81,7 @@ export default function PreviousChat(props) {
             <button className={classes.new} onClick={() => {
                 props.clear();
                 router.push("/chat/new");
-            }}>new Chat</button>
+            }}>New Chat</button>
         </div>
     );
 }

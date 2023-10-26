@@ -1,24 +1,38 @@
 .main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* background-color: red; */
 }
 
 .container {
-    display: flex;
-    padding: 20px;
-    max-width: 40rem;
-    width: 80%;
-    gap: 2rem;
+  display: flex;
+  padding: 20px;
+  max-width: 40rem;
+  width: 80%;
+  gap: 2rem;
+  /* background-color: red; */
+  background-color: var(--primary-dark);
+  color: var(--primary-bright);
+  font-family: monospace;
+  border-radius: 3rem;
+  border: none;
+  margin-bottom: 1rem;
+
 }
 
 .container div {
-    min-width: fit-content;
+  min-width: fit-content;
+  /* background-color: red; */
+  font-family: monospace;
+  font-size: 1.2rem;
+  
 }
 
 .container p {
-    margin: 0;
-    width: 100%;
-    text-align: justify;
+  margin: 0;
+  width: 100%;
+  text-align: justify;
+  /* background-color: red; */
 }

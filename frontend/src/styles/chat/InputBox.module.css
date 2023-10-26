@@ -8,12 +8,21 @@
 }
 
 .input {
-    text-decoration: none;
+    /* text-decoration: none; */
     border: none;
     width: 500px;
-    min-height: 30px;
+    min-height: 50px;
     max-height: 100px;
     overflow-y: scroll;
     padding: 5px 10px;
     background-color: white;
+    font-family: monospace;
+    font-size: 1.5rem;
+    font-weight: 900;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 1rem;
+    text-align: justify;
+    /* background-color: white; */
+    /* color: var(--primary-dark); */
+    color: #202020 ;
 }
