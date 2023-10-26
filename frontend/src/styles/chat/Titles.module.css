@@ -31,7 +31,6 @@
 }
 
 .delbtn:hover{
-
     cursor: pointer;
     transform: scale(0.95);
     transition: all ease-in-out 0.2s;
