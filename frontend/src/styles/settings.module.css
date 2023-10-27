@@ -1,0 +1,51 @@
+.content{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns */
+    gap: 10px;
+    width: 100%;
+    font-family: monospace;
+    color: var(--primary-dark);
+}
+.inputs{
+    display: flex;
+    gap:0.8rem;
+    font-family: monospace;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+.text{
+    display: flex;
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 1.4rem;
+    color: var(--primary-dark);
+
+}.grid_item {
+    text-align: left;
+  font-family: monospace;
+    padding: 10px;
+    margin: 0; /* Remove margin for the grid items */
+}
+.check{
+
+
+}
+.done{
+    font-family: monospace;
+    background: var(--primary-dark);
+    color: var(--primary-bright);
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 1rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    height: 3rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+.done:hover{
+    cursor: pointer;
+}
