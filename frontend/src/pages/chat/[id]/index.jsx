@@ -57,7 +57,7 @@ export default function ChatId() {
     async function pythonRequest(message) {
         try {
             const pythonResponse = await new Promise(resolve => setTimeout(() => resolve({ message: "Hi, how are you?", messageHistory: "", title: "wow" }), 1000));
-            const newMessages = [...messages, { sender: "user", message }, { sender: "bot", message: pythonResponse.message }];
+            const newMessages = [...messages, { sender: "User", message }, { sender: "Bot", message: pythonResponse.message }];
 
             data[router.query.id] = { messages: newMessages, messageHistory: pythonResponse.messageHistory };
             setMessageHistory(pythonResponse.messageHistory);
@@ -71,7 +71,7 @@ export default function ChatId() {
     async function sendData(message) {
         try {
             if (router.query.id === "new") {
-                setMessages([{ sender: "user", message }]);
+                setMessages([{ sender: "User", message }]);
 
                 const pythonResponse = await pythonRequest(message);
 
@@ -89,7 +89,7 @@ export default function ChatId() {
                 return;
             }
 
-            setMessages(messages => [...messages, { sender: "user", message }]);
+            setMessages(messages => [...messages, { sender: "User", message }]);
 
             const pythonResponse = await pythonRequest(message);
 

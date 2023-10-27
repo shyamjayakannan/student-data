@@ -5,7 +5,7 @@ const v4 = require("uuid").v4;
 const UserSchema = new mongoose.Schema({
     id: {
         type: String,
-        default: v4(),
+        default: v4,
     },
     email: {
         type: String,
@@ -23,7 +23,7 @@ const UserSchema = new mongoose.Schema({
     },
     resetPasswordEmailSent: {
         type: Number,
-        default: Date.now(),
+        default: Date.now,
     },
     resetToken: {
         type: String,

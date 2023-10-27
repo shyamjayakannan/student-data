@@ -1,5 +1,37 @@
 .container {
     width: 100%;
     display: flex;
+    gap: 1rem;
     align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    /* text-align: center; */
+    color:var(--primary-bright);
+    /* background-color: red; */
+    font-family: monospace;
+    font-size: 1.3rem;
+}
+.combine{
+    display: flex;
+    margin-top: 2rem;
+    height: 3rem;
+}
+.delbtn{
+    background: var(--primary-bright);
+    color: var(--primary-dark);
+    font-family: monospace;
+    font-size: 1.3rem;
+    font-weight: 900;
+    border-radius: 1rem;
+    height: 3rem;
+    text-decoration: none;
+    /* margin-top: 3rem; */
+    border: none;
+    width: 60%;
+}
+
+.delbtn:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+    transition: all ease-in-out 0.2s;
 }

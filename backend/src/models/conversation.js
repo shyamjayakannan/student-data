@@ -20,7 +20,7 @@ const messageSchema = new Schema({
 const conversationSchema = new Schema({
     id: {
         type: String,
-        default: v4(),
+        default: v4,
     },
     userId: {
         type: String,
