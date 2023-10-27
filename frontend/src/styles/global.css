@@ -10,6 +10,10 @@ body {
     margin: 0;
     padding: 0;
 	background-color: var(--primary-bright);
+	max-width:2000px;
+	margin: auto;
+	display: block;
+	position: relative;
 }
 
 /* ::-webkit-scrollbar {

@@ -4,17 +4,16 @@
   align-items: center;
   justify-content: center;
   position: fixed;
-  background-color: var(--primary-bright);
+  background-color: var(--white);
 }
 
 .navbar {
-  background-color: var(--white);
   position: relative;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 0 0.5rem var(--primary-shadow);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   transition: 0.25s;
 }
 
@@ -34,18 +33,12 @@
   border-radius: 1rem;
 }
 
-.otherlinks:hover {
-  background: rgb(205, 203, 203);
-}
-
 .navlinks {
-    text-decoration: none;
-    color: black;
-    font-family: monospace;
-    font-weight: 800;
-    font-size: 1.2rem;
   text-decoration: none;
-  font-family: monospace;
+  color: black;
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-decoration: none;
   font-weight: 800;
   font-size: 1.2rem;
 }
@@ -53,7 +46,6 @@
 .logolink {
   text-decoration: none;
   color: black;
-  font-family: monospace;
   font-weight: 900;
   font-size: 2rem;
 }
@@ -70,7 +62,6 @@
   border: none;
   border-radius: 10px;
   padding: 5px 10px;
-  font-family: monospace;
   font-size: 1rem;
   text-decoration: none;
   cursor: pointer;
@@ -82,13 +73,13 @@
   background-color: rgb(229, 226, 226);
   color: black;
 }
+
 .dashbtn {
   background-color: var(--primary-dark);
   color: var(--primary-bright);
   border: none;
   border-radius: 10px;
   padding: 5px 10px;
-  font-family: monospace;
   font-size: 1rem;
   text-decoration: none;
   cursor: pointer;
@@ -99,8 +90,8 @@
   align-items: center;
 }
 
-.dashbtn:hover {    background-color: rgb(229, 226, 226);
-    color: black;
-
+.dashbtn:hover {
+  background-color: rgb(229, 226, 226);
+  color: black;
   background-color: rgb(229, 226, 226);
 }

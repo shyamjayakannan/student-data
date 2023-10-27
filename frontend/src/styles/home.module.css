@@ -34,7 +34,7 @@
 
 .but1{
     display: flex;
-    font-family: monospace;
+    
     color: var(--primary-bright);
     background: var(--primary-dark);
     padding: 1rem;
@@ -52,7 +52,7 @@
 }
 .but2{
     display: flex;
-    font-family: monospace;
+    
     color: var(--primary-bright);
     /* background: var(--primary-dark); */
     padding: 1rem;

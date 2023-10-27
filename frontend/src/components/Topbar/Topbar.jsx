@@ -8,11 +8,11 @@ import useLocalStorage from "../../hooks/useLocalStorage";
 import { googleLogout } from "@react-oauth/google";
 import ThemeToggler from "./theme.util";
 import { useContext, useEffect } from "react";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
+
 export default function Topbar() {
 	const authenticationCtx = useContext(AuthenticationContext);
 	const { removePersonalDetails } = useLocalStorage();
-	const router = useRouter();
 	const pathname = usePathname();
 	const [pop, setPop] = useState(false);
 
@@ -36,17 +36,17 @@ export default function Topbar() {
 	return (
 		<div className={classes.main}>
 			<nav className={`${classes.navbar} ${pop ? classes["navbar-pop"] : ""}`}>
-				<div className={classes.otherlinks}>
-					<Link href="/aboutus" className={classes.navlinks}>
+				<Link href="/aboutus" className={classes.navlinks}>
+					<div className={classes.otherlinks}>
 						AboutUs
-					</Link>
-					{/* <Link href="services" className={classes.navlinks}>
+						{/* <Link href="services" className={classes.navlinks}>
 					Services
-				</Link>
-				<Link href="resources" className={classes.navlinks}>
+					</Link>
+					<Link href="resources" className={classes.navlinks}>
 					Resources
 				</Link> */}
-				</div>
+					</div>
+				</Link>
 				<Link href="/" className={classes.logolink}>
 					{/* <Image src="" alt="logo" /> */}
 					<p style={{ margin: "0" }}>Logo</p>
@@ -55,26 +55,20 @@ export default function Topbar() {
 					<ThemeToggler />
 					{
 						authenticationCtx.isLoggedIn && pathname == '/dashboard/dpage' ? (
-							<button
-								onClick={(e) => {
-									e.preventDefault();
-									router.push("/");
-								}}
+							<Link
+								href="/"
 								className={classes.dashbtn}
 							>
 								Home
-							</button>
+							</Link>
 
 						) : (
-							<button
-								onClick={(e) => {
-									e.preventDefault();
-									router.push("/dashboard");
-								}}
+							<Link
+								href="/dashboard"
 								className={classes.dashbtn}
 							>
 								Dashboard
-							</button>
+							</Link>
 						)
 					}
 					{authenticationCtx.isLoggedIn ? <button onClick={logout} className={classes.signupbtn}>Sign Out</button> :

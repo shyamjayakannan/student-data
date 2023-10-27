@@ -11,8 +11,8 @@
   max-width: 40rem;
   width: 80%;
   gap: 2rem;
-  font-family: monospace;
-  border-radius: 1rem;
+  
+  border-radius: 8px;
   border: none;
   margin-bottom: 1rem;
 }
@@ -27,7 +27,7 @@
 
 .container div {
   min-width: fit-content;
-  font-family: monospace;
+  
   font-size: 1.2rem;
 }
 

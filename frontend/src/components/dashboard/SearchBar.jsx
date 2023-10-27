@@ -9,6 +9,7 @@ const SearchBar = () => {
     alert("radhey radhey");
     alert("radhey radhey bol pehle");
   };
+  console.log("ysy")
   return (
     <form
       method="POST"

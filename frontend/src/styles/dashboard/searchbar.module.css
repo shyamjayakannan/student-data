@@ -22,7 +22,7 @@
     height: 3rem;
     display: flex;
     background-color:var(--primary-bright);
-    font-family: monospace;
+    
     font-weight: 900;
     font-size: 1.2rem;
     border: none;
