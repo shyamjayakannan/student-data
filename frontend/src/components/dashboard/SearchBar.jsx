@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import classes from "../../styles/searchbar.module.css";
+import classes from "../../styles/dashboard/searchbar.module.css";
 import Image from "next/image";
 const SearchBar = () => {
   const [search, setsearch] = useState("");
@@ -34,7 +34,7 @@ const SearchBar = () => {
           width={20}
           alt="search"
           style={{
-            display: "flex"
+            display: "flex",
           }}
         />
       </button>

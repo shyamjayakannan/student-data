@@ -8,9 +8,9 @@
 }
 
 .navbar {
+  background-color: var(--white);
   position: relative;
   width: 100%;
-  background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,14 +23,6 @@
   border-radius: 20px;
   margin: 20px 0;
 }
-
-/* a{
-    text-decoration: none;
-    color:black;
-    font-family:monospace;
-    font-weight: 900;
-    font-size: 2rem;
-} */
 
 .otherlinks {
   font-size: 1rem;

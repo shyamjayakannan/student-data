@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  /* background-color: red; */
 }
 
 .container {
@@ -12,27 +11,28 @@
   max-width: 40rem;
   width: 80%;
   gap: 2rem;
-  /* background-color: red; */
-  background-color: var(--primary-dark);
-  color: var(--primary-bright);
   font-family: monospace;
   border-radius: 1rem;
   border: none;
   margin-bottom: 1rem;
+}
 
+:root[data-theme = "dark"] .grey {
+  background-color: var(--black);
+}
+
+.grey {
+  background-color: rgb(230, 230, 230);
 }
 
 .container div {
   min-width: fit-content;
-  /* background-color: red; */
   font-family: monospace;
   font-size: 1.2rem;
-  
 }
 
 .container p {
   margin: 0;
   width: 100%;
   text-align: justify;
-  /* background-color: red; */
 }

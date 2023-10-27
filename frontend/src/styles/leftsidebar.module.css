@@ -1,14 +1,13 @@
 .main_section {
   height: 100%;
-  background-color: var(--primary-dark);
   width: 20vw;
-  color: var(--primary-bright);
+  background-color: var(--black);
+  color: var(--white);
   font-family: monospace;
   font-weight: 900;
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-radius: 0rem 4rem 0 0;
   border: none;
 }
 
