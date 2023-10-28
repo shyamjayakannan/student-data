@@ -5,6 +5,7 @@
   justify-content: center;
   position: fixed;
   background-color: var(--white);
+  max-width: 2000px;
 }
 
 .navbar {
@@ -60,8 +61,8 @@
   background-color: var(--primary-dark);
   color: var(--primary-bright);
   border: none;
-  border-radius: 10px;
-  padding: 5px 10px;
+  border-radius: 5px;
+  padding: 10px;
   font-size: 1rem;
   text-decoration: none;
   cursor: pointer;
@@ -78,7 +79,7 @@
   background-color: var(--primary-dark);
   color: var(--primary-bright);
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 5px 10px;
   font-size: 1rem;
   text-decoration: none;

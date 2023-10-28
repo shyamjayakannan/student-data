@@ -1,18 +1,35 @@
-.dashboard_container{
+.dashboard_container {
     display: flex;
     height: calc(100vh - 68px);
 }
-.main_cont{
+
+.main_cont {
     display: flex;
     flex-direction: column;
-    color:var(--primary-dark);
+    color: var(--primary-dark);
     width: 100%;
     align-items: center;
     height: 100%;
     overflow-y: scroll;
 }
-.h1{
-    
+
+.h1 {
     font-weight: 900;
     font-size: 2rem;
+}
+
+.button {
+    background-color: var(--primary-dark);
+    color: var(--primary-bright);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    width: 8rem;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

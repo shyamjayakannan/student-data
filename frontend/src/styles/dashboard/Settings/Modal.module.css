@@ -1,0 +1,110 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  color: var(--primary-dark);
+  cursor: auto;
+}
+
+.container {
+  position: relative;
+  width: 500px;
+  background-color: var(--primary-bright);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+:root[data-theme="dark"] .container {
+  background-color: var(--black);
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 0 30px;
+  margin-top: 20px;
+}
+
+.buttons button,
+.buttons input {
+  text-decoration: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: rgb(190, 190, 190);
+}
+
+.buttons input:hover {
+  background-color: rgb(180, 0, 0);
+  color: var(--white);
+}
+
+.options {
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 20px;
+}
+
+.styled-checkbox {
+  position: relative;
+  /* take it out of document flow */
+  display: none;
+  /* hide it */
+  /* dont use visibility:hidden because that does not show shadow when checkbox is focussed */
+}
+
+.styled-checkbox+label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Box */
+.styled-checkbox+label::before {
+  content: '';
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgb(100, 100, 100);
+  border-radius: 3px;
+}
+
+/* tick mark */
+.styled-checkbox:checked+label::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 5px;
+  background: white;
+  width: 12px;
+  height: 10px;
+  -webkit-clip-path: polygon(12.5% 33.33%, 0% 50%, 37.5% 100%, 100% 16.66%, 87.5% 0%, 37.5% 66.66%);
+  clip-path: polygon(12.5% 33.33%, 0% 50%, 37.5% 100%, 100% 16.66%, 87.5% 0%, 37.5% 66.66%);
+}
+
+/* Box checked */
+.styled-checkbox:checked+label::before {
+  background: blue;
+}
