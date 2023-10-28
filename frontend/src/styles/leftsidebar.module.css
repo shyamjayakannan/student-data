@@ -1,8 +1,8 @@
 .main_section {
   height: 100%;
   width: 20vw;
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--primary-dark);
+  color: var(--primary-bright);
   
   font-weight: 900;
   display: flex;

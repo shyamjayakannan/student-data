@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import Dpage from "../../../components/dashboard/Dpage";
 import Companies from "../../../components/dashboard/Companies";
 import Students from "../../../components/dashboard/Students";
-import Shortlist from "../../../components/dashboard/ShortList";
+import Shortlist from "../../../components/dashboard/Shortlist";
 import Settings from "../../../components/dashboard/Settings";
 import Leftsidebar from "../../../components/leftsidebar/Leftsidebar";
 import LoadingWait from "../../../ui/loadingWait";
