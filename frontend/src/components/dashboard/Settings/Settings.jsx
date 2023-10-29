@@ -18,7 +18,7 @@ const Settings = () => {
         Select the category/categories of the companies:
       </p>
       <button className={classes.button} onClick={() => setPopup(true)}>Categories</button>
-      {popup && <Modal close={() => setPopup(false)} />}
+      {popup && <Modal close={() => setPopup(false)}  />}
     </div>
   );
 };
