@@ -10,6 +10,11 @@ export default function Card({ data }) {
             <hr />
             <div className={classes.info}>
                 <p>
+                    <strong>Company</strong>
+                    <br />
+                    {data.Company}
+                </p>
+                <p>
                     <strong>Selected</strong>
                     <br />
                     {data.Selected}
