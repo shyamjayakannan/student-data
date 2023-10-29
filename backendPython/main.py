@@ -1,12 +1,15 @@
 # Import necessary libraries
+from backendPython.agents import *
+from prompts import *
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from tools import *
-import os, sys
+import os
+import sys
 sys.path.append(os.getcwd())
 from prompts import *
-from retrivers import *
-from agents import *
+from backendPython.profile_retrivers import *
+from backendPython.agents import *
 app = Flask(__name__)
 
 CORS(app)
@@ -27,7 +30,7 @@ def chatbot():
             new_message_history = agent.get_chat_summary()
             response_obj = [{
                 "text": output,
-                "messageHistory":new_message_history
+                "messageHistory": new_message_history
             }]
             response_headers = {
                 "Access-Control-Allow-Origin": "*"

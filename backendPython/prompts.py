@@ -1,7 +1,7 @@
 from langchain.prompts import PromptTemplate
 import os, sys
 sys.path.append(os.getcwd())
-from parsers import *
+from backendPython.parsers import *
 
 
 summary_template= ''''
@@ -34,7 +34,7 @@ short_summary_prompt = PromptTemplate(
 )
 
 title_template= ''''
-Write a descriptive title of the following text:
+Write a descriptive title of the following text in not more than 30 words:
 
 Text: {text}
 '''

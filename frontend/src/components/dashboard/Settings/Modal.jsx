@@ -96,7 +96,7 @@ export default function Modal(props) {
                 </div>
                 <div className={classes.buttons}>
                     <button type="button" onClick={props.close}>Cancel</button>
-                    <input type="submit">{props.action}</input>
+                    <input type="submit" value={props.action}></input>
                 </div>
             </form>
         </div>

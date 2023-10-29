@@ -1,4 +1,4 @@
-from langchain.llms import GooglePalm
+from langchain.llms.google_palm import GooglePalm
 import google.generativeai as palm
 import os
 
@@ -8,4 +8,4 @@ load_dotenv(find_dotenv()) # read local .env file
 
 llm = GooglePalm(temperature=0.2)
 llm.bind
-palm.configure(api_key=os.environ['GOOGLE_API_KEY'])
+palm.configure(api_key=os.environ['GOOGLE_API_KEY_PALM'])
