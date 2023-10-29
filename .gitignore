@@ -1,0 +1,7 @@
+env
+backendPython/.env
+backendPython/__pycache__
+backendPython/neo4j_dir/Neo4j-credentials.txt
+backendPython/neo4j_dir/__pycache__
+backendPython/profile_database/__pycache__
+backendPython/profile_database/info_db
