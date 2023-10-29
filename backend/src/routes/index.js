@@ -12,6 +12,9 @@ const deleteConversationRoute = require("./Conversation/deleteConversationRoute"
 const getAllUserConversationsRoute = require("./Conversation/getAllUserConversationsRoute");
 const getConversationRoute = require("./Conversation/getConversationRoute");
 const updateConversationRoute = require("./Conversation/updateConversationRoute");
+const createSkillSetRoute = require("./SkillSet/createSkillSetRoute");
+const getSkillSetRoute = require("./SkillSet/getSkillSetRoute");
+const updateSkillSetRoute = require("./SkillSet/updateSkillSetRoute");
 
 module.exports = routes = [
     // auth
@@ -31,4 +34,9 @@ module.exports = routes = [
     deleteConversationRoute,
     getAllUserConversationsRoute,
     updateConversationRoute,
+
+    // skills
+    createSkillSetRoute,
+    updateSkillSetRoute,
+    getSkillSetRoute,
 ];

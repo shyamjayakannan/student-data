@@ -16,7 +16,6 @@ const Layout = () => {
     const router = useRouter();
 
     useEffect(() => {
-        // console.log(router.query.id)
         switch (router.query.id) {
             case "companies":
                 setComponent(<Companies />);

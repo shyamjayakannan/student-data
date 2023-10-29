@@ -15,7 +15,10 @@ export default function usePopup() {
                         <p>{props.message}</p>
                         <div className={classes.buttons}>
                             <button onClick={() => setPopup(false)}>Cancel</button>
-                            <button onClick={props.function}>{props.action}</button>
+                            <button onClick={() => {
+                                props.function();
+                                setPopup(false);
+                            }}>{props.action}</button>
                         </div>
                     </div>
                 </div>

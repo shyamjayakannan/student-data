@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from "react";
 import classes from "../../../styles/dashboard/dashboard.module.css";
 import Image from "next/image";
@@ -18,7 +20,7 @@ const Settings = () => {
         Select the category/categories of the companies:
       </p>
       <button className={classes.button} onClick={() => setPopup(true)}>Categories</button>
-      {popup && <Modal close={() => setPopup(false)} />}
+      <Modal close={() => setPopup(false)} style={{display: popup ? "flex" : "none"}} />
     </div>
   );
 };

@@ -15,7 +15,7 @@
 
 .container {
   position: relative;
-  width: 500px;
+  width: 700px;
   background-color: var(--primary-bright);
   display: flex;
   flex-direction: column;
@@ -23,6 +23,7 @@
   justify-content: center;
   border-radius: 10px;
   padding: 20px;
+  max-height: 80%;
 }
 
 :root[data-theme="dark"] .container {
@@ -62,7 +63,9 @@
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(2, 1fr);
-  padding: 20px;
+  margin: 20px;
+  padding: 0 20px;
+  overflow-y: scroll;
 }
 
 .styled-checkbox {
@@ -77,14 +80,17 @@
   position: relative;
   cursor: pointer;
   padding: 0;
+  display: flex;
+  gap: 10px;
 }
 
 /* Box */
 .styled-checkbox+label::before {
   content: '';
-  margin-right: 10px;
   display: inline-block;
   vertical-align: text-top;
+  min-width: 15px;
+  min-height: 15px;
   width: 15px;
   height: 15px;
   border: 2px solid rgb(100, 100, 100);

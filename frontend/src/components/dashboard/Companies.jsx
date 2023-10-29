@@ -8,7 +8,7 @@ import CardSkeleton from './CardSkeleton';
 import SearchBar from './SearchBar';
 
 const Companies = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     async function getData() {

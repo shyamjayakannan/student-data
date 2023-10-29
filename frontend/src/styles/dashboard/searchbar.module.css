@@ -3,7 +3,7 @@
     width: 80%;
     height: 5rem;
     border-radius: 4rem;
-    margin-top: 2rem;
+    margin: 1rem 0;
     align-items: center;
     justify-content: space-evenly;
     background-color: var(--black);

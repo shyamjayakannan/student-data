@@ -71,7 +71,7 @@ export default function ChatId() {
     async function sendData(message) {
         try {
             if (router.query.id === "new") {
-                setMessages([{ sender: "User", message }]);
+                setMessages([{ sender: "User", message }, { sender: "Bot", message: "" }]);
 
                 const pythonResponse = await pythonRequest(message);
 
@@ -89,7 +89,7 @@ export default function ChatId() {
                 return;
             }
 
-            setMessages(messages => [...messages, { sender: "User", message }]);
+            setMessages(messages => [...messages, { sender: "User", message }, { sender: "Bot", message: "" }]);
 
             const pythonResponse = await pythonRequest(message);
 

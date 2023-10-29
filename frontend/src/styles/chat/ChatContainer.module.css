@@ -33,3 +33,28 @@
   width: 100%;
   text-align: justify;
 }
+
+.loading {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: var(--primary-dark);
+  animation: blink 1.5s infinite;
+}
+
+.loading:nth-child(2) {
+  animation: blink 1.5s 0.25s infinite;
+}
+
+.loading:nth-child(3) {
+  animation: blink 1.5s 0.5s infinite;
+}
+
+@keyframes blink {
+  0%, 66%, 100% {
+    scale: 1;
+  }
+  33% {
+    scale: 2;
+  }
+}
