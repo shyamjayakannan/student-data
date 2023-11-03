@@ -10,7 +10,7 @@ export default function useAuth() {
     const authenticationCtx = useContext(AuthenticationContext);
     const { updatePersonalDetails } = useLocalStorage();
 
-    async function Auth(data, type) {
+    async function Auth(data, type, who = undefined) {
         try {
             const response = await fetch(
                 `${process.env.NEXT_PUBLIC_BACKEND_URL}/user/${type}`,
@@ -24,11 +24,12 @@ export default function useAuth() {
                 }
             );
             const responsedata = await response.json();
-            notificationCtx.message(responsedata.message);
+            if (who !== "google") notificationCtx.message(responsedata.message);
 
             if (responsedata.type === "Success" && (type === "signin" || type === "signup")) {
                 updatePersonalDetails(responsedata.response);
                 authenticationCtx.setDetails(responsedata.id);
+                authenticationCtx.setFirstTime(responsedata.firstTime);
             }
             return responsedata.type;
         } catch (err) {

@@ -1,12 +1,30 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import classes from "../../../styles/dashboard/dashboard.module.css";
 import Image from "next/image";
 import Modal from "./Modal";
+import AuthenticationContext from "../../../store/AuthenticationContext";
+import useAuth from "../../../hooks/useAuth";
 
 const Settings = () => {
-  const [popup, setPopup] = useState(false);
+  const authenticationCtx = useContext(AuthenticationContext);
+  const [popup, setPopup] = useState(authenticationCtx.details.firstTime);
+  const Auth = useAuth();
+
+  useEffect(() => {
+    if (authenticationCtx.details.id === "" || !authenticationCtx.details.firstTime) return;
+
+    authenticationCtx.setFirstTime(false);
+
+    // backend
+    (async () => {
+      await Auth(
+        { id: authenticationCtx.details.id },
+        "updateFirstTime"
+      );
+    })();
+  }, [authenticationCtx.details.id]);
 
   return (
     <div className={classes.main_cont}>
@@ -20,7 +38,7 @@ const Settings = () => {
         Select the category/categories of the companies:
       </p>
       <button className={classes.button} onClick={() => setPopup(true)}>Categories</button>
-      <Modal close={() => setPopup(false)} style={{display: popup ? "flex" : "none"}} />
+      <Modal close={() => setPopup(false)} style={{ display: popup ? "flex" : "none" }} />
     </div>
   );
 };

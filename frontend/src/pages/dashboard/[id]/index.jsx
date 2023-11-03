@@ -10,6 +10,7 @@ import Shortlist from "../../../components/dashboard/ShortList";
 import Settings from "../../../components/dashboard/Settings/Settings";
 import Leftsidebar from "../../../components/leftsidebar/Leftsidebar";
 import LoadingWait from "../../../ui/loadingWait";
+import { SkillsContextProvider } from "../../../store/SkillsContext";
 
 const Layout = () => {
     const [component, setComponent] = useState(<Dpage />);
@@ -37,7 +38,11 @@ const Layout = () => {
         <LoadingWait>
             <div className={classes.dashboard_container}>
                 <Leftsidebar />
-                <main style={{ width: "100%", height: "100%" }}>{component}</main>
+                <main style={{ width: "100%", height: "100%" }}>
+                    <SkillsContextProvider>
+                        {component}
+                    </SkillsContextProvider>
+                </main>
             </div>
         </LoadingWait>
     );

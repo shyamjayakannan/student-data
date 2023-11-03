@@ -13,7 +13,7 @@ export default function InputBox(props) {
     }
 
     return (
-        <div className={classes.container}>
+        <div className={`${classes.container} ${props.className}`}>
             <span placeholder="Type or paste your message here" onKeyDown={submit} className={classes.input} role="textbox" contentEditable />
         </div>
     );

@@ -39,6 +39,10 @@ const UserSchema = new mongoose.Schema({
         required: [true, "Password is required"],
     },
     salt: String,
+    firstTime: {
+        type: Boolean,
+        default: true,
+    },
 });
 
 // using function instead of arrow because of this keyword

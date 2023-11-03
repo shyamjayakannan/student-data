@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import classes from "../../styles/dashboard/searchbar.module.css";
 import Image from "next/image";
+import InputBox from "../chat/InputBox";
 const SearchBar = () => {
   const [search, setsearch] = useState("");
   const handlesearch = (e) => {
@@ -9,14 +10,15 @@ const SearchBar = () => {
     alert("radhey radhey");
     alert("radhey radhey bol pehle");
   };
-  console.log("ysy")
+
   return (
     <form
       method="POST"
       onSubmit={handlesearch}
       className={classes.searchcontainer}
     >
-      <input
+      <InputBox className={classes.searchinput} />
+      {/* <input
         className={classes.searchinput}
         type="text"
         required
@@ -26,7 +28,7 @@ const SearchBar = () => {
           setsearch(e.target.value);
         }}
         placeholder="Search your Query"
-      />
+      /> */}
       <button className={classes.searchbtn} type="submit">
         Search
         <Image

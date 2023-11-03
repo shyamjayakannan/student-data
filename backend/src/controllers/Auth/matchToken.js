@@ -21,6 +21,7 @@ module.exports = async function matchToken(userData) {
         }
         return {
             id: user.id,
+            firstTime: user.firstTime,
             message: "Logged in Successfully!",
             type: "Success",
         };

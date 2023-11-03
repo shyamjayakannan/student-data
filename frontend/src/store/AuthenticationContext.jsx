@@ -5,20 +5,22 @@ import { googleLogout } from "@react-oauth/google";
 
 const AuthenticationContext = createContext({
   open: {
-    signupOpen: false,
-    LogInOpen: true,
-    error: "",
-    logoutButton: false,
+    signupOpen: Boolean,
+    LogInOpen: Boolean,
+    error: String,
+    logoutButton: Boolean,
   },
   details: {
-    id: "",
+    id: String,
+    firstTime: Boolean,
   },
-  isLoggedIn: true,
-  show: () => {},
-  hide: () => {},
-  setDetails: () => {},
-  setLoggedIn: () => {},
-  setLogoutButton: () => {},
+  isLoggedIn: Boolean,
+  show: () => { },
+  hide: () => { },
+  setDetails: () => { },
+  setLoggedIn: () => { },
+  setLogoutButton: () => { },
+  setFirstTime: () => { },
 });
 
 export default AuthenticationContext;
@@ -34,6 +36,7 @@ export function AuthenticationContextProvider({ children }) {
   });
   const [details, setDetails] = useState({
     id: "",
+    firstTime: false,
   });
 
   useEffect(() => {
@@ -60,7 +63,7 @@ export function AuthenticationContextProvider({ children }) {
         const responsedata = await response.json();
         if (responsedata.type === "Success") {
           setIsLoggedIn(true);
-          setDetails({ id: responsedata.id });
+          setDetails({ id: responsedata.id, firstTime: responsedata.firstTime });
         }
         else {
           removePersonalDetails();
@@ -104,14 +107,20 @@ export function AuthenticationContextProvider({ children }) {
   }
 
   function setNewDetails(id) {
-    setDetails({
-      id,
+    setDetails(details => {
+      return { ...details, id };
+    });
+  }
+
+  function setFirstTime(firstTime) {
+    setDetails(details => {
+      return { ...details, firstTime };
     });
   }
 
   function logoutButtonHandler(state) {
     setOpen(open => {
-      return {...open, logoutButton: state};
+      return { ...open, logoutButton: state };
     });
   }
 
@@ -124,6 +133,7 @@ export function AuthenticationContextProvider({ children }) {
         setDetails: setNewDetails,
         setLoggedIn: setIsLoggedIn,
         setLogoutButton: logoutButtonHandler,
+        setFirstTime,
         isLoggedIn,
         details,
       }}

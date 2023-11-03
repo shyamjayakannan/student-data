@@ -31,6 +31,7 @@ async function getSignIn(userData) {
                 token: token,
             },
             id: user.id,
+            firstTime: user.firstTime,
             message: "Logged in Successfully!",
             type: "Success",
         };

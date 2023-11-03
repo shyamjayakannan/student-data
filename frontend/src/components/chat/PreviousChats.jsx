@@ -32,7 +32,7 @@ export default function PreviousChat(props) {
                 console.log(err.message);
             }
         })();
-    }, [authenticationCtx.details, props.call]);
+    }, [authenticationCtx.details.id, props.call]);
 
     useEffect(() => {
         setSelected(selected => {

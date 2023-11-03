@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
 	scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 	background-color: var(--primary-bright);
 	max-width: 2000px;
 	margin: auto;
@@ -23,21 +23,22 @@ body {
 /*
  * Dark mode theme 
  */
- :root[data-theme='light'] {
-	--primary-bright:	#f8f8f8;
+:root[data-theme='light'] {
+	--primary-bright: #f8f8f8;
 	--primary-shadow: rgba(0, 0, 0, 0.2);
-	--primary:		#d9d9d9;
-	--primary-dim:		#666666;
-	--primary-dark:		#202020;
-	--secondary: 		#ffed7f;
-	--secondary-bright: 	#ffea5f;
-	--background: 		#060708;
+	--primary: #d9d9d9;
+	--primary-dim: #666666;
+	--primary-dark: #202020;
+	--secondary: #ffed7f;
+	--secondary-bright: #ffea5f;
+	--background: #060708;
 	--green: green;
 	--blue: blue;
 	--white: #f8f8f8;
-	--scrollbar-hover: rgba(217,217,227,.8);
+	--scrollbar-hover: rgba(217, 217, 227, .8);
 	--black: rgb(50, 50, 50);
-} 
+	--grey: rgb(200, 200, 200);
+}
 
 /*
 * Light mode theme 
@@ -46,17 +47,36 @@ body {
 	--white: #f8f8f8;
 	--black: rgb(50, 50, 50);
 	--primary-shadow: rgba(255, 255, 255, 0.2);
-	--primary-bright:	#000000;
-	--primary: 		#060708;
-	--primary-dim:		#121315;
-	--primary-dark:		#efefef;
-	--secondary: 		#002aff;
-	--secondary-bright:	#4800ff;
-	--background: 		#ededed;
+	--primary-bright: #000000;
+	--primary: #060708;
+	--primary-dim: #121315;
+	--primary-dark: #efefef;
+	--secondary: #002aff;
+	--secondary-bright: #4800ff;
+	--background: #ededed;
 	--green: green;
 	--blue: blue;
-	--scrollbar-hover: rgba(236,236,241,1);
-	
+	--scrollbar-hover: rgba(236, 236, 241, 1);
+	--grey: grey;
+
 	/* Asks browser to behave in dark mode */
 	color-scheme: dark;
+}
+
+.main {
+	position: relative;
+	margin-top: 68px;
+	width: 100%;
+	max-height: calc(100vh - 68px);
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+	width: 11px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--grey);
+	border-radius: 10px;
+	border-right: 2px solid var(--primary-bright);
 }

@@ -28,14 +28,22 @@ export default function GoogleAuth(props) {
             const response1 = await Auth(
                 { email: responseData.email, password: responseData.id },
                 props.LogInOpen ? "signin" : "signup",
+                "google",
             );
             if (response1 === "Success") {
                 // redirect
                 redirectUser("/dashboard");
                 authenticationCtx.setLoggedIn(true);
             } else if (response1 === "User Not found Error") {
-                authenticationCtx.hide("LogInOpen");
-                authenticationCtx.show("signupOpen");
+                const response1 = await Auth(
+                    { email: responseData.email, password: responseData.id },
+                    "signup",
+                );
+                if (response1 === "Success") {
+                    // redirect
+                    redirectUser("/dashboard");
+                    authenticationCtx.setLoggedIn(true);
+                }
             }
         },
         onError: (error) => console.log('Login Failed:', error)

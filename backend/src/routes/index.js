@@ -7,6 +7,7 @@ const insertSignUpRoute = require("./Auth/insertSignUpRoute");
 const matchTokenRoute = require("./Auth/matchTokenRoute");
 const resetPasswordRoute = require("./Auth/resetPasswordRoute");
 const setResetPasswordEmailSentTimeRoute = require("./Auth/setResetPasswordEmailSentTimeRoute");
+const updateFirstTimeRoute = require("./Auth/updateFirstTimeRoute");
 const createConversationRoute = require("./Conversation/createConversationRoute");
 const deleteConversationRoute = require("./Conversation/deleteConversationRoute");
 const getAllUserConversationsRoute = require("./Conversation/getAllUserConversationsRoute");
@@ -27,6 +28,7 @@ module.exports = routes = [
     getResetPasswordEmailSentTimeRoute,
     setResetPasswordEmailSentTimeRoute,
     getUserRoute,
+    updateFirstTimeRoute,
 
     // conversation
     createConversationRoute,

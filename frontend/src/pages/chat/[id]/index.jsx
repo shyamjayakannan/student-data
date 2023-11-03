@@ -48,7 +48,7 @@ export default function ChatId() {
                 console.log(err.message);
             }
         })();
-    }, [authenticationCtx.details, router.query.id]);
+    }, [authenticationCtx.details.id, router.query.id]);
 
     useEffect(() => {
         if (containerRef.current) containerRef.current.scrollTop = containerRef.current.scrollHeight;

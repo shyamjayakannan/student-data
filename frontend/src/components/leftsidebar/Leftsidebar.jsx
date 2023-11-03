@@ -5,6 +5,7 @@ import useGetUser from "../../hooks/useGetUser";
 import AuthenticationContext from "../../store/AuthenticationContext";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export const Buts = [
   {
@@ -39,6 +40,7 @@ const Leftsidebar = () => {
   });
   const getUser = useGetUser();
   const authenticationCtx = useContext(AuthenticationContext);
+  const router = useRouter();
 
   useEffect(() => {
     if (authenticationCtx.details.id === "") return;
@@ -48,7 +50,28 @@ const Leftsidebar = () => {
       setemail(set.email);
     }
     wow();
-  }, [authenticationCtx.details]);
+  }, [authenticationCtx.details.id]);
+
+  useEffect(() => {
+    switch (router.query.id) {
+      case "settings":
+        setColor("Settings");
+        break;
+      case "students":
+        setColor("Students");
+        break;
+      case "shortlist":
+        setColor("Shortlist");
+        break;
+      case "companies":
+        setColor("Companies");
+        break;
+      default: setButton(button => {
+        for (const key in button) button[key] = false;
+        return { ...button };
+      });
+    }
+  }, [router.query.id]);
 
   function setColor(which) {
     setButton(button => {
@@ -77,7 +100,6 @@ const Leftsidebar = () => {
               className={`${classes.but} ${element.name === "Settings" ? classes.butset : ""} ${button[element.name] ? classes.color : ""}`}
               key={element.name}
               href={element.route}
-              onClick={() => setColor(element.name)}
             >
               {element.name}
             </Link>
