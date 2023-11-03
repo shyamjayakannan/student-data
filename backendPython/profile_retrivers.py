@@ -1,4 +1,4 @@
-import os, sys
+import os, sys, json
 from langchain.vectorstores import chroma
 sys.path.append(os.getcwd())
 from langchain.retrievers import ContextualCompressionRetriever
@@ -16,13 +16,37 @@ compression_retriever = ContextualCompressionRetriever(base_compressor=_filter, 
 
 
 
-def get_profiles(query: str):
+def get_profiles(query: str, skill_query =  ['Python', 'SQL', 'R']):
     results:List[Document] = compression_retriever.get_relevant_documents(query)
-    print(query, results)
+    
+
+    # print(query, results)
+    general_suggestions_idxs = set()
+    order = 0
     companies_info = {}
     for i ,doc in enumerate(results):
-        companies_info[i] = doc.metadata
-    return companies_info
+        skills = doc.metadata['Skills'].split(',')
+        j , k = 0, 0
+        x = True
+        while j <len(skill_query):
+            if k >= len(skills):
+                general_suggestions_idxs.add(i)
+                x = False
+                break
+            elif skill_query[j] == skills[k]:
+                j+=1
+            k+=1
+        if x:
+            companies_info[order] = doc.metadata
+            order+=1
+    for i in general_suggestions_idxs:
+        companies_info[order] = results[i].metadata
+        order+=1
+    
 
+            
+    
+    return json.dumps(companies_info)
 
-# print(get_profiles("Pandas, SQL, Python, NLP"))
+print(get_profiles("Graduate Electronics Engineer Trainee"))
+
