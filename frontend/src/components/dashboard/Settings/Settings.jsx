@@ -33,6 +33,7 @@ const Settings = () => {
         alt="setting"
         height={300}
         width={300}
+        priority
       />
       <p>
         Select the category/categories of the companies:

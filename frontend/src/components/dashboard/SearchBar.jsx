@@ -1,35 +1,15 @@
-import React, { useState } from "react";
 import classes from "../../styles/dashboard/searchbar.module.css";
 import Image from "next/image";
 import InputBox from "../chat/InputBox";
-const SearchBar = (props) => {
-  const [search, setsearch] = useState("");
-  const handlesearch = (e) => {
-    e.preventDefault();
-    // console.log(e.target.search.value);
-    // alert("radhey radhey");
-    // alert("radhey radhey bol pehle");
-  };
 
+const SearchBar = (props) => {
   return (
     <form
       method="POST"
-      onSubmit={handlesearch}
       className={classes.searchcontainer}
     >
-      <InputBox className={classes.searchinput} sendData={props.sendData} />
-      {/* <input
-        className={classes.searchinput}
-        type="text"
-        required
-        value={search}
-        name="search"
-        onChange={(e) => {
-          setsearch(e.target.value);
-        }}
-        placeholder="Search your Query"
-      /> */}
-      <button className={classes.searchbtn} type="submit">
+      <InputBox className={classes.searchinput} noclear sendData={props.sendData} />
+      {/* <button className={classes.searchbtn} type="submit">
         Search
         <Image
           src="/images/search.png"
@@ -40,7 +20,7 @@ const SearchBar = (props) => {
             display: "flex",
           }}
         />
-      </button>
+      </button> */}
     </form>
   );
 };
