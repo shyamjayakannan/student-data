@@ -7,7 +7,9 @@ export default function Card({ data }) {
 
     return (
         <div className={classes.container}>
-            <Image priority src={`https://logo.clearbit.com/${data.Link}`} alt="company" width={150} height={150} style={{borderRadius: "20px"}} />
+            <div style={{ height: "100px", width: "200px", position: "relative" }}>
+                <Image priority src={`https://logo.clearbit.com/${data.Link}`} alt="company" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" style={{ borderRadius: "10px", objectFit: "contain" }} />
+            </div>
             <hr />
             <div className={classes.info}>
                 <p>
@@ -23,7 +25,7 @@ export default function Card({ data }) {
                 <p>
                     <strong>CTC(in Lakhs)</strong>
                     <br />
-                    {data["CTC(in Lakhs)"] ? data["CTC(in Lakhs)"] : "Not Revealed"}
+                    {data["CTC"] ? data["CTC"] : "Not Revealed"}
                 </p>
                 <p>
                     <strong>CGPA</strong>
@@ -33,7 +35,7 @@ export default function Card({ data }) {
                 <p>
                     <strong>Job Profile</strong>
                     <br />
-                    {data["Job Profile"]}
+                    {data["JobProfile"]}
                 </p>
                 <p>
                     <strong>Location(s)</strong>

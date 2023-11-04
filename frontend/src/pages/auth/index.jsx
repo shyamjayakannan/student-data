@@ -41,12 +41,8 @@ export default function Auth() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            justifyContent: "center",
             width: "100%",
             minHeight: "100vh",
-            position: "absolute",
-            top: "0",
-            padding: "20px"
           }}
         >
           {authenticationCtx.open.LogInOpen && (

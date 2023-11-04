@@ -56,20 +56,19 @@ export default function ChatId() {
 
     async function pythonRequest(message) {
         try {
-            const response = await fetch(
-                `${process.env.NEXT_PUBLIC_PYTHON_BACKEND_URL}/chatbot`,
-                {
-                    method: "POST",
-                    headers: {
-                        Accept: "application/json",
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify({ message, messageHistory: "" }),
-                }
-            );
-            const pythonResponse = await response.json();
-            console.log(pythonResponse);
-            // const pythonResponse = await new Promise(resolve => setTimeout(() => resolve({ message: "Hi, how are you?", messageHistory: "", title: "wow" }), 1000));
+            // const response = await fetch(
+            //     `${process.env.NEXT_PUBLIC_PYTHON_BACKEND_URL}/chatbot`,
+            //     {
+            //         method: "POST",
+            //         headers: {
+            //             Accept: "application/json",
+            //             "Content-Type": "application/json",
+            //         },
+            //         body: JSON.stringify({ message, messageHistory }),
+            //     }
+            // );
+            // const pythonResponse = await response.json();
+            const pythonResponse = await new Promise(resolve => setTimeout(() => resolve({ message: "Hi, how are you?", messageHistory: "", title: "wow" }), 1000));
             const newMessages = [...messages, { sender: "User", message }, { sender: "Bot", message: pythonResponse.message }];
 
             data[router.query.id] = { messages: newMessages, messageHistory: pythonResponse.messageHistory };
