@@ -68,7 +68,8 @@ body {
 	margin-top: 68px;
 	width: 100%;
 	max-height: calc(100vh - 68px);
-    overflow-y: auto;
+	height: calc(100vh - 68px);
+  overflow-y: auto;
 }
 
 ::-webkit-scrollbar {

@@ -15,32 +15,11 @@ const Companies = () => {
   const [loading, setLoading] = useState(false);
   const authenticationCtx = useContext(AuthenticationContext);
   const skillsCtx = useContext(SkillsContext);
-  const {popup, setPopup, Component} = usePopup();
+  const { popup, setPopup, Component } = usePopup();
   const router = useRouter();
 
   useEffect(() => {
     if (authenticationCtx.details.id === "") return;
-
-    async function getData() {
-      try {
-        const response = await fetch(
-          `${process.env.NEXT_PUBLIC_BACKEND_URL}/company/getAllCompanies`,
-          {
-            method: "GET",
-            headers: {
-              Accept: "application/json",
-              "Content-Type": "application/json",
-            },
-          }
-        );
-        const responseData = await response.json();
-        if (responseData.type === "Success") {
-          setLoading(false);
-        }
-      } catch (err) {
-        console.log(err);
-      }
-    }
 
     if (authenticationCtx.details.firstTime) setPopup(true);
   }, [authenticationCtx.details.id]);
@@ -49,10 +28,32 @@ const Companies = () => {
     console.log(skillsCtx.skills)
   }, [skillsCtx.skills]);
 
+  async function sendData(query) {
+    setLoading(true);
+    try {
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_PYTHON_BACKEND_URL}/profile`,
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ query, skills: skillsCtx.skills }),
+        }
+      );
+      const pythonResponse = await response.json();
+      console.log(pythonResponse);
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <div className={classes.container}>
       <div className={classes.search}>
-        <SearchBar />
+        <SearchBar sendData={sendData} />
       </div>
       <div className={classes.compcardsbox}>
         {loading ? Array(6).fill(0).map((_, index) => <CardSkeleton key={index} />) : data["2020-21"].map((item, index) => <Card key={index} data={item} />)}
@@ -63,3 +64,60 @@ const Companies = () => {
 }
 
 export default Companies
+// [
+//   {
+//       "About Company": "```\n{\n  \"title\": \"Leading With Data: Srikanth Velamakanni, Co-founder and Group CEO of Fractal\",\n  \"summary\": [\n    \"Srikanth Velamakanni co-founded Fractal in 2000 with a vision to power every human decision in the enterprise\",\n    \"He is also the Co-founder and Trustee of Plaksha University and a member of the NASSCOM Executive Council\",\n    \"Srikanth considers himself a lifelong student of mathematics, behavioral economics, neuroscience and consumer behavior\",\n    \"Watch as Srikanth delves into:\",\n    \"His experience on the way the AI industry evolved over the last couple of decades\",\n    \"His advice to stay relevant with the advancement in the AI field\",\n    \"The way AI is going to change how and what we work on in the future\",\n    \"The AI, Engineering and Design Framework followed by Fractal\",\n    \"How he sees Fractal evolving over the next 100 years\",\n    \"Shares his passion for teaching and the books he recommends!\"\n  ]\n}\n```",
+//       "CGPA": 5.5,
+//       "CTC": 18,
+//       "Company": "Fractal Analytics Pvt. Ltd. ",
+//       "Id": 82,
+//       "JobProfile": "Imagineer",
+//       "Selected": 12,
+//       "Skills": "3D Modelling, Animation, VFX, Game Design, Storyboarding, Level Design, Programming, Art Direction",
+//       "Venue": "Hyderabad/Banglore"
+//   },
+//   {
+//       "About Company": "{\n  \"title\": \"Jaguar Land Rover India reports strong Q1 FY24 sales\",\n  \"summary\": [\n    \"Retail sales increase by 102% vs Q1 FY23\",\n    \"Demand for Range Rover, Range Rover Sport and Defender has seen a phenomenal growth of 209%\",\n    \"Contributing 78% of the current order book\"\n  ]\n}",
+//       "CGPA": 7,
+//       "CTC": 20,
+//       "Company": "Jaguar Land Rover India ",
+//       "Id": 122,
+//       "JobProfile": "Graduate Electronics Engineer Trainee",
+//       "Selected": 3,
+//       "Skills": "C, C++, Embedded Systems, Linux, Python, Verilog, VHDL, Git",
+//       "Venue": "Banglore  "
+//   },
+//   {
+//       "About Company": "```\n{\n  \"title\": \"The Importance of Sleep\",\n  \"summary\": [\n    \"Sleep is essential for both physical and mental health\",\n    \"Lack of sleep can lead to a number of health problems, including obesity, heart disease, and diabetes\",\n    \"Getting enough sleep is important for children's development\",\n    \"There are a number of things you can do to improve your sleep habits\",\n    \"If you have trouble sleeping, talk to your doctor\"\n  ]\n}\n```",
+//       "CGPA": 7.5,
+//       "CTC": 29,
+//       "Company": "Swiggy-Bundl Technologies Pvt. Ltd. ",
+//       "Id": 225,
+//       "JobProfile": "Software Development Engineer",
+//       "Selected": 3,
+//       "Skills": "Programming Languages, Data Structures and Algorithms, Object-Oriented Programming, Software Design and Architecture, Testing, Version Control, Continuous Integration and Delivery (CI/CD), DevOps",
+//       "Venue": "Banglore"
+//   },
+//   {
+//       "About Company": "```\n{\n  \"title\": \"Harness Launches Gitness™, a New Open-Source Git Repository and Harness Code Repository\",\n  \"summary\": [\n    \"Harness Launches Gitness™, a New Open-Source Git Repository\",\n    \"Harness Code Repository is the hosted and managed version of Gitness with premium features\",\n    \"Gitness can run on the smallest virtual machine and integrates seamlessly with Harness CI/CD and other tools\",\n    \"Harness Code Repository adds features like added governance, policy enforcement, and additional integrations\",\n    \"Code Repository will make it easier for companies to scale their dev teams with ease\"\n  ]\n}\n```",
+//       "CGPA": 7,
+//       "CTC": 30,
+//       "Company": "Harness ",
+//       "Id": 97,
+//       "JobProfile": "Software Development Engineer",
+//       "Selected": 3,
+//       "Skills": "Python, Java, C++, SQL, NoSQL, Web development, Machine learning, Cloud computing",
+//       "Venue": "Banglore  "
+//   },
+//   {
+//       "About Company": "{\n  \"title\": \"Navigating the tightrope of balancing costs and carbon emissions\",\n  \"summary\": [\n    \"Economic Pressures on Containing Cost\",\n    \"Delivery Management Solutions\",\n    \"Leveraging Routing and Optimization Solutions\",\n    \"2030 Carbon Emissions Commitments\",\n    \"Parcel Lockers and PUDO Growth\"\n  ]\n}",
+//       "CGPA": 7,
+//       "CTC": 20,
+//       "Company": "Fareye ",
+//       "Id": 76,
+//       "JobProfile": "Software Development Engineer",
+//       "Selected": 12,
+//       "Skills": "Programming Languages, Data Structures and Algorithms, Object-Oriented Programming, Software Design and Architecture, Testing, Version Control, Continuous Integration and Delivery, DevOps",
+//       "Venue": "Noida"
+//   }
+// ]

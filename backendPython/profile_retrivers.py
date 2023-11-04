@@ -22,8 +22,7 @@ def get_profiles(query: str, skill_query =  ['Python', 'SQL', 'R']):
 
     # print(query, results)
     general_suggestions_idxs = set()
-    order = 0
-    companies_info = {}
+    companies_info = []
     for i ,doc in enumerate(results):
         skills = doc.metadata['Skills'].split(',')
         j , k = 0, 0
@@ -37,16 +36,14 @@ def get_profiles(query: str, skill_query =  ['Python', 'SQL', 'R']):
                 j+=1
             k+=1
         if x:
-            companies_info[order] = doc.metadata
-            order+=1
+            companies_info.append(doc.metadata)
     for i in general_suggestions_idxs:
-        companies_info[order] = results[i].metadata
-        order+=1
+        companies_info.append(results[i].metadata)
     
 
             
     
     return json.dumps(companies_info)
 
-print(get_profiles("Graduate Electronics Engineer Trainee"))
+# print(get_profiles("software engineer"))
 

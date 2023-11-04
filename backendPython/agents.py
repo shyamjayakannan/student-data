@@ -4,7 +4,7 @@ from langchain.memory import ConversationSummaryBufferMemory
 from chains import title_chain
 
 class PersonalAgent:
-    def __init__(self, history= {'title' : '' , 'chat_summary' : 'New Chat Begins'}):
+    def __init__(self, history= {'title' : '' , 'chat_summary' : ''}):
 
         self.history = history
         self.prefix = """Have a conversation with a human, answering the following questions as best you can. You have access to the following tools:"""
@@ -45,13 +45,14 @@ class PersonalAgent:
 
     def get_chat_summary(self):
         messages = self.memory.chat_memory.messages
+        old_memory = self.history['chat_summary']
         self.history['chat_summary'] = self.memory.predict_new_summary(messages, self.history['chat_summary'])
-        if self.history['title'] == '':
+        if old_memory == '':
             self.history['title'] = title_chain.run(self.history['chat_summary'])
         
         return self.history
 
-agent_chain = PersonalAgent()
+# agent_chain = PersonalAgent()
 
-x = agent_chain.run("name companies which offered work location as Kolkata")
-print('\n\n\n\n', x)
+# x = agent_chain.run("name companies which offered work location as Kolkata")
+# print('\n\n\n\n', x)

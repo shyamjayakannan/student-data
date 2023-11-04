@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import classes from "../../styles/dashboard/searchbar.module.css";
 import Image from "next/image";
 import InputBox from "../chat/InputBox";
-const SearchBar = () => {
+const SearchBar = (props) => {
   const [search, setsearch] = useState("");
   const handlesearch = (e) => {
     e.preventDefault();
@@ -17,7 +17,7 @@ const SearchBar = () => {
       onSubmit={handlesearch}
       className={classes.searchcontainer}
     >
-      <InputBox className={classes.searchinput} />
+      <InputBox className={classes.searchinput} sendData={props.sendData} />
       {/* <input
         className={classes.searchinput}
         type="text"
