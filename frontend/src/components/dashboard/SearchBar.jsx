@@ -6,9 +6,9 @@ const SearchBar = () => {
   const [search, setsearch] = useState("");
   const handlesearch = (e) => {
     e.preventDefault();
-    console.log(e.target.search.value);
-    alert("radhey radhey");
-    alert("radhey radhey bol pehle");
+    // console.log(e.target.search.value);
+    // alert("radhey radhey");
+    // alert("radhey radhey bol pehle");
   };
 
   return (
