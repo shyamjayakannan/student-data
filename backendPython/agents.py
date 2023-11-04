@@ -36,7 +36,7 @@ class PersonalAgent:
 
     def run(self, query):
         try:
-            print('**')
+            # print('**')
             ans =  self.agent_chain.run(query)
             return ans
         except Exception as e:
@@ -54,5 +54,5 @@ class PersonalAgent:
 
 # agent_chain = PersonalAgent()
 
-# x = agent_chain.run("name companies which offered work location as Kolkata")
+# x = agent_chain.run("name companies which offered work location as Delhi")
 # print('\n\n\n\n', x)

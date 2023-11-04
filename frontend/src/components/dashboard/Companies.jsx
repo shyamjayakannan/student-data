@@ -90,19 +90,19 @@ const Companies = () => {
   async function sendData(query) {
     setLoading(true);
     try {
-      // const response = await fetch(
-      //   `${process.env.NEXT_PUBLIC_PYTHON_BACKEND_URL}/profile`,
-      //   {
-      //     method: "POST",
-      //     headers: {
-      //       Accept: "application/json",
-      //       "Content-Type": "application/json",
-      //     },
-      //     body: JSON.stringify({ query, skills: skillsCtx.skills }),
-      //   }
-      // );
-      // const pythonResponse = await response.json();
-      const pythonResponse = await new Promise(resolve => setTimeout(() => resolve(dummy), 1000));
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_PYTHON_BACKEND_URL}/profile`,
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ query, skills: skillsCtx.skills }),
+        }
+      );
+      const pythonResponse = await response.json();
+      // const pythonResponse = await new Promise(resolve => setTimeout(() => resolve(dummy), 1000));
       setCompanies(_ => {
         const newResponse = pythonResponse.map(company => {
           for (const key in company) {

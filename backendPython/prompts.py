@@ -18,8 +18,7 @@ summary_prompt = PromptTemplate(
     template=summary_template,
     partial_variables={"format_instructions": summary_parser.get_format_instructions()}
 )
-
-
+#_________________________________________________________________________________________
 
 short_summary_template= ''''
 
