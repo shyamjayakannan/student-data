@@ -14,6 +14,7 @@ import pickle
 
 path = 'backendPython/Placement data.xlsx'
 df = pd.read_excel(path, sheet_name='2020-21')
+
 values = {'Selected': df.iloc[:,2].mode() , 'CTC':df.iloc[:, 4].median() , 'CGPA':0}
 df.fillna(value=values, inplace=True)
 
@@ -30,9 +31,14 @@ def get_about_company(url):
     return article[:1000]
   
 
-skill_template = """You  will be provided with a job role ,you need to get top 8 tech_stacks that they need to know fot the given job role.
-Be cautious that you put the skills in the order of their importance. Return a dictionary of skills with tech_stacks needed as keys and their 1-2 line explanation as values. 
-Don't put backticks(`) in the output. Keep check that there are no syntax errors in the output.
+skill_template = """You  will be provided with a job role ,you need to follow the below instructions.
+ 
+
+Instructions : 
+1) get top 3 tech_stacks that they need to know for the given job role.
+2) Be cautious that you put the skills in the order of their importance.
+4) Return a dictionary of skills with tech_stacks needed as keys and their 1-2 line explanation as values. 
+3) Don't put backticks(`) in the output. Keep check that there are no syntax errors in the output.
 
 Job Profile : {job_profile}
 """
@@ -43,7 +49,8 @@ skill_prompt = PromptTemplate(
 skill_chain = LLMChain(llm=llm, prompt=skill_prompt,)
 
 syntax_template = '''You will be provided with a code snippet for python dictionary , you need to find error in code and return 
- the correct code snippet. Return a string of correct code snippet. Don't put backticks(`) in the output. Keep check that there are no syntax errors in the output.
+ the correct code snippet. Return a string of correct code snippet. Don't put backticks(`) in the output. 
+ Keep check that there are no syntax errors in the output.
 Do not make any changes in the code snippet if there is no error part.
 
 
@@ -93,9 +100,15 @@ def web_scraping(url):
       print(f"Error occurred while fetching article at {url}: {e}") 
     
     return  None, None
-
+  
 
 docs = []
+
+page_prompt = '''
+
+The company is looking for {JobProfile}. The number of students that got selected for this profile are {Selected} and the average CTC is {CTC} LPA. The CGPA cutoff is {CGPA}.
+You can find more about the company in its metadata. The company is looking for the following skills : {Skills}
+'''
 skill_set = set()
 for index, row in df.iterrows():
   print(index , end = ' ')
@@ -109,9 +122,10 @@ for index, row in df.iterrows():
   skill_dict = get_context(metadata['JobProfile'])
   
   
-  page_content = ', '.join(skill_dict.keys())
+  page_content = page_prompt.format(JobProfile = metadata['JobProfile'], Selected = metadata['Selected'], 
+                                    CTC = metadata['CTC'], CGPA = metadata['CGPA'] , Skills = ', '.join(skill_dict.keys()))
   skill_set.update(set(skill_dict.keys()))
-  metadata['Skills'] = page_content
+  metadata['Skills'] = ', '.join(skill_dict.keys())
   docs.append(Document(page_content=page_content, metadata=metadata))
 
 

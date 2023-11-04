@@ -11,16 +11,13 @@ db = chroma.Chroma(embedding_function = Embedding(), persist_directory= db_path)
 
 _filter = LLMChainFilter.from_llm(llm)
 
-retriever = db.as_retriever(search_kwargs={"k": 5, 'fetch_k': 20}, return_source_documents=True)
+retriever = db.as_retriever(search_kwargs={"k": 10, 'fetch_k': 20}, return_source_documents=True)
 compression_retriever = ContextualCompressionRetriever(base_compressor=_filter, base_retriever=retriever)
 
-
+#__________________________________________________________________________________________________
 
 def get_profiles(query: str, skill_query =  ['Python', 'SQL', 'R']):
     results:List[Document] = compression_retriever.get_relevant_documents(query)
-    
-
-    # print(query, results)
     general_suggestions_idxs = set()
     companies_info = []
     for i ,doc in enumerate(results):
@@ -40,10 +37,7 @@ def get_profiles(query: str, skill_query =  ['Python', 'SQL', 'R']):
     for i in general_suggestions_idxs:
         companies_info.append(results[i].metadata)
     
-
-            
-    
     return json.dumps(companies_info)
 
-# print(get_profiles("software engineer"))
+# print(get_profiles("ios/android"))
 

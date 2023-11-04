@@ -5,7 +5,7 @@ from llms import *
 from parsers import *
 from chains import *
 from profile_retrivers import *
-from neo4j_dir.creating_graph import graph_chain
+from neo4j_dir.creating_graph import *
 
 # wolfram = WolframAlphaAPIWrapper()
 search = GoogleSearchAPIWrapper()
@@ -24,7 +24,7 @@ task_tools = [
     selected ect. and there combination as a query.
     Use this tool more often as it is more reliable and fast for queries related to above topics.
     ''',
-    func = graph_chain.run,
+    func = get_response,
     return_direct = True, 
     handle_tool_error=True,
     ),
