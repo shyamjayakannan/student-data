@@ -83,26 +83,26 @@ const Companies = () => {
     if (authenticationCtx.details.firstTime) setPopup(true);
   }, [authenticationCtx.details.id]);
 
-  useEffect(() => {
-    console.log(skillsCtx.skills)
-  }, [skillsCtx.skills]);
-
   async function sendData(query) {
     setLoading(true);
+    const arr = [];
+    skillsCtx.skills.forEach(obj => {
+      if (obj.checked) arr.push(obj.skill);
+    })
     try {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_PYTHON_BACKEND_URL}/profile`,
-        {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ query, skills: skillsCtx.skills }),
-        }
-      );
-      const pythonResponse = await response.json();
-      // const pythonResponse = await new Promise(resolve => setTimeout(() => resolve(dummy), 1000));
+      // const response = await fetch(
+      //   `${process.env.NEXT_PUBLIC_PYTHON_BACKEND_URL}/profile`,
+      //   {
+      //     method: "POST",
+      //     headers: {
+      //       Accept: "application/json",
+      //       "Content-Type": "application/json",
+      //     },
+      //     body: JSON.stringify({ query, skills: arr}),
+      //   }
+      // );
+      // const pythonResponse = await response.json();
+      const pythonResponse = await new Promise(resolve => setTimeout(() => resolve(dummy), 1000));
       setCompanies(_ => {
         const newResponse = pythonResponse.map(company => {
           for (const key in company) {

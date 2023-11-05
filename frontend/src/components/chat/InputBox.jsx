@@ -29,7 +29,7 @@ export default function InputBox(props) {
     }, []);
 
     function seto(e) {
-        if (e.target.innerText.trim() === "" && e.key === "Enter" && !e.shiftKey) {
+        if (e.key === "Enter" && !e.shiftKey) {
             e.preventDefault();
             return;
         }

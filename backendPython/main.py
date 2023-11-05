@@ -75,9 +75,10 @@ def profile():
     try:
         user_input = request.json.get('query')
         skills = request.json.get('skills')  
-        print(user_input, skills)
+
         if user_input:
             response_obj = get_profiles(user_input, skills)
+
             response_headers = {
                 "Access-Control-Allow-Origin": "*"
             }
