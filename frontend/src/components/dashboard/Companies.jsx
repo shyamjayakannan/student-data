@@ -10,6 +10,7 @@ import AuthenticationContext from '../../store/AuthenticationContext';
 import SkillsContext from '../../store/SkillsContext';
 import usePopup from '../../ui/Popup';
 import { useRouter } from 'next/router';
+import Image from 'next/image'
 
 const dummy = [
   {
@@ -126,7 +127,7 @@ const Companies = () => {
         <SearchBar sendData={sendData} />
       </div>
       <div className={classes.compcardsbox}>
-        {loading ? Array(6).fill(0).map((_, index) => <CardSkeleton key={index} />) : companies.map((item, index) => <Card key={index} data={item} />)}
+        {loading ? Array(6).fill(0).map((_, index) => <CardSkeleton key={index} />) : companies.length!=0?companies.map((item, index) => <Card key={index} data={item} />):<div className={classes.noresult}><Image src="/images/empty.png" alt="no result" width={500} height={500}/><p>NO RESULT FOUND</p></div>}
       </div>
       {popup && <Component function={() => router.push("/dashboard/settings")} title="Skill Preferences" message="Looks like you haven't set skill preferences yet. Do you wish to set them now?" action="Ok" />}
     </div>
@@ -134,3 +135,4 @@ const Companies = () => {
 }
 
 export default Companies
+// companies.map((item, index) => <Card key={index} data={item} />

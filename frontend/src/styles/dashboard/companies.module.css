@@ -26,3 +26,16 @@ align-items: center;
 height: 100%;
 /* justify-content: center; */
 }
+.noresult{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: right;
+  /* /  background-color: red; */
+    width: 1200px;
+    height: 100%;
+
+    font-weight: 900;
+    font-size: 2rem;
+
+}
