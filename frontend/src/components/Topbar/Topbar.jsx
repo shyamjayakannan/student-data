@@ -9,7 +9,7 @@ import { googleLogout } from "@react-oauth/google";
 import ThemeToggler from "./theme.util";
 import { useContext, useEffect } from "react";
 import { usePathname } from "next/navigation";
-
+import Image from 'next/image'
 export default function Topbar() {
 	const authenticationCtx = useContext(AuthenticationContext);
 	const { removePersonalDetails } = useLocalStorage();
@@ -39,17 +39,11 @@ export default function Topbar() {
 				<Link href="/aboutus" className={classes.navlinks}>
 					<div className={classes.otherlinks}>
 						AboutUs
-						{/* <Link href="services" className={classes.navlinks}>
-					Services
-					</Link>
-					<Link href="resources" className={classes.navlinks}>
-					Resources
-				</Link> */}
 					</div>
 				</Link>
 				<Link href="/" className={classes.logolink}>
-					{/* <Image src="" alt="logo" /> */}
-					<p style={{ margin: "0" }}>Logo</p>
+					
+					<p style={{ margin: "0",display:'flex',alignItems:'center',justifyContent:'center' }}><Image src="/images/logo.png" style={{marginTop:'5px'}}alt="logo"  width={80} height={60}/>StudentPedia</p>
 				</Link>
 				<div className={classes.signbtn}>
 					<ThemeToggler />
