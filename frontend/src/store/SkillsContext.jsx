@@ -10,459 +10,459 @@ const options = [
         checked: false
     },
     {
-        skill: " 'UX Design",
+        skill: "UX Design",
         checked: false
     },
     {
-        skill: " 'Z3",
+        skill: "Z3",
         checked: false
     },
     {
-        skill: " 'Flask",
+        skill: "Flask",
         checked: false
     },
     {
-        skill: " 'Communication",
+        skill: "Communication",
         checked: false
     },
     {
-        skill: " 'Pandas",
+        skill: "Pandas",
         checked: false
     },
     {
-        skill: " 'Java",
+        skill: "Java",
         checked: false
     },
     {
-        skill: " 'ArcGIS",
+        skill: "ArcGIS",
         checked: false
     },
     {
-        skill: " 'Power BI",
+        skill: "Power BI",
         checked: false
     },
     {
-        skill: " 'Robotics Control",
+        skill: "Robotics Control",
         checked: false
     },
     {
-        skill: " 'c++",
+        skill: "c++",
         checked: false
     },
     {
-        skill: " 'Analog Design",
+        skill: "Analog Design",
         checked: false
     },
     {
-        skill: " 'FPGA",
+        skill: "FPGA",
         checked: false
     },
     {
-        skill: " 'HTML",
+        skill: "HTML",
         checked: false
     },
     {
-        skill: " 'SQL",
+        skill: "SQL",
         checked: false
     },
     {
-        skill: " 'Blackboard",
+        skill: "Blackboard",
         checked: false
     },
     {
-        skill: " 'Software Development Tools",
+        skill: "Software Development Tools",
         checked: false
     },
     {
-        skill: " 'Technical Writing",
+        skill: "Technical Writing",
         checked: false
     },
     {
-        skill: " 'Power Electronics",
+        skill: "Power Electronics",
         checked: false
     },
     {
-        skill: " 'Patience",
+        skill: "Patience",
         checked: false
     },
     {
-        skill: " 'Canvas LMS",
+        skill: "Canvas LMS",
         checked: false
     },
     {
-        skill: " 'Git",
+        skill: "Git",
         checked: false
     },
     {
-        skill: " 'Tableau",
+        skill: "Tableau",
         checked: false
     },
     {
-        skill: " 'Google Data Studio",
+        skill: "Google Data Studio",
         checked: false
     },
     {
-        skill: " 'Figma",
+        skill: "Figma",
         checked: false
     },
     {
-        skill: " 'Object Oriented Programming",
+        skill: "Object Oriented Programming",
         checked: false
     },
     {
-        skill: " 'Solidworks",
+        skill: "Solidworks",
         checked: false
     },
     {
-        skill: " 'Unreal Engine",
+        skill: "Unreal Engine",
         checked: false
     },
     {
-        skill: " 'Excel",
+        skill: "Excel",
         checked: false
     },
     {
-        skill: " 'MATLAB",
+        skill: "MATLAB",
         checked: false
     },
     {
-        skill: " 'VHDL",
+        skill: "VHDL",
         checked: false
     },
     {
-        skill: " 'Docker",
+        skill: "Docker",
         checked: false
     },
     {
-        skill: " 'Machine Learning",
+        skill: "Machine Learning",
         checked: false
     },
     {
-        skill: " 'Ansys",
+        skill: "Ansys",
         checked: false
     },
     {
-        skill: " 'NLTK",
+        skill: "NLTK",
         checked: false
     },
     {
-        skill: " 'Digital Design",
+        skill: "Digital Design",
         checked: false
     },
     {
-        skill: " 'Linux",
+        skill: "Linux",
         checked: false
     },
     {
-        skill: " 'AutoCAD",
+        skill: "AutoCAD",
         checked: false
     },
     {
-        skill: " 'NumPy",
+        skill: "NumPy",
         checked: false
     },
     {
-        skill: " 'Adobe Photoshop",
+        skill: "Adobe Photoshop",
         checked: false
     },
     {
-        skill: " 'Google Classroom",
+        skill: "Google Classroom",
         checked: false
     },
     {
-        skill: " 'Programming Languages",
+        skill: "Programming Languages",
         checked: false
     },
     {
-        skill: " 'mentoring",
+        skill: "mentoring",
         checked: false
     },
     {
-        skill: " 'Google Tag Manager",
+        skill: "Google Tag Manager",
         checked: false
     },
     {
-        skill: " 'Electronics",
+        skill: "Electronics",
         checked: false
     },
     {
-        skill: " 'Electrical Machines",
+        skill: "Electrical Machines",
         checked: false
     },
     {
-        skill: " 'Water Quality Modeling",
+        skill: "Water Quality Modeling",
         checked: false
     },
     {
-        skill: " 'Environmental Chemistry",
+        skill: "Environmental Chemistry",
         checked: false
     },
     {
-        skill: " 'Power Systems",
+        skill: "Power Systems",
         checked: false
     },
     {
-        skill: " 'PowerPoint",
+        skill: "PowerPoint",
         checked: false
     },
     {
-        skill: " 'research",
+        skill: "research",
         checked: false
     },
     {
-        skill: " 'Software Design Patterns",
+        skill: "Software Design Patterns",
         checked: false
     },
     {
-        skill: " 'java",
+        skill: "java",
         checked: false
     },
     {
-        skill: " 'HTML\/CSS",
+        skill: "HTML\/CSS",
         checked: false
     },
     {
-        skill: " 'C++",
+        skill: "C++",
         checked: false
     },
     {
-        skill: " 'Truffle",
+        skill: "Truffle",
         checked: false
     },
     {
-        skill: " 'PCB Design",
+        skill: "PCB Design",
         checked: false
     },
     {
-        skill: " 'Patent Analysis",
+        skill: "Patent Analysis",
         checked: false
     },
     {
-        skill: " 'Scrum",
+        skill: "Scrum",
         checked: false
     },
     {
-        skill: " 'Cadence",
+        skill: "Cadence",
         checked: false
     },
     {
-        skill: " 'Salesforce",
+        skill: "Salesforce",
         checked: false
     },
     {
-        skill: " 'Leadership",
+        skill: "Leadership",
         checked: false
     },
     {
-        skill: " 'Blackboard Learn",
+        skill: "Blackboard Learn",
         checked: false
     },
     {
-        skill: " 'Patent Writing",
+        skill: "Patent Writing",
         checked: false
     },
     {
-        skill: " 'Research",
+        skill: "Research",
         checked: false
     },
     {
-        skill: " 'AWS",
+        skill: "AWS",
         checked: false
     },
     {
-        skill: " 'Verilog",
+        skill: "Verilog",
         checked: false
     },
     {
-        skill: " 'Adobe XD",
+        skill: "Adobe XD",
         checked: false
     },
     {
-        skill: " 'Geologic Data Systems",
+        skill: "Geologic Data Systems",
         checked: false
     },
     {
-        skill: " 'Problem Solving",
+        skill: "Problem Solving",
         checked: false
     },
     {
-        skill: " 'Critical Thinking",
+        skill: "Critical Thinking",
         checked: false
     },
     {
-        skill: " 'Sketch",
+        skill: "Sketch",
         checked: false
     },
     {
-        skill: " 'Hadoop",
+        skill: "Hadoop",
         checked: false
     },
     {
-        skill: " 'Google Analytics",
+        skill: "Google Analytics",
         checked: false
     },
     {
-        skill: " 'SystemVerilog",
+        skill: "SystemVerilog",
         checked: false
     },
     {
-        skill: " 'Robotics Mechanics",
+        skill: "Robotics Mechanics",
         checked: false
     },
     {
-        skill: " 'Google Cloud Platform",
+        skill: "Google Cloud Platform",
         checked: false
     },
     {
-        skill: " 'Robotics Programming",
+        skill: "Robotics Programming",
         checked: false
     },
     {
-        skill: " 'NoSQL",
+        skill: "NoSQL",
         checked: false
     },
     {
-        skill: " 'SAS",
+        skill: "SAS",
         checked: false
     },
     {
-        skill: " 'Patent Law",
+        skill: "Patent Law",
         checked: false
     },
     {
-        skill: " 'Embedded Systems",
+        skill: "Embedded Systems",
         checked: false
     },
     {
-        skill: " 'TensorFlow",
+        skill: "TensorFlow",
         checked: false
     },
     {
-        skill: " 'Spring Boot",
+        skill: "Spring Boot",
         checked: false
     },
     {
-        skill: " 'Teaching",
+        skill: "Teaching",
         checked: false
     },
     {
-        skill: " 'R",
+        skill: "R",
         checked: false
     },
     {
-        skill: " 'Scikit-learn",
+        skill: "Scikit-learn",
         checked: false
     },
     {
-        skill: " 'hadoop",
+        skill: "hadoop",
         checked: false
     },
     {
-        skill: " 'sql",
+        skill: "sql",
         checked: false
     },
     {
-        skill: " 'Python",
+        skill: "Python",
         checked: false
     },
     {
-        skill: " 'Unity",
+        skill: "Unity",
         checked: false
     },
     {
-        skill: " 'Agile",
+        skill: "Agile",
         checked: false
     },
     {
-        skill: " 'Microsoft Project",
+        skill: "Microsoft Project",
         checked: false
     },
     {
-        skill: " 'Control Systems",
+        skill: "Control Systems",
         checked: false
     },
     {
-        skill: " 'Solidity",
+        skill: "Solidity",
         checked: false
     },
     {
-        skill: " 'spark",
+        skill: "spark",
         checked: false
     },
     {
-        skill: " 'Ethereum",
+        skill: "Ethereum",
         checked: false
     },
     {
-        skill: " 'CSS",
+        skill: "CSS",
         checked: false
     },
     {
-        skill: " 'Canvas",
+        skill: "Canvas",
         checked: false
     },
     {
-        skill: " 'ANSYS",
+        skill: "ANSYS",
         checked: false
     },
     {
-        skill: " 'Patent Search",
+        skill: "Patent Search",
         checked: false
     },
     {
-        skill: " 'FEA",
+        skill: "FEA",
         checked: false
     },
     {
-        skill: " 'Data Structures and Algorithms",
+        skill: "Data Structures and Algorithms",
         checked: false
     },
     {
-        skill: " 'teaching",
+        skill: "teaching",
         checked: false
     },
     {
-        skill: " 'Azure",
+        skill: "Azure",
         checked: false
     },
     {
-        skill: " 'Spark",
+        skill: "Spark",
         checked: false
     },
     {
-        skill: " 'Adobe Illustrator",
+        skill: "Adobe Illustrator",
         checked: false
     },
     {
-        skill: " 'Blender",
+        skill: "Blender",
         checked: false
     },
     {
-        skill: " 'Environmental Engineering",
+        skill: "Environmental Engineering",
         checked: false
     },
     {
-        skill: " 'Deep Learning",
+        skill: "Deep Learning",
         checked: false
     },
     {
-        skill: " 'SolidWorks",
+        skill: "SolidWorks",
         checked: false
     },
     {
-        skill: " 'python",
+        skill: "python",
         checked: false
     },
     {
-        skill: " 'Kubernetes",
+        skill: "Kubernetes",
         checked: false
     },
     {
-        skill: " 'Swift",
+        skill: "Swift",
         checked: false
     },
     {
-        skill: "Â 'JavaScript",
+        skill: "JavaScript",
         checked: false
     }
 ];

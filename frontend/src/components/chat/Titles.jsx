@@ -10,7 +10,7 @@ export default function Titles(props) {
         <Link href={`/chat/${props.id}`} className={`${classes.container} ${props.selected ? classes.selected : ""}`} onClick={() => props.onSelect(props.index)}>
             <div className={classes.combine}>
                 <span>{props.title}</span>
-                <div className={classes.yoo}>
+                <div className={`${!props.selected ? classes.yes : ""} ${classes.yoo}`}>
                     <button disabled={!props.selected} className={classes.delbtn} onClick={() => setPopup(true)}>
                         <Image src="/images/delete-48.png" height={25} width={25} alt="delete" />
                     </button>

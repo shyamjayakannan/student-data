@@ -58,10 +58,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(79 75 75);
+    background-color: rgb(79, 75, 75);
     padding: 10px;
 }
 
 .container:hover .yoo {
     background-color: rgb(58, 56, 56);
+}
+
+:root[data-theme = "dark"] .yoo {
+    background-color: rgb(94, 87, 87);
+}
+
+:root[data-theme = "dark"] .container:hover .yoo {
+    background-color: rgb(71, 69, 69);
+}
+
+.yes {
+    background-color: var(--primary-dark);
+}
+
+:root[data-theme = "dark"] .yes {
+    background-color: var(--black);
 }
