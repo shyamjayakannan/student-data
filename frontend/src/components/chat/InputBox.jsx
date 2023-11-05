@@ -8,6 +8,8 @@ export default function InputBox(props) {
     const spanRef = useRef();
 
     useEffect(() => {
+        if (props.preset) spanRef.current.innerText = props.preset;
+        
         function paste(e) {
             e.preventDefault();
             if (e.target.getAttribute("data-ref") !== "wow") return;
@@ -51,7 +53,7 @@ export default function InputBox(props) {
         setOk(false);
     }
 
-    function submit2(e) {
+    function submit2() {
         props.sendData(spanRef.current.innerText);
         if (!props.noclear) spanRef.current.innerText = "";
         setOk(false);

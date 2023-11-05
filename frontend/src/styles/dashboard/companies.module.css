@@ -30,7 +30,7 @@ height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
   /* /  background-color: red; */
     width: 1200px;
     height: 100%;

@@ -70,9 +70,12 @@ const dummy = [
   }
 ];
 
+let companies_list = [];
+let preset = "";
+
 const Companies = () => {
   const [loading, setLoading] = useState(false);
-  const [companies, setCompanies] = useState(data["2020-21"]);
+  const [companies, setCompanies] = useState(companies_list.length > 0 ? companies_list : data["2020-21"]);
   const authenticationCtx = useContext(AuthenticationContext);
   const skillsCtx = useContext(SkillsContext);
   const { popup, setPopup, Component } = usePopup();
@@ -84,26 +87,37 @@ const Companies = () => {
     if (authenticationCtx.details.firstTime) setPopup(true);
   }, [authenticationCtx.details.id]);
 
+  useEffect(() => {
+    if (skillsCtx.skills.length === 0) return;
+
+    if (skillsCtx.first === 1) {
+      sendData(" ");
+      skillsCtx.setFirst(2);
+      console.log("yay");
+    }
+  }, [skillsCtx.skills]);
+
   async function sendData(query) {
+    preset = query;
     setLoading(true);
     const arr = [];
     skillsCtx.skills.forEach(obj => {
       if (obj.checked) arr.push(obj.skill);
     })
     try {
-      // const response = await fetch(
-      //   `${process.env.NEXT_PUBLIC_PYTHON_BACKEND_URL}/profile`,
-      //   {
-      //     method: "POST",
-      //     headers: {
-      //       Accept: "application/json",
-      //       "Content-Type": "application/json",
-      //     },
-      //     body: JSON.stringify({ query, skills: arr}),
-      //   }
-      // );
-      // const pythonResponse = await response.json();
-      const pythonResponse = await new Promise(resolve => setTimeout(() => resolve(dummy), 1000));
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_PYTHON_BACKEND_URL}/profile`,
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ query, skills: arr}),
+        }
+      );
+      const pythonResponse = await response.json();
+      // const pythonResponse = await new Promise(resolve => setTimeout(() => resolve(dummy), 1000));
       setCompanies(_ => {
         const newResponse = pythonResponse.map(company => {
           for (const key in company) {
@@ -113,6 +127,7 @@ const Companies = () => {
           company.Link = data["2020-21"].find(elem => elem.Company === company.Company)?.Link;
           return company;
         });
+        companies_list = newResponse;
         return newResponse;
       });
       setLoading(false);
@@ -124,7 +139,7 @@ const Companies = () => {
   return (
     <div className={classes.container}>
       <div className={classes.search}>
-        <SearchBar sendData={sendData} />
+        <SearchBar preset={preset} sendData={sendData} />
       </div>
       <div className={classes.compcardsbox}>
         {loading ? Array(6).fill(0).map((_, index) => <CardSkeleton key={index} />) : companies.length!=0?companies.map((item, index) => <Card key={index} data={item} />):<div className={classes.noresult}><Image src="/images/empty.png" alt="no result" width={500} height={500}/><p>NO RESULT FOUND</p></div>}
@@ -135,4 +150,3 @@ const Companies = () => {
 }
 
 export default Companies
-// companies.map((item, index) => <Card key={index} data={item} />

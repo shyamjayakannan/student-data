@@ -8,7 +8,7 @@ const SearchBar = (props) => {
       method="POST"
       className={classes.searchcontainer}
     >
-      <InputBox className={classes.searchinput} noclear sendData={props.sendData} />
+      <InputBox className={classes.searchinput} preset={props.preset} noclear sendData={props.sendData} />
       {/* <button className={classes.searchbtn} type="submit">
         Search
         <Image

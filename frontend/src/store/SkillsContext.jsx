@@ -222,10 +222,6 @@ const options = [
         checked: false
     },
     {
-        skill: "C++",
-        checked: false
-    },
-    {
         skill: "Truffle",
         checked: false
     },
@@ -469,11 +465,14 @@ const options = [
 
 const SkillsContext = createContext({
     setSkills: () => { },
+    setFirst: () => { },
     skills: [String],
+    first: Number,
 });
 
 export function SkillsContextProvider({ children }) {
     const [skills, setSkills] = useState([]);
+    const [first, setFirst] = useState(0);
     const authenticationCtx = useContext(AuthenticationContext);
     const SkillSet = useSkillSet();
 
@@ -514,11 +513,18 @@ export function SkillsContextProvider({ children }) {
         })();
     }, [skills]);
 
+    function setSkillsHandler(skills) {
+        setSkills(skills);
+        if (first === 0) setFirst(1);
+    }
+
     return (
         <SkillsContext.Provider
             value={{
-                setSkills,
+                setSkills: setSkillsHandler,
+                setFirst,
                 skills,
+                first,
             }}
         >
             {children}
