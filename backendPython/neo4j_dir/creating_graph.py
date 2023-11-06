@@ -102,6 +102,8 @@ Response :
 You need to format the respone in a conversational way, arrange the response in bulleted points 
 and under major headings if possible. 
 
+Take care that you do not pollute the data provided in response, by adding your own data.
+
 '''
 
 result_prompt = PromptTemplate(input_variables=['response'], template=result_template)
@@ -127,5 +129,5 @@ def get_response(query):
     return response
 
 
-x = get_response('what ctc is offered for cgpa below 7')
+x = get_response('what ctc is offered for cgpa below 7, sort the ctc in descending order')
 print(x)
