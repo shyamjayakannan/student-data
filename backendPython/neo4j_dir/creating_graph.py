@@ -126,7 +126,7 @@ result_chain = LLMChain(llm=llm, prompt=result_prompt)
 
 def get_response(query):
     li = get_nodes_chain.run(query)
-    print(li)
+    # print(li)
     if type(li)==str:
         li = ast.literal_eval(li) 
 
@@ -141,6 +141,7 @@ def get_response(query):
 
 # x = get_response('what ctc is offered for cgpa below 7, sort the ctc in descending order')
 # x = get_response("list companies with ctc above 30")
+# x= get_response("list companies with ctc above 30 and cgpa below 8")
 # print(x)
 
 

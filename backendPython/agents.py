@@ -37,7 +37,7 @@ class PersonalAgent:
     def run(self, query):
         try:
             # print('**')
-            ans =  self.agent_chain.run(query)
+            ans =  get_response(query)
             return ans
         except Exception as e:
             print(e)
