@@ -12,7 +12,7 @@ export default function InputBox(props) {
         
         function paste(e) {
             e.preventDefault();
-            if (e.target.getAttribute("data-ref") !== "wow") return;
+            if (e.target !== spanRef.current) return;
             
             const text = (e.clipboardData || window.clipboardData).getData("text");
             spanRef.current.innerText = text ? text : "";

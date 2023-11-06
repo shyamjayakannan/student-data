@@ -58,3 +58,11 @@
     scale: 2;
   }
 }
+
+.result h1 {
+  margin: 25px;
+}
+
+.display {
+  width: 100%;
+}
