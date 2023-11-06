@@ -29,6 +29,12 @@ examples = [
      "syntax": '''MATCH (cgpa:CGPA)-[CGPA_to_CTC]->(ctc:CTC)
                   WHERE cgpa.name < 6
                   RETURN ctc '''},
+    {"Query": "name 10 companies which came for cgpa below 7 and ctc above 20",
+    "syntax" :'''MATCH (company:Company)-[Company_to_CGPA]->(cgpa:CGPA)
+                 MATCH (company)-[Company_to_CTC]->(ctc:CTC)
+                 WHERE cgpa.name < 7 AND ctc.name > 20
+                 RETURN company LIMIT 10;'''
+    }
 ]
 
 example_formatter_template = """
@@ -52,13 +58,16 @@ You can refer to  below examples for getting idea of how to write cypher query f
 suffix = '''
 create a cypher query for following  natural query for neo4j database
 
-The query has the following nodes :
-    1) 'source_node'  : {source} ---> property : name
-    2) 'destination_node' : {destination} ---> property : name
+The query has the following list of nodes :
+    {List_of_nodes}
     
-Relations : 
-{source}_to_{destination}
+You can create relations between the nodes in following manner :
+    Node1 : Company
+    Node2 : CGPA
+    Relation1 : Company_to_CGPA
+    Relation2 : CGPA_to_Company
 
+    
 natural_query :
 {natural_query}
 
@@ -80,14 +89,14 @@ few_shot_prompt = FewShotPromptTemplate(
     suffix=suffix ,
     
     # input variable to use in the suffix template
-    input_variables=["source", "destination" , "natural_query"],
+    input_variables=["List_of_nodes" , "natural_query"],
     example_separator="\n", 
 )
 
 
 cypher_chain = LLMChain(llm=llm, prompt=few_shot_prompt,verbose=False,)
 #__________________________________________________________________________________________________
-# cypher = cypher_chain.run({'source': 'Company', 'destination': 'CGPA', 'natural_query':'name 10 companies which came for cgpa below 7'})
+# cypher = cypher_chain.run({"List_of_nodes" :['Company' , 'CGPA'] , 'natural_query':'name 10 companies which came for cgpa below 7'})
 
 # result = graph.query(cypher)
 # print(result)
@@ -113,23 +122,30 @@ result_prompt = PromptTemplate(input_variables=['response'], template=result_tem
 result_chain = LLMChain(llm=llm, prompt=result_prompt)
 # print(result_chain.run({'response': result}))
 
-#__________________________________________________________________________________________________
+# #__________________________________________________________________________________________________
 
 def get_response(query):
     li = get_nodes_chain.run(query)
-    # print(li)
+    print(li)
     if type(li)==str:
         li = ast.literal_eval(li) 
-    source , destination = li[0] , li[1]
 
-    cypher = cypher_chain.run({'source': source, 'destination': destination, 'natural_query':query})
-    print('\n\n\n', cypher,'\n\n\n')
+    cypher = cypher_chain.run({"List_of_nodes" : li, 'natural_query':query})
+    # print('\n\n\n', cypher,'\n\n\n')
     result = graph.query(cypher)
-    print('\n\n\n', result)
+    # print('\n\n\n', result)
     response = result_chain.run({'response': result})
-    print('\n\n\n', response)
+    # print('\n\n\n', response)
     return response
 
 
-x = get_response('what ctc is offered for cgpa below 7, sort the ctc in descending order')
-print(x)
+# x = get_response('what ctc is offered for cgpa below 7, sort the ctc in descending order')
+# x = get_response("list companies with ctc above 30")
+# print(x)
+
+
+
+
+
+
+
