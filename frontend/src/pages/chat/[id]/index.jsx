@@ -52,6 +52,13 @@ export default function ChatId() {
 
     useEffect(() => {
         if (containerRef.current) containerRef.current.scrollTop = containerRef.current.scrollHeight;
+        const length = messages.length;
+        if (length > 0 && messages[length - 1].sender === "Bot" && messages[length - 1].message === "") {
+            setMessages(messages => {
+                messages.splice(-2, 2);
+                return [...messages];
+            });
+        }
     }, [messages]);
 
     async function pythonRequest(message) {
@@ -68,7 +75,6 @@ export default function ChatId() {
                 }
             );
             const pythonResponse = await response.json();
-            console.log(pythonResponse)
             // const pythonResponse = await new Promise(resolve => setTimeout(() => resolve({ message: "Hi, how are you?", messageHistory: "", title: "wow the weather is wonderful today isn't it wow the weather is wonderful today isn't it" }), 1000));
             const newMessages = [...messages, { sender: "User", message }, { sender: "Bot", message: pythonResponse.message }];
 
