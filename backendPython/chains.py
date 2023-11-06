@@ -14,3 +14,4 @@ summarize_chain = LLMChain(llm=llm, prompt=summary_prompt)
 short_summary_chain = LLMChain(llm=llm, prompt=short_summary_prompt)
 title_chain = LLMChain(llm=llm, prompt=title_prompt)
 formatting_chain = LLMChain(llm=llm, prompt=formatting_prompt)
+
