@@ -124,8 +124,8 @@ You will be provided with the response generated for the given user query.
 Response :
 {response}
 
-You are powerful at doing certain tasks like sorting, summarizing, formatting, etc.
-You will be given a task with some instructions and you have to complete the task.
+You need to format the respone in html in a conversational way,
+arrange the response in bulleted points and under major headings if possible.
 
 Take care that you do not pollute the data provided in response, by adding your own data.
 

@@ -55,7 +55,7 @@ task_tools = [
         
     ''',
     func = get_response,
-    return_direct = False, 
+    return_direct = True, 
     handle_tool_error=True,
     ),
     # Tool(

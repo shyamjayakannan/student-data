@@ -52,10 +52,10 @@ class PersonalAgent:
         
         return self.history
 
-agent_chain = PersonalAgent()
+# agent_chain = PersonalAgent()
 
-x = agent_chain.run('maximum and minimum ctc offered for cgpa below 7')
-print('\n\n\n\n', x)
-# y = agent_chain.run('10 companies which offered ctc above 20')
-# print('\n\n\n\n', y)
-print(agent_chain.get_chat_summary())
+# x = agent_chain.run('maximum and minimum ctc offered for cgpa below 7')
+# print('\n\n\n\n', x)
+# # y = agent_chain.run('10 companies which offered ctc above 20')
+# # print('\n\n\n\n', y)
+# print(agent_chain.get_chat_summary())
