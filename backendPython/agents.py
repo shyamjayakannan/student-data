@@ -45,10 +45,14 @@ class PersonalAgent:
 
     def get_chat_summary(self):
         messages = self.memory.chat_memory.messages
+        print(messages)
         old_memory = self.history['chat_summary']
+        print(old_memory)
         self.history['chat_summary'] = self.memory.predict_new_summary(messages, self.history['chat_summary'])
+        print(3)
         if old_memory == '':
             self.history['title'] = title_chain.run(self.history['chat_summary'])
+            print(4)
         
         return self.history
 
