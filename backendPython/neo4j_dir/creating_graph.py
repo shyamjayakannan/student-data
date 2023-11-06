@@ -129,5 +129,5 @@ def get_response(query):
     return response
 
 
-x = get_response('what ctc is offered for cgpa below 7, sort the ctc in descending order')
-print(x)
+# x = get_response('what ctc is offered for cgpa below 7, sort the ctc in descending order')
+# print(x)
