@@ -68,6 +68,7 @@ export default function ChatId() {
                 }
             );
             const pythonResponse = await response.json();
+            console.log(pythonResponse)
             // const pythonResponse = await new Promise(resolve => setTimeout(() => resolve({ message: "Hi, how are you?", messageHistory: "", title: "wow the weather is wonderful today isn't it wow the weather is wonderful today isn't it" }), 1000));
             const newMessages = [...messages, { sender: "User", message }, { sender: "Bot", message: pythonResponse.message }];
 
