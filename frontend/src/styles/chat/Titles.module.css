@@ -16,28 +16,68 @@
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.combine{
+.combine {
     display: flex;
     align-items: center;
     position: relative;
     width: 100%;
-    margin: 20px;
+    padding: 20px;
 }
-.delbtn{
-    position: absolute;
-    right: 10px;
+
+.delbtn {
     background: var(--white);
     border-radius: 5px;
     border: none;
     padding: 5px;
+    position: relative;
 }
 
 .delbtn:disabled {
     display: none;
 }
 
-.delbtn:hover{
+.delbtn:hover {
     cursor: pointer;
     transform: scale(0.95);
     transition: all ease-in-out 0.2s;
+}
+
+.combine span {
+    word-break: break-all;
+    max-height: 20px;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.yoo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(79, 75, 75);
+    padding: 10px;
+}
+
+.container:hover .yoo {
+    background-color: rgb(58, 56, 56);
+}
+
+:root[data-theme = "dark"] .yoo {
+    background-color: rgb(94, 87, 87);
+}
+
+:root[data-theme = "dark"] .container:hover .yoo {
+    background-color: rgb(71, 69, 69);
+}
+
+.yes {
+    background-color: var(--primary-dark);
+}
+
+:root[data-theme = "dark"] .yes {
+    background-color: var(--black);
 }

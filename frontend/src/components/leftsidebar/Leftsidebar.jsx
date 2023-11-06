@@ -84,7 +84,7 @@ const Leftsidebar = () => {
     <>
       <div className={classes.main_section}>
         <br />
-        <p className={classes.user}>
+        <div className={classes.user}>
           <Image
             src="/images/avatar1.svg"
             alt="avatar"
@@ -92,8 +92,8 @@ const Leftsidebar = () => {
             height={50}
             className={classes.avatar}
           />
-          {email}
-        </p>
+          <h3>{email}</h3>
+        </div>
         <p className={classes.buttons}>
           {Buts.map((element) => (
             <Link

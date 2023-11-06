@@ -6,7 +6,7 @@ const Students = () => {
   return (
     <div className={classes.main_cont}>
       <div className={classes.search}>
-        <SearchBar />
+        <SearchBar preset="" />
       </div>
       <Image src="/images/graph1.png" height={400} width={400} alt="graph1" />
       {/* <h2>Students</h2> */}

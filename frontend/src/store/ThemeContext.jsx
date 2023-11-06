@@ -10,7 +10,8 @@ export function ThemeContextProvider({ children }) {
     const [theme, setTheme] = useState();
 
     useEffect(() => {
-        if (!theme) return setTheme(localStorage.getItem('theme'))
+        console.log(theme)
+        if (!theme) return setTheme(localStorage.getItem('theme') === "dark" ? "dark" : "light");
 
         document.querySelector(':root').dataset.theme = theme
         localStorage.setItem('theme', theme)
@@ -21,7 +22,7 @@ export function ThemeContextProvider({ children }) {
         watchSysTheme.addEventListener('change', useSetTheme);
 
         function changeTheme() {
-            setTheme(localStorage.getItem('theme'));
+            setTheme(localStorage.getItem('theme') === "dark" ? "dark" : "light");
         }
         window.addEventListener("storage", changeTheme);
 

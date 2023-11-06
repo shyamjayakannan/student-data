@@ -39,5 +39,5 @@ def get_profiles(query: str, skill_query =  ['Python', 'SQL', 'R']):
     
     return json.dumps(companies_info)
 
-# print(get_profiles("ios/android"))
+# print(get_profiles("analyst"))
 
