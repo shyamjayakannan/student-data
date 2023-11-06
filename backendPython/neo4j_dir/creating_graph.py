@@ -34,7 +34,22 @@ examples = [
                  MATCH (company)-[Company_to_CTC]->(ctc:CTC)
                  WHERE cgpa.name < 7 AND ctc.name > 20
                  RETURN company LIMIT 10;'''
-    }
+    } ,
+
+    {   "Query": "minimum cgpa required for ctc above 40" ,
+        "syntax" : '''  MATCH (cgpa:CGPA)-[CGPA_to_CTC]->(ctc:CTC)
+                        WHERE ctc.name > 20
+                        RETURN MIN(cgpa.name) AS minimum_cgpa;
+                    ''' ,
+    } ,
+   { "Query" :"maximum and minimum cgpa required for ctc above 40" , 
+    "syntax" : '''
+            MATCH (cgpa:CGPA)-[CGPA_to_CTC]->(ctc:CTC)-[CTC_to_Company]->(company:Company)
+            WHERE ctc.name > 40
+            WITH MIN(cgpa.name) AS minCGPA, MAX(cgpa.name) AS maxCGPA
+            RETURN minCGPA, maxCGPA;
+            '''
+            } , 
 ]
 
 example_formatter_template = """
@@ -109,11 +124,12 @@ You will be provided with the response generated for the given user query.
 Response :
 {response}
 
-You need to format the respone in html in a conversational way, arrange the response in bulleted points 
-and under major headings if possible. 
-
+You are powerful at doing certain tasks like sorting, summarizing, formatting, etc.
+You will be given a task with some instructions and you have to complete the task.
 
 Take care that you do not pollute the data provided in response, by adding your own data.
+
+Check that there are no back-ticks(`) in the output.
 Check that html syntax is correct.
 '''
 
@@ -125,15 +141,16 @@ result_chain = LLMChain(llm=llm, prompt=result_prompt)
 # #__________________________________________________________________________________________________
 
 def get_response(query):
+    print('\n\n\n\n', query)
     li = get_nodes_chain.run(query)
-    # print(li)
+    print(li)
     if type(li)==str:
         li = ast.literal_eval(li) 
 
     cypher = cypher_chain.run({"List_of_nodes" : li, 'natural_query':query})
-    # print('\n\n\n', cypher,'\n\n\n')
+    print('\n\n\n', cypher,'\n\n\n')
     result = graph.query(cypher)
-    # print('\n\n\n', result)
+    print('\n\n\n', result)
     response = result_chain.run({'response': result})
     # print('\n\n\n', response)
     return response
@@ -142,6 +159,8 @@ def get_response(query):
 # x = get_response('what ctc is offered for cgpa below 7, sort the ctc in descending order')
 # x = get_response("list companies with ctc above 30")
 # x= get_response("list companies with ctc above 30 and cgpa below 8")
+# x = get_response('name 10 companies which offered ctc above 20')
+# x = get_response('jobProfiles available for cgpa below 7')
 # print(x)
 
 

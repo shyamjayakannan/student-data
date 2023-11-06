@@ -19,16 +19,13 @@ class PersonalAgent:
             prefix=self.prefix,
             suffix=self.suffix,
             input_variables=["input", "chat_history", "agent_scratchpad"],
-            # format_instructions = 
         )
         # memory
         self.memory = ConversationSummaryBufferMemory(llm = llm ,memory_key="chat_history", 
                                                       moving_summary_buffer = self.history['chat_summary'])
-
-        self.llm_chain = LLMChain(llm=llm, prompt=self.task_prompt)
         
         # agent
-        self.agent = ZeroShotAgent(llm_chain=self.llm_chain, tools=task_tools, verbose=True)
+        self.agent = ZeroShotAgent.from_llm_and_tools(llm=llm, tools=task_tools, verbose=True)
         self.agent_chain = AgentExecutor.from_agent_and_tools(
             agent=self.agent, tools=task_tools, 
             verbose=True, memory=self.memory, handle_parsing_errors=True,
@@ -36,8 +33,7 @@ class PersonalAgent:
 
     def run(self, query):
         try:
-            # print('**')
-            ans =  get_response(query)
+            ans = self.agent_chain.run(query)
             return ans
         except Exception as e:
             print(e)
@@ -52,7 +48,10 @@ class PersonalAgent:
         
         return self.history
 
-# agent_chain = PersonalAgent()
+agent_chain = PersonalAgent()
 
-# x = agent_chain.run("name companies which offered work location as Delhi")
-# print('\n\n\n\n', x)
+x = agent_chain.run('maximum and minimum ctc offered for cgpa below 7')
+print('\n\n\n\n', x)
+# y = agent_chain.run('10 companies which offered ctc above 20')
+# print('\n\n\n\n', y)
+print(agent_chain.get_chat_summary())
