@@ -91,9 +91,13 @@ const Companies = () => {
     if (skillsCtx.skills.length === 0) return;
 
     if (skillsCtx.first === 1) {
-      sendData(" ");
+      let arr = " ";
+      skillsCtx.skills.forEach(obj => {
+        if (obj.checked) arr += obj.skill + " ";
+      })
+      console.log(arr)
+      sendData(arr);
       skillsCtx.setFirst(2);
-      console.log("yay");
     }
   }, [skillsCtx.skills]);
 
@@ -113,7 +117,7 @@ const Companies = () => {
             Accept: "application/json",
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({ query, skills: arr}),
+          body: JSON.stringify({ query, skills: arr }),
         }
       );
       const pythonResponse = await response.json();
@@ -142,7 +146,7 @@ const Companies = () => {
         <SearchBar preset={preset} sendData={sendData} />
       </div>
       <div className={classes.compcardsbox}>
-        {loading ? Array(6).fill(0).map((_, index) => <CardSkeleton key={index} />) : companies.length!=0?companies.map((item, index) => <Card key={index} data={item} />):<div className={classes.noresult}><Image src="/images/empty.png" alt="no result" width={500} height={500}/><p>NO RESULT FOUND</p></div>}
+        {loading ? Array(6).fill(0).map((_, index) => <CardSkeleton key={index} />) : companies.length != 0 ? companies.map((item, index) => <Card key={index} data={item} />) : <div className={classes.noresult}><Image src="/images/empty.png" alt="no result" width={500} height={500} /><p>NO RESULT FOUND</p></div>}
       </div>
       {popup && <Component function={() => router.push("/dashboard/settings")} title="Skill Preferences" message="Looks like you haven't set skill preferences yet. Do you wish to set them now?" action="Ok" />}
     </div>

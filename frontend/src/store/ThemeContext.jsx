@@ -10,7 +10,6 @@ export function ThemeContextProvider({ children }) {
     const [theme, setTheme] = useState();
 
     useEffect(() => {
-        console.log(theme)
         if (!theme) return setTheme(localStorage.getItem('theme') === "dark" ? "dark" : "light");
 
         document.querySelector(':root').dataset.theme = theme
