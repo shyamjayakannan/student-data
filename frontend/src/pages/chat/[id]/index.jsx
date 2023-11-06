@@ -52,13 +52,6 @@ export default function ChatId() {
 
     useEffect(() => {
         if (containerRef.current) containerRef.current.scrollTop = containerRef.current.scrollHeight;
-        const length = messages.length;
-        if (length > 0 && messages[length - 1].sender === "Bot" && messages[length - 1].message === "") {
-            setMessages(messages => {
-                messages.splice(-2, 2);
-                return [...messages];
-            });
-        }
     }, [messages]);
 
     async function pythonRequest(message) {
