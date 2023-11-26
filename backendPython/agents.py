@@ -45,17 +45,21 @@ class PersonalAgent:
 
     def get_chat_summary(self):
         messages = self.memory.chat_memory.messages
+        print(messages)
         old_memory = self.history['chat_summary']
+        print(old_memory)
         self.history['chat_summary'] = self.memory.predict_new_summary(messages, self.history['chat_summary'])
+        print(3)
         if old_memory == '':
             self.history['title'] = title_chain.run(self.history['chat_summary'])
+            print(4)
         
         return self.history
 
-Agent = PersonalAgent()
+# agent_chain = PersonalAgent()
 
-x = Agent.run('name companies which offered ctc above 20')
-print('\n\n\n\n', x['intermediate_steps'])
+x = agent_chain.run('maximum and minimum ctc offered for cgpa below 7')
+print('\n\n\n\n', x)
 # y = agent_chain.run('10 companies which offered ctc above 20')
 # print('\n\n\n\n', y)
-# print(agent_chain.get_chat_summary())
+print(agent_chain.get_chat_summary())

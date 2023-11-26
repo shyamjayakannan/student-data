@@ -24,7 +24,7 @@ export default function useAuth() {
                 }
             );
             const responsedata = await response.json();
-            if (who !== "google") notificationCtx.message(responsedata.message);
+            if (!(who === "google" && type === "signin")) notificationCtx.message(responsedata.message);
 
             if (responsedata.type === "Success" && (type === "signin" || type === "signup")) {
                 updatePersonalDetails(responsedata.response);

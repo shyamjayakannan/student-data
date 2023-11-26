@@ -24,7 +24,6 @@ def chatbot():
         user_input = request.json.get('message')
         message_history = request.json.get('messageHistory')  
         agent.history = {'title' : '' , 'chat_summary' : message_history}
-        print(user_input, message_history)
         if user_input:
             output = agent.run(user_input)
             new_message_history = agent.get_chat_summary()
