@@ -2,6 +2,8 @@ from langchain.agents import ZeroShotAgent, AgentExecutor
 from chat_tools import *
 from langchain.memory import ConversationSummaryBufferMemory
 from chains import title_chain
+from langchain.agents import initialize_agent
+from langchain.agents import AgentType
 
 class PersonalAgent:
     def __init__(self, history= {'title' : '' , 'chat_summary' : ''}):
@@ -25,16 +27,18 @@ class PersonalAgent:
                                                       moving_summary_buffer = self.history['chat_summary'])
         
         # agent
-        self.agent = ZeroShotAgent.from_llm_and_tools(llm=llm, tools=task_tools, verbose=True)
-        self.agent_chain = AgentExecutor.from_agent_and_tools(
-            agent=self.agent, tools=task_tools, 
-            verbose=True, memory=self.memory, handle_parsing_errors=True,
-        )
+        self.agent = initialize_agent(
+                                task_tools,
+                                llm,
+                                agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
+                                verbose=True,
+                                return_intermediate_steps=True,
+                                )
 
     def run(self, query):
         try:
-            ans = self.agent_chain.run(query)
-            return ans
+            response = self.agent(query)
+            return response
         except Exception as e:
             print(e)
         return "I did not get that. Please try again."
@@ -48,10 +52,10 @@ class PersonalAgent:
         
         return self.history
 
-agent_chain = PersonalAgent()
+Agent = PersonalAgent()
 
-x = agent_chain.run('maximum and minimum ctc offered for cgpa below 7')
-print('\n\n\n\n', x)
+x = Agent.run('name companies which offered ctc above 20')
+print('\n\n\n\n', x['intermediate_steps'])
 # y = agent_chain.run('10 companies which offered ctc above 20')
 # print('\n\n\n\n', y)
-print(agent_chain.get_chat_summary())
+# print(agent_chain.get_chat_summary())
